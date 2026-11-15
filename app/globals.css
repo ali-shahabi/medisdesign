@@ -1328,8 +1328,8 @@
 
   /* split copy/figure block */
   .split { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px; align-items: center; }
-  .split-txt { min-width: 0; }
-  .split-fig { min-width: 0; }
+  .split-txt { grid-column: 1 / span 6; min-width: 0; }
+  .split-fig { grid-column: 8 / span 5; min-width: 0; }
 
   /* document page */
   .doc-panel {

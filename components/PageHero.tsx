@@ -40,6 +40,12 @@ export function PageHero({ crumb, en, fa: faLabel, h1, lede, actions, tags, art,
       : 'ph-copy col-span-8 max-[900px]:col-span-1'
     : 'ph-copy full col-span-12';
 
+  const artCls = art
+    ? narrow
+      ? 'ph-art col-span-4 col-start-9 max-[900px]:col-span-1 max-[900px]:col-start-auto'
+      : 'ph-art col-span-4 max-[900px]:col-span-1'
+    : '';
+
   return (
     <section className="page-hero" id="top" aria-labelledby="page-h">
       <Field className="page-field" drift="0.04" turn="0.004" />
@@ -52,7 +58,7 @@ export function PageHero({ crumb, en, fa: faLabel, h1, lede, actions, tags, art,
           {tags}
           {actions ? <div className="ph-actions">{actions}</div> : null}
         </div>
-        {art ? <div className="ph-art col-span-4 max-[900px]:col-span-1">{art}</div> : null}
+        {art ? <div className={artCls}>{art}</div> : null}
       </div>
     </section>
   );
