@@ -46,7 +46,6 @@ export default function ServicesPage() {
               fa="شش میدان"
               id="practices-h"
               title="شش میدان، یک پیوستار"
-              note="هر کارت به صفحهٔ همان خدمت می‌رود؛ توضیح‌ها متن واقعی سایت است."
             />
 
             <div className="svc-grid">
