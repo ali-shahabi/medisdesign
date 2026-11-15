@@ -19,10 +19,12 @@
     "react-dom": "19.3.1"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "cheerio": "^1.0.0",
+    "tailwindcss": "^4.3.5",
     "typescript": "^5"
   }
 }

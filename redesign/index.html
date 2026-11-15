@@ -1,578 +1,162 @@
 <!doctype html>
 <!--
-  MEDIS DESIGN GROUP — chosen direction «ارگانیک» / ORGANIC
+  MEDIS DESIGN GROUP — SPARK final production design («ارگانیک» / ORGANIC, build SPARK)
   ---------------------------------------------------------------------------------------------
   Concept  : acoustic ecology. Sound as a natural field: contour lines, mineral pigments,
              human warmth, generous air. Calm and material — no wellness stock, no gradients.
-  Palette  : extracted from the live site in session 8b3cc8d0 (docs/color-palette.md):
-             terracotta #CC7529 (primary) · petrol #002736 (secondary) · coral #F77656
-             ink #0F131F · body #35415B
-             muted #727F9F · surface #F2F4F7 · border #E3E7F0 · warm beige #C7A78D
-             Gold #A18E37 / accent-hover #C4AE45 were the live-site accents; terracotta replaces
-             them here as the page's single chromatic accent.
-  Type     : IRANYekan 700 display clamp(2.8rem,5.6vw,5.6rem)/1.12 · IRANSans Light 17/1.95 body
-             system serif italic for small Latin labels only.
-  Layout   : 1440-first. 12-col grid, 1320 max, wide 24px gutters, asymmetric 2-col,
-             28px soft frames, alternation of chalk / sand-wash / sky-wash grounds.
-  Signature: ONE contour shape. A single irregular ring (inline SVG path) is reused thirteen times
-             at different scales and rotations to build a sound-ripple field. It sits behind the
-             hero at full bleed, behind every section number, and is cropped into the stats band
-             and the contact panel. Constant 1px line weight (non-scaling-stroke). It drifts on
-             scroll — slow translate + a fraction of a degree of rotation.
-  Motion   : scroll-linked drift on the contour layers + quiet 18px reveals; disabled under
-             prefers-reduced-motion. No parallax walls, no scroll-jacking.
-  A11y     : skip link, focus-visible styles, alt text, landmarks, reduced-motion, no overflow.
+  Palette  : DSH terracotta #CC7529 — the single chromatic accent for every button, label,
+             figure and rule (exactly as in dsh-redesign.html) · petrol #002736 (secondary)
+             ink #0F131F · body #35415B · muted #55607A · coral #F77656 decorative only
+             The retired gold #A18E37 is fully tokenised: no colour literals remain.
+  Type     : IRANYekan 700/500 display · IRANSans 300/400 body — four faces, subset to
+             Latin + Persian and re-encoded as WOFF2 (86 KB for the whole set, was 151 KB).
+             Latin micro-labels use a Georgia-first serif stack. Persian text never
+             receives letter-spacing (Arabic script must stay connected).
+  Layout   : 1440-first. 12-col grid, 1320 max, 24px gutters, asymmetric 2-col,
+             28px soft frames, alternation of chalk / sand / sky / petrol grounds.
+  Signature: ONE contour shape reused at different scales and rotations.
+  Motion   : scroll-linked drift + quiet 18px reveals; off under prefers-reduced-motion.
+  A11y     : skip link, focus-visible (ink, AA), native <dialog> mobile navigation,
+             landmarks, reduced-motion, 44px touch targets, forced-colors support,
+             no horizontal overflow from 320px up.
+  Production changes vs. `index.html` (the reviewed mockup) and `dsh-redesign.html`:
+             · the hero H1 now carries the keyword line and the mast shows scroll progress
+               (hero proof strip + hero-meta divider removed per request; stats live in §05 band)
+             · a new «فرآیند» section (analysis → design → execution) with real
+               technical plates, and the six services now use the six real site photos
+             · the portfolio got a focal point: one 6-column flagship plate, a 12-column
+               grid and an inline «all projects» card
+             · مدیس مگ became four cards with real thumbnails instead of four text rows
+             · Persian text no longer gets letter-spacing; small type is 400 not 300
+             · four subset WOFF2 faces instead of five unoptimised files
+             · manifest, geo meta, WebPage JSON-LD, 1200x630 OG image, scroll progress
+             · forced-colors and prefers-contrast fallbacks
   All copy, numbers, project names and contact details come from CONTENT.md (real site content).
+  SPARK lineage (merged 2026-11-16, new model review):
+             · base = oc-redesign.html (process section, flagship plate, mag cards w/ thumbs,
+               subset WOFF2, dialog nav, mcta bar, scroll progress, JSON-LD, manifest)
+             · from dsh-redesign.html = tokenised gold, ink focus ring, real URLs, SEO head discipline
+             · from autoclow-redesign.html = bilingual micro-labels, bottom-sheet mobile thinking
+               (kept native <dialog> as the superior accessible pattern)
+             · from index.html = original organic concept + contour motif + palette discipline
+             · spark deltas = data-design attr + design meta, header rebrand,
+               DSH orange #CC7529 restored on buttons, eyebrows, numerals, link hovers,
+               tagline rule and band eyebrow (replacing OC's darker #B05A12 / #8A4610 / coral)
 -->
-<html lang="fa" dir="rtl">
+<html lang="fa-IR" dir="rtl" data-design="spark">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>گروه مهندسی مدیس — آرامش، شنیده می‌شود</title>
-<meta name="description" content="گروه مهندسی مدیس؛ طراحی آکوستیک، الکتروآکوستیک و معماری سالن‌های همایش، سینما و فضاهای فرهنگی.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>گروه مهندسی مدیس | طراحی آکوستیک، سالن همایش و سینما</title>
+<meta name="description" content="طراحی آکوستیک، الکتروآکوستیک و معماری سالن‌های همایش، سینما و فضاهای فرهنگی؛ تحلیل، طراحی و اجرا در یک پیوستار.">
 <meta name="theme-color" content="#F8F6F0">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="گروه مهندسی مدیس">
+<meta name="design" content="spark — merged final (organic OC base + dsh production hygiene + autoclow sheet ideas + index concept)">
+<meta name="geo.region" content="IR-07">
+<meta name="geo.placename" content="تهران">
+<link rel="canonical" href="https://medisdesign.com/">
+<link rel="manifest" href="site.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/brand/favicon-180.png">
+<meta name="apple-mobile-web-app-title" content="مدیس">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:site_name" content="گروه مهندسی مدیس">
+<meta property="og:url" content="https://medisdesign.com/">
+<meta property="og:title" content="گروه مهندسی مدیس | طراحی آکوستیک، سالن همایش و سینما">
+<meta property="og:description" content="طراحی آکوستیک، الکتروآکوستیک و معماری سالن‌های همایش، سینما و فضاهای فرهنگی؛ تحلیل، طراحی و اجرا در یک پیوستار.">
+<meta property="og:image" content="https://medisdesign.com/assets/brand/og-1200x630.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="سالن کنسرت با پوشش آکوستیک چوبی">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="گروه مهندسی مدیس | طراحی آکوستیک، سالن همایش و سینما">
+<meta name="twitter:description" content="طراحی آکوستیک، الکتروآکوستیک و معماری سالن‌های همایش، سینما و فضاهای فرهنگی.">
+<meta name="twitter:image" content="https://medisdesign.com/assets/brand/og-1200x630.jpg">
+<link rel="preload" href="assets/fonts/oc/yekan-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/oc/sans-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" fetchpriority="high"
+      href="assets/img/hall-green-1280.webp"
+      imagesrcset="assets/img/hall-green-640.webp 640w, assets/img/hall-green-1280.webp 1280w"
+      imagesizes="(max-width: 900px) 90vw, 640px">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": "https://medisdesign.com/#organization",
+      "name": "گروه مهندسی مدیس",
+      "alternateName": "MEDIS Design Group",
+      "url": "https://medisdesign.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://medisdesign.com/wp-content/uploads/2025/05/00695959.png",
+        "width": 500,
+        "height": 500
+      },
+      "image": "https://medisdesign.com/assets/brand/og-1200x630.jpg",
+      "telephone": ["+982126413369", "+982126709572", "+989386038003"],
+      "email": "medisdesign.team@gmail.com",
+      "sameAs": ["https://instagram.com/medisdesign.team"],
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "تهران، خیابان شریعتی، خیابان ظفر، پلاک 168، واحد 9",
+          "addressLocality": "تهران",
+          "addressCountry": "IR"
+        },
+        {
+          "@type": "PostalAddress",
+          "name": "کارخانه",
+          "streetAddress": "شهرک صنعتی صفادشت، بلوار فروردین، پلاک 310",
+          "addressLocality": "صفادشت",
+          "addressCountry": "IR"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+989386038003",
+        "contactType": "sales",
+        "areaServed": "IR",
+        "availableLanguage": ["fa"]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://medisdesign.com/#website",
+      "url": "https://medisdesign.com/",
+      "name": "گروه مهندسی مدیس",
+      "inLanguage": "fa-IR",
+      "publisher": {"@id": "https://medisdesign.com/#organization"}
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://medisdesign.com/#webpage",
+      "url": "https://medisdesign.com/",
+      "name": "گروه مهندسی مدیس | طراحی آکوستیک، سالن همایش و سینما",
+      "description": "طراحی آکوستیک، الکتروآکوستیک و معماری سالن‌های همایش، سینما و فضاهای فرهنگی؛ تحلیل، طراحی و اجرا در یک پیوستار.",
+      "inLanguage": "fa-IR",
+      "isPartOf": {"@id": "https://medisdesign.com/#website"},
+      "about": {"@id": "https://medisdesign.com/#organization"}
+    }
+  ]
+}
+</script>
 <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('motion')}</script>
-<style>
-/* ==========================================================================
-   1 — fonts (self-hosted, the same faces as the live site)
-   ========================================================================== */
-@font-face{font-family:'Yekan';src:url('assets/fonts/site/iranyekanwebboldfanum.woff') format('woff');font-weight:700;font-display:swap}
-@font-face{font-family:'Yekan';src:url('assets/fonts/site/iranyekanwebmediumfanum.woff') format('woff');font-weight:500;font-display:swap}
-@font-face{font-family:'Sans';src:url('assets/fonts/site/IRANSansWeb_Light.woff2') format('woff2');font-weight:300;font-display:swap}
-@font-face{font-family:'Sans';src:url('assets/fonts/site/IRANSansWeb.woff2') format('woff2');font-weight:400;font-display:swap}
-@font-face{font-family:'Sans';src:url('assets/fonts/site/IRANSansWeb_Medium.woff2') format('woff2');font-weight:500;font-display:swap}
-
-/* ==========================================================================
-   2 — tokens
-   ========================================================================== */
-:root{
-  --sand:#E7DCCB;
-  --chalk:#F8F6F0;
-  --sky:#E8EEF6;
-  --ink:#0F131F;
-  --body-text:#35415B;
-  --muted:#727F9F;
-  --primary:#CC7529;      /* terracotta — accent, CTAs */
-  --secondary:#002736;    /* deep petrol — dark structural grounds */
-  --on-secondary:#F8F6F0; /* cream on petrol */
-  --coral:#F77656;
-  --surface-alt:#F2F4F7;
-  --line-neutral:#E3E7F0;
-
-  --ink-64:rgba(15,19,31,.64);
-  --ink-72:rgba(15,19,31,.72);
-  --ink-52:rgba(15,19,31,.52);
-  --line:rgba(15,19,31,.12);
-  --line-strong:rgba(15,19,31,.24);
-
-  --display:'Yekan',system-ui,sans-serif;
-  --body:'Sans',system-ui,sans-serif;
-  --serif:ui-serif,'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif;
-
-  --pad:clamp(20px,4.17vw,60px);
-  --max:1320px;
-  --r-lg:28px;
-  --r-md:22px;
-  --r-sm:14px;
-  --sec:clamp(76px,8.6vw,126px);
-  --ease:cubic-bezier(.22,.61,.36,1);
-}
-
-/* ==========================================================================
-   3 — base
-   ========================================================================== */
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
-body{
-  margin:0;background:var(--chalk);color:var(--body-text);overflow-x:clip;
-  font-family:var(--body);font-weight:300;font-size:17px;line-height:1.95;
-  text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;
-}
-body::after{
-  content:"";position:fixed;inset:0;z-index:4;pointer-events:none;opacity:.5;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.045'/%3E%3C/svg%3E");
-}
-img{display:block;max-width:100%;height:auto}
-a{color:inherit;text-decoration:none}
-h1,h2,h3,h4,p,figure,figcaption,blockquote{margin:0}
-ul,ol{margin:0;padding:0;list-style:none}
-::selection{background:var(--primary);color:var(--ink)}
-:focus-visible{outline:2px solid var(--coral);outline-offset:4px;border-radius:3px}
-
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
-}
-
-.skip{
-  position:fixed;z-index:200;top:10px;inset-inline-start:10px;
-  transform:translateY(-180%);transition:transform .2s var(--ease);
-  background:var(--ink);color:var(--chalk);padding:10px 18px;border-radius:8px;
-  font-size:13px;font-weight:400;
-}
-.skip:focus{transform:none}
-
-.svg-defs{position:absolute;width:1px;height:1px;overflow:hidden;pointer-events:none}
-
-/* ==========================================================================
-   4 — small primitives
-   ========================================================================== */
-.wrap{width:min(var(--max),100% - 2 * var(--pad));margin-inline:auto}
-.g12{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px}
-
-.latin{
-  font-family:var(--serif);font-style:italic;font-weight:400;
-  font-size:11.5px;line-height:1.4;letter-spacing:.01em;color:var(--ink-52);
-  direction:ltr;unicode-bidi:isolate;
-}
-.eyebrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.eyebrow .rule{display:block;width:38px;height:1px;background:var(--line-strong);flex:none}
-.eyebrow .fa{font-family:var(--body);font-weight:500;font-size:11px;letter-spacing:.04em;color:var(--primary)}
-
-h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:0;color:var(--ink)}
-h2{font-size:clamp(1.85rem,2.9vw,2.6rem);line-height:1.28;margin-top:10px}
-h3{font-size:18.5px;line-height:1.6}
-.lead{font-size:clamp(17px,1.35vw,19.5px);line-height:2;color:var(--ink-72)}
-p{max-width:62ch}
-
-.link{
-  display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:500;
-  border-bottom:1px solid color-mix(in srgb,var(--primary) 70%,transparent);padding-bottom:4px;
-  transition:color .25s,border-color .25s;
-}
-.link svg{width:13px;height:13px;flex:none;color:var(--primary);transition:transform .35s var(--ease)}
-.link:hover{color:var(--primary)}
-.link:hover svg{transform:translateX(-4px)}
-
-.btn{
-  display:inline-flex;align-items:center;gap:10px;
-  border:1px solid var(--primary);border-radius:999px;background:var(--primary);
-  padding:12px 24px;font-size:12.5px;font-weight:500;color:#fff;
-  transition:background .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease);
-}
-.btn:hover{background:var(--body-text);color:#fff;border-color:var(--body-text)}
-.btn svg{width:13px;height:13px;flex:none}
-.btn.small{padding:9px 17px;font-size:11.5px}
-
-.field{position:absolute;pointer-events:none}
-.field svg{display:block;width:100%;height:100%}
-.field use{color:currentColor}
-
-/* ==========================================================================
-   5 — header
-   ========================================================================== */
-.mast{
-  position:sticky;top:0;z-index:60;background:var(--chalk);
-  border-bottom:1px solid var(--line);
-}
-.mast-in{display:flex;align-items:center;justify-content:space-between;gap:26px;height:78px}
-.brand{display:flex;align-items:center;gap:12px;flex:none}
-.brand img{width:34px;height:34px;object-fit:contain;opacity:.92}
-.brand-txt{display:flex;flex-direction:column;line-height:1.3}
-.brand-txt b{font-family:var(--display);font-weight:700;font-size:14.5px}
-.brand-txt .latin{font-size:9.5px;margin-top:3px;color:var(--ink-52);letter-spacing:.03em}
-
-.nav{display:flex;align-items:center;gap:clamp(9px,1.45vw,21px);flex-wrap:nowrap}
-.nav a{
-  position:relative;font-size:12.5px;font-weight:400;color:var(--ink-64);
-  padding-block:6px;white-space:nowrap;transition:color .25s;
-}
-.nav a::after{
-  content:"";position:absolute;inset-inline:0;bottom:0;height:1px;background:var(--primary);
-  transform:scaleX(0);transform-origin:right;transition:transform .3s var(--ease);
-}
-.nav a:hover{color:var(--ink)}
-.nav a:hover::after,.nav a[aria-current="page"]::after{transform:scaleX(1)}
-.nav a[aria-current="page"]{color:var(--ink)}
-.mast-end{display:flex;align-items:center;gap:18px;flex:none}
-.mast-tel{
-  font-family:var(--display);font-weight:500;font-size:12px;color:var(--ink-64);
-  direction:ltr;unicode-bidi:isolate;white-space:nowrap;transition:color .25s;
-}
-.mast-tel:hover{color:var(--ink)}
-
-/* ==========================================================================
-   6 — hero
-   ========================================================================== */
-.hero{position:relative;isolation:isolate;overflow:hidden;background:var(--chalk)}
-.hero-field{width:1760px;height:1760px;left:-520px;top:-360px;color:var(--primary);opacity:.22;z-index:0}
-.hero-in{
-  position:relative;z-index:1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));
-  gap:24px;align-items:center;
-  min-height:calc(100svh - 78px - 58px);
-  padding-block:clamp(40px,5vw,72px) clamp(36px,4.4vw,64px);
-}
-.hero-copy{grid-column:1 / span 6;min-width:0}
-.hero-plate{grid-column:7 / span 6;min-width:0}
-
-.hero-copy h1{
-  margin-top:26px;
-  font-size:clamp(2.8rem,5.6vw,5.6rem);
-  line-height:1.12;
-  font-weight:700;
-}
-.hero-copy h1 span{display:block}
-.hero-tagline{
-  margin-top:28px;max-width:36ch;font-size:clamp(17px,1.5vw,20px);line-height:1.85;color:var(--ink);
-  border-inline-start:2px solid var(--coral);padding-inline-start:18px;
-}
-.hero-lede{margin-top:18px;max-width:44ch;font-size:16px;line-height:1.95;color:var(--ink-64)}
-.hero-meta{
-  margin-top:38px;padding-top:20px;border-top:1px solid var(--line);
-  display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
-}
-.disc-line{font-size:13px;color:var(--ink-64);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.disc-line i{font-style:normal;color:var(--primary);opacity:.8}
-
-.frame{
-  padding:10px;border:1px solid rgba(161,142,55,.38);
-  border-radius:var(--r-lg);
-  background:color-mix(in srgb,var(--chalk) 82%,var(--sand));
-}
-.frame img{width:100%;height:100%;border-radius:19px;object-fit:cover}
-.hero-plate .frame img{aspect-ratio:16 / 10;object-position:50% 44%;filter:saturate(.95)}
-
-.plate-cap{
-  display:flex;align-items:baseline;justify-content:space-between;gap:16px;
-  margin-top:13px;padding-top:11px;border-top:1px solid var(--line);
-}
-.plate-cap .fa{font-size:11.5px;color:var(--ink-52)}
-
-.hero-foot{
-  position:relative;z-index:1;border-top:1px solid var(--line);height:58px;
-  display:flex;align-items:center;justify-content:space-between;gap:24px;
-}
-.hero-foot p{font-family:var(--display);font-weight:500;font-size:12.5px;color:var(--ink-64)}
-.scroll-cue{display:inline-flex;align-items:center;gap:12px;color:var(--ink-52)}
-.scroll-cue .line{position:relative;display:block;width:54px;height:1px;background:var(--line-strong)}
-.scroll-cue .dot{
-  position:absolute;top:-2px;inset-inline-start:0;width:5px;height:5px;border-radius:50%;
-  background:var(--primary);
-}
-@media (prefers-reduced-motion:no-preference){
-  .motion .scroll-cue .dot{animation:cue 3s var(--ease) infinite}
-  @keyframes cue{0%{transform:translateX(0);opacity:1}70%{transform:translateX(46px);opacity:.2}100%{transform:translateX(46px);opacity:0}}
-}
-
-/* ==========================================================================
-   7 — section furniture
-   ========================================================================== */
-.sec{padding-block:var(--sec)}
-.sec.alt{background:color-mix(in srgb,var(--sand) 34%,var(--chalk))}
-.sec.sky{background:color-mix(in srgb,var(--secondary) 5%,var(--chalk))}
-
-.sec-head{display:flex;align-items:flex-start;gap:40px}
-.sec-title{position:relative;z-index:1;min-width:0;padding-top:2px}
-.mark{position:relative;flex:none;width:64px;height:64px;display:grid;place-items:center;margin-top:2px}
-.mark .rings{
-  position:absolute;top:50%;left:50%;width:172px;height:172px;
-  transform:translate(-50%,-50%);color:var(--primary);opacity:.24;
-}
-.mark b{
-  position:relative;font-family:var(--display);font-weight:700;font-size:12px;
-  color:var(--primary);letter-spacing:.02em;
-}
-
-.sec-bar{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;flex-wrap:wrap}
-.sec-note{max-width:34ch;font-size:14px;line-height:1.9;color:var(--ink-64);margin-bottom:6px}
-
-/* ==========================================================================
-   8 — statement
-   ========================================================================== */
-.stmt-in{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:start}
-.stmt-main{grid-column:1 / span 7;min-width:0}
-.stmt-side{grid-column:9 / span 4;min-width:0;padding-top:10px}
-.stmt-main .lead{margin-top:26px}
-.stmt-main .body{margin-top:20px;font-size:16px;line-height:2;color:var(--ink-64)}
-
-.quote{
-  background:color-mix(in srgb,var(--sand) 46%,var(--chalk));
-  border-radius:var(--r-md);padding:28px 26px 24px;
-}
-.quote p{font-family:var(--display);font-weight:500;font-size:17.5px;line-height:1.85;color:var(--ink)}
-.quote .latin{display:block;margin-top:14px}
-
-.disc{margin-top:26px;border-top:1px solid var(--line)}
-.disc li{
-  display:flex;align-items:baseline;justify-content:space-between;gap:16px;
-  padding-block:13px;border-bottom:1px solid var(--line);font-size:13.5px;
-}
-.disc li .latin{font-size:11px}
-
-/* ==========================================================================
-   9 — services
-   ========================================================================== */
-.svc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:44px}
-.card{
-  position:relative;background:var(--chalk);border:1px solid var(--line);
-  border-radius:var(--r-md);padding:28px 26px 30px;min-width:0;
-  transition:border-color .35s var(--ease),transform .5s var(--ease);
-}
-.card:hover{border-color:color-mix(in srgb,var(--primary) 58%,transparent);transform:translateY(-3px)}
-.card-n{font-family:var(--display);font-weight:700;font-size:11px;color:var(--primary);letter-spacing:.04em}
-.card .ico{width:29px;height:29px;color:var(--primary);margin-block:20px 16px;display:block}
-.card h3{margin-top:0}
-.card p{margin-top:9px;font-size:14.4px;line-height:1.9;color:var(--ink-64);max-width:38ch}
-
-/* ==========================================================================
-   10 — projects
-   ========================================================================== */
-.plates{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:38px 22px;margin-top:44px}
-.plate{min-width:0}
-.plate .ph{
-  display:block;position:relative;overflow:hidden;border-radius:var(--r-md);
-  background:color-mix(in srgb,var(--sand) 40%,var(--chalk));
-  aspect-ratio:4 / 3;
-}
-.plate .ph img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
-.plate:hover .ph img{transform:scale(1.035)}
-.plate .ph::after{
-  content:"";position:absolute;inset:0;border-radius:inherit;
-  box-shadow:inset 0 0 0 1px rgba(43,42,36,.10);
-}
-.plate figcaption{padding-top:12px;border-top:1px solid var(--line);margin-top:13px}
-.cap-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
-.pnum{font-family:var(--display);font-weight:700;font-size:11px;color:var(--primary)}
-.ptype{font-size:11.5px;color:var(--ink-52)}
-.plate h3{font-size:15px;line-height:1.55;margin-top:5px}
-
-/* ==========================================================================
-   11 — stats band
-   ========================================================================== */
-.band{
-  position:relative;overflow:hidden;isolation:isolate;background:var(--secondary);
-  padding-block:clamp(54px,5.6vw,76px);
-}
-.band-field{width:1180px;height:1180px;left:-330px;bottom:-560px;color:var(--primary);opacity:.13;z-index:0}
-.band-in{position:relative;z-index:1}
-.band .sec-head{align-items:flex-start}
-.band h2{max-width:34ch;font-size:clamp(1.6rem,2.5vw,2.25rem);line-height:1.45}
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:38px;padding-top:34px;border-top:1px solid color-mix(in srgb,var(--ink) 24%,transparent)}
-.stat{min-width:0;padding-inline-start:26px}
-.stat + .stat{border-inline-start:1px solid color-mix(in srgb,var(--ink) 20%,transparent)}
-.stat:first-child{padding-inline-start:0}
-.stat b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(2.5rem,4.2vw,3.6rem);line-height:1;letter-spacing:-.01em}
-.stat span{display:block;margin-top:12px;font-size:13px;color:var(--ink-64)}
-
-/* ==========================================================================
-   12 — products
-   ========================================================================== */
-.prod-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:start;margin-top:44px}
-.chips{grid-column:1 / span 6;min-width:0}
-.chip{
-  display:grid;grid-template-columns:96px minmax(0,1fr) 18px;align-items:center;gap:16px;
-  background:var(--chalk);border:1px solid var(--line);border-radius:18px;
-  padding:11px;margin-bottom:11px;
-  transition:border-color .35s var(--ease),transform .45s var(--ease);
-}
-.chip:hover{border-color:color-mix(in srgb,var(--primary) 42%,transparent);transform:translateX(-3px)}
-.chip img{width:96px;height:62px;object-fit:cover;border-radius:11px;filter:saturate(.9)}
-.chip h3{font-size:15.5px;line-height:1.5}
-.chip p{font-size:13px;line-height:1.7;color:var(--ink-64);margin-top:2px}
-.chip .go{color:var(--primary);display:grid;place-items:center}
-.chip .go svg{width:15px;height:15px}
-
-.cat{margin-top:22px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-
-.material{grid-column:8 / span 5;min-width:0;margin-top:44px}
-.material .frame img{aspect-ratio:16 / 10;object-position:50% 50%;filter:saturate(.92)}
-.material-cap{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-top:13px;padding-top:11px;border-top:1px solid var(--line)}
-.material-cap .fa{font-size:11.5px;color:var(--ink-52)}
-
-/* ==========================================================================
-   13 — partners
-   ========================================================================== */
-.logos{
-  display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px;
-  margin-top:38px;padding-block:28px;border-block:1px solid var(--line);
-}
-.logos a{display:grid;place-items:center;padding:10px 4px;border-radius:10px;transition:background .3s}
-.logos a:hover{background:color-mix(in srgb,var(--sand) 30%,transparent)}
-.logos img{
-  width:auto;max-width:100%;height:74px;max-height:78px;object-fit:contain;
-  filter:grayscale(1) contrast(.9);opacity:.72;transition:opacity .3s;
-}
-.logos a:hover img{opacity:.85}
-.partner-note{margin-top:22px;font-size:11.5px;color:var(--ink-52)}
-
-/* ==========================================================================
-   14 — magazine
-   ========================================================================== */
-.mag-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 54px;margin-top:36px}
-.mag-item{
-  display:flex;align-items:baseline;justify-content:space-between;gap:22px;
-  padding-block:22px;border-top:1px solid var(--line);transition:color .25s;
-}
-.mag-item .mtext{display:flex;align-items:baseline;gap:14px;min-width:0}
-.mag-item .idx{font-family:var(--display);font-weight:700;font-size:10.5px;color:var(--primary);flex:none}
-.mag-item h3{font-weight:500;font-size:16.5px;line-height:1.7;min-width:0}
-.mag-item time{font-size:12px;color:var(--ink-52);white-space:nowrap;flex:none}
-.mag-item:hover h3{color:var(--primary)}
-
-/* ==========================================================================
-   15 — contact
-   ========================================================================== */
-.panel{
-  position:relative;overflow:hidden;isolation:isolate;background:var(--sand);
-  border-radius:var(--r-lg);padding:clamp(34px,4.4vw,62px);
-}
-.panel-field{width:1000px;height:1000px;left:-260px;bottom:-470px;color:var(--primary);opacity:.15;z-index:0}
-.panel-in{position:relative;z-index:1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:start}
-.c-main{grid-column:1 / span 7;min-width:0}
-.c-side{grid-column:9 / span 4;min-width:0;padding-top:10px}
-.c-main h2{font-size:clamp(2rem,3.2vw,2.8rem);margin-top:16px}
-.c-cta{margin-top:22px;font-size:17px;line-height:1.9;color:var(--ink);max-width:34ch}
-.c-address{margin-top:34px;padding-top:22px;border-top:1px solid color-mix(in srgb,var(--ink) 20%,transparent)}
-.c-address .lbl{font-size:11px;font-weight:500;color:var(--primary);letter-spacing:.02em;display:block;margin-bottom:8px}
-.c-address p{font-size:15.5px;line-height:2;max-width:none}
-
-.prow{
-  display:flex;align-items:baseline;justify-content:space-between;gap:16px;
-  padding-block:15px;border-top:1px solid color-mix(in srgb,var(--ink) 18%,transparent);
-}
-.prow:last-of-type{border-bottom:1px solid color-mix(in srgb,var(--ink) 18%,transparent)}
-.prow .plabel{font-size:11.5px;color:var(--ink-64);flex:none}
-.prow .pnum{font-family:var(--display);font-weight:500;font-size:17px;letter-spacing:.01em;direction:ltr;unicode-bidi:isolate}
-.prow:hover .pnum{color:var(--primary)}
-.c-site{display:inline-block;margin-top:20px;font-family:var(--serif);font-style:italic;font-size:15px;color:var(--ink);direction:ltr;unicode-bidi:isolate;border-bottom:1px solid color-mix(in srgb,var(--ink) 40%,transparent);padding-bottom:2px}
-.c-site:hover{color:var(--primary);border-color:var(--primary)}
-.c-side .latin{display:block;margin-bottom:10px}
-
-/* ==========================================================================
-   16 — footer
-   ========================================================================== */
-.foot{background:var(--secondary);border-top:1px solid rgba(248,246,240,.14);padding-block:56px 34px;color:rgba(248,246,240,.72)}
-.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:38px;align-items:start}
-.foot-brand{display:flex;gap:14px;align-items:flex-start}
-.foot-brand img{width:32px;height:32px;object-fit:contain;opacity:.9;margin-top:2px}
-.foot-brand b{font-family:var(--display);font-weight:700;font-size:15px;display:block;line-height:1.5}
-.foot-brand p{margin-top:8px;font-size:12.5px;color:var(--ink-64);line-height:1.9;max-width:30ch}
-.foot h4{font-family:var(--display);font-weight:500;font-size:11.5px;color:var(--ink-52);margin-bottom:14px}
-.foot ul li{padding-block:5px}
-.foot ul a{font-size:13px;color:var(--ink-72);transition:color .25s}
-.foot ul a:hover{color:var(--primary)}
-.foot-meta{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
-.foot-meta p{font-size:11.5px;color:var(--ink-52)}
-.to-top{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;color:var(--ink-64)}
-.to-top svg{width:12px;height:12px;color:var(--primary);transition:transform .3s var(--ease)}
-.to-top:hover{color:var(--ink)}
-.to-top:hover svg{transform:translateY(-3px)}
-
-/* ==========================================================================
-   17 — motion
-   ========================================================================== */
-.motion .reveal{opacity:0;transform:translateY(18px);transition:opacity .95s var(--ease) var(--d,0s),transform .95s var(--ease) var(--d,0s)}
-.motion .reveal.in{opacity:1;transform:none}
-
-/* ==========================================================================
-   18 — responsive (no budget on mobile, but no overflow either)
-   ========================================================================== */
-@media (max-width:1180px){
-  .nav{gap:10px}
-  .nav a{font-size:11.5px}
-  .hero-copy{grid-column:1 / span 8}
-  .hero-plate{grid-column:9 / span 4}
-  .stmt-main{grid-column:1 / span 8}
-  .stmt-side{grid-column:9 / span 4;padding-top:40px}
-  .plates{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .chips{grid-column:1 / span 7}
-  .material{grid-column:8 / span 5}
-  .logos{grid-template-columns:repeat(4,minmax(0,1fr))}
-}
-@media (max-width:900px){
-  .nav{display:none}
-  .hero-in{grid-template-columns:1fr;min-height:0;padding-block:36px 46px}
-  .hero-copy,.hero-plate{grid-column:1 / -1}
-  .hero-copy h1{font-size:clamp(2.4rem,9vw,3.6rem)}
-  .hero-plate{margin-top:34px}
-  .sec-head{gap:12px}
-  .mark{width:48px;height:48px}
-  .mark .rings{width:136px;height:136px}
-  .stmt-in,.prod-grid,.panel-in{display:block}
-  .stmt-side{margin-top:38px;padding-top:0}
-  .svc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .stats{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:30px}
-  .stat:nth-child(3){padding-inline-start:0;border-inline-start:0}
-  .stat:nth-child(3),.stat:nth-child(4){border-top:1px solid color-mix(in srgb,var(--ink) 20%,transparent);padding-top:26px}
-  .chips{margin-bottom:38px}
-  .material{margin-top:0}
-  .mag-grid{grid-template-columns:1fr}
-  .foot-grid{grid-template-columns:1fr 1fr}
-  .plates{gap:30px 18px}
-  .c-side{padding-top:0;margin-top:34px}
-}
-@media (max-width:700px){
-  .plates{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .svc-grid{grid-template-columns:1fr}
-  .logos{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .foot-grid{grid-template-columns:1fr}
-  .hero-meta{gap:16px}
-  .hero-foot p:first-child{display:none}
+<link rel="stylesheet" href="assets/css/spark.css">
+<noscript><style>
+  /* navigation must still work without JavaScript */
+  .burger{display:none !important}
+  .nav{display:flex !important;flex-wrap:wrap;gap:6px 14px}
+  .mast-in{height:auto;min-height:70px;padding-block:10px;flex-wrap:wrap}
   .mast-tel{display:none}
-  .mast-in{gap:12px;height:70px}
-  .brand-txt b{font-size:13px}
-  .btn.small{padding:8px 14px;font-size:11px}
-  .sec-head{gap:14px}
-  .mark{width:44px;height:44px}
-  .mark .rings{width:118px;height:118px}
-}
-@media (max-width:460px){
-  body{font-size:16px}
-  .stats{grid-template-columns:1fr}
-  .stat{padding-inline-start:0;border-inline-start:0}
-  .stat + .stat{border-top:1px solid color-mix(in srgb,var(--ink) 20%,transparent);padding-top:24px}
-  .stat:first-of-type{border-top:0}
-  .chip{grid-template-columns:78px minmax(0,1fr) 16px;gap:12px}
-  .chip img{width:78px;height:56px}
-}
-/* brand-palette refinements (session 8b3cc8d0) */
-body{color:var(--body-text)}
-h1,h2,h3{color:var(--ink)}
-.hero-copy h1 span:last-child::after{
-  content:"";display:block;width:82px;height:3px;background:var(--primary);margin-top:24px;
-}
-.hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
-.hero-plate .frame{box-shadow:0 24px 60px -46px rgba(15,19,31,.45)}
-.sec-head .latin{color:var(--muted)}
-.prow .plabel{color:var(--muted)}
-.foot{color:var(--body-text)}
-
-/* ==========================================================================
-   secondary #002736 — the petrol grounds carry cream type, terracotta figures
-   ========================================================================== */
-.band h2{color:var(--on-secondary)}
-.band .sec-note{color:rgba(248,246,240,.72)}
-.band .latin{color:rgba(248,246,240,.58)}
-.band .eyebrow .fa{color:var(--coral)}
-.band .eyebrow .rule{background:rgba(248,246,240,.28)}
-.band .mark b{color:var(--on-secondary)}
-.band .mark .rings{color:var(--on-secondary);opacity:.18}
-.band-field{color:var(--on-secondary);opacity:.10}
-.band .stats{border-top:1px solid rgba(248,246,240,.22)}
-.band .stat + .stat{border-inline-start:1px solid rgba(248,246,240,.16)}
-.band .stat b{color:var(--primary)}
-.band .stat span{color:rgba(248,246,240,.72)}
-.band :focus-visible{outline-color:var(--on-secondary)}
-@media (max-width:900px){
-  .band .stat:nth-child(3),.band .stat:nth-child(4){border-top:1px solid rgba(248,246,240,.16)}
-}
-@media (max-width:460px){
-  .band .stat + .stat{border-top:1px solid rgba(248,246,240,.16);border-inline-start:0}
-}
-
-.foot-brand b{color:var(--on-secondary)}
-.foot-brand p{color:rgba(248,246,240,.66)}
-.foot h4{color:rgba(248,246,240,.48)}
-.foot ul a{color:rgba(248,246,240,.74)}
-.foot ul a:hover{color:var(--primary)}
-.foot-meta{border-top:1px solid rgba(248,246,240,.16)}
-.foot-meta p{color:rgba(248,246,240,.56)}
-.to-top{color:rgba(248,246,240,.66)}
-.to-top svg{color:var(--primary)}
-.to-top:hover{color:var(--on-secondary)}
-.foot :focus-visible{outline-color:var(--on-secondary)}
-
-</style>
+  .mcta{display:none !important}
+</style></noscript>
 </head>
 <body>
 
@@ -605,31 +189,66 @@ h1,h2,h3{color:var(--ink)}
 
 <header class="mast">
   <div class="wrap mast-in">
-    <a class="brand" href="#top" aria-label="گروه مهندسی مدیس — صفحه اصلی">
+    <a class="brand" href="index.html" aria-label="گروه مهندسی مدیس — صفحه اصلی">
       <img src="assets/brand/medis-mark-secondary.png" width="34" height="34" alt="نشان گروه مهندسی مدیس">
       <span class="brand-txt">
         <b>گروه مهندسی مدیس</b>
-        <span class="latin">medis design group</span>
+        <span class="latin" lang="en">medis design group</span>
       </span>
     </a>
 
     <nav class="nav" aria-label="ناوبری اصلی">
-      <a href="#top" aria-current="page">صفحه اصلی</a>
-      <a href="#projects">پروژه‌ها</a>
-      <a href="#products">محصولات</a>
-      <a href="#services">خدمات ما</a>
-      <a href="#magazine">مدیس مگ</a>
-      <a href="#catalog">کاتالوگ‌ها</a>
-      <a href="#about">درباره ما</a>
-      <a href="#contact">تماس با ما</a>
+      <a href="index.html" aria-current="page">صفحه اصلی</a>
+      <a href="projects.html">پروژه‌ها</a>
+      <a href="products.html">محصولات</a>
+      <a href="services.html">خدمات ما</a>
+      <a href="magazine.html">مدیس مگ</a>
+      <a href="catalog.html">کاتالوگ‌ها</a>
+      <a href="about.html">درباره ما</a>
+      <a href="contact.html">تماس با ما</a>
     </nav>
 
     <div class="mast-end">
       <a class="mast-tel" href="tel:+982126413369">۰۲۱-۲۶۴۱۳۳۶۹</a>
       <a class="btn small" href="#contact">تماس با ما</a>
+      <button class="burger" type="button" aria-label="باز کردن منو" aria-haspopup="dialog"
+              aria-controls="mobile-nav" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor"
+             stroke-width="1.5" stroke-linecap="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg>
+      </button>
     </div>
   </div>
 </header>
+
+<dialog class="mnav" id="mobile-nav" aria-labelledby="mnav-title">
+  <div class="mnav-in">
+    <div class="mnav-head">
+      <span class="mnav-title" id="mnav-title">منوی اصلی</span>
+      <button class="mnav-close" type="button" aria-label="بستن منو">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor"
+             stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12"/><path d="M18 6L6 18"/></svg>
+      </button>
+    </div>
+
+    <nav aria-label="ناوبری موبایل">
+      <a href="index.html" aria-current="page">صفحه اصلی <span class="latin" lang="en">home</span></a>
+      <a href="projects.html">پروژه‌ها <span class="latin" lang="en">projects</span></a>
+      <a href="products.html">محصولات <span class="latin" lang="en">products</span></a>
+      <a href="services.html">خدمات ما <span class="latin" lang="en">services</span></a>
+      <a href="magazine.html">مدیس مگ <span class="latin" lang="en">journal</span></a>
+      <a href="catalog.html">کاتالوگ‌ها <span class="latin" lang="en">catalogues</span></a>
+      <a href="about.html">درباره ما <span class="latin" lang="en">about</span></a>
+      <a href="contact.html">تماس با ما <span class="latin" lang="en">contact</span></a>
+    </nav>
+
+    <div class="mnav-foot">
+      <a class="mast-tel" href="tel:+982126413369">۰۲۱-۲۶۴۱۳۳۶۹</a>
+      <a class="mast-tel" href="mailto:medisdesign.team@gmail.com">medisdesign.team@gmail.com</a>
+      <a class="btn" href="#contact">شروع گفت‌وگو</a>
+      <p class="mnav-note">تهران، خیابان شریعتی، خیابان ظفر، پلاک ۱۶۸، واحد ۹</p>
+    </div>
+  </div>
+</dialog>
 
 <main id="main">
 
@@ -642,12 +261,16 @@ h1,h2,h3{color:var(--ink)}
     <div class="wrap hero-in">
       <div class="hero-copy">
         <p class="eyebrow">
-          <span class="latin">acoustic ecology</span>
+          <span class="latin" lang="en">acoustic ecology</span>
           <span class="rule" aria-hidden="true"></span>
-          <span class="fa">ارگانیک</span>
+          <span class="fa">طراحی آکوستیک</span>
         </p>
 
-        <h1 id="hero-h"><span>آرامش،</span><span>شنیده می‌شود</span></h1>
+        <h1 id="hero-h">
+          <span class="h1-kicker">طراحی آکوستیک سالن همایش و سینما</span>
+          <span>آرامش،</span>
+          <span>شنیده می‌شود</span>
+        </h1>
 
         <p class="hero-tagline">طراحی سالن همایش، تلفیقی از هنر و علم</p>
         <p class="hero-lede">طراحی آکوستیک، الکتروآکوستیک و معماری سالن‌های همایش، سینما و فضاهای فرهنگی.</p>
@@ -671,11 +294,17 @@ h1,h2,h3{color:var(--ink)}
       <div class="hero-plate">
         <figure>
           <div class="frame">
-            <img src="assets/img/hall-green.jpg" width="1280" height="720"
-                 alt="نمای داخلی سالن همایش با صندلی‌های سبز، پوشش چوبی دیوار و نورپردازی خطی سقف">
+            <picture>
+              <source type="image/webp"
+                      srcset="assets/img/hall-green-640.webp 640w, assets/img/hall-green-1280.webp 1280w"
+                      sizes="(max-width: 900px) 90vw, 640px">
+              <img src="assets/img/hall-green.jpg" width="1280" height="720"
+                   fetchpriority="high" decoding="async"
+                   alt="نمای داخلی سالن همایش با صندلی‌های سبز، پوشش چوبی دیوار و نورپردازی خطی سقف">
+            </picture>
           </div>
           <figcaption class="plate-cap">
-            <span class="latin">hall study</span>
+            <span class="latin" lang="en">hall study</span>
             <span class="fa">سالن، نمای داخلی</span>
           </figcaption>
         </figure>
@@ -685,14 +314,14 @@ h1,h2,h3{color:var(--ink)}
     <div class="wrap hero-foot">
       <p>دو دهه تمایز</p>
       <a class="scroll-cue" href="#about">
-        <span class="latin">scroll</span>
+        <span class="latin" lang="en">scroll</span>
         <span class="line" aria-hidden="true"><span class="dot"></span></span>
       </a>
     </div>
   </section>
 
   <!-- ================= 01 · STATEMENT ================= -->
-  <section class="sec" id="about" aria-labelledby="about-h">
+  <section class="sec petrol" id="about" aria-labelledby="about-h">
     <div class="wrap">
       <div class="sec-head reveal">
         <div class="mark" aria-hidden="true">
@@ -701,7 +330,7 @@ h1,h2,h3{color:var(--ink)}
         </div>
         <div class="sec-title">
           <p class="eyebrow">
-            <span class="latin">field note</span>
+            <span class="latin" lang="en">field note</span>
             <span class="rule" aria-hidden="true"></span>
             <span class="fa">درباره ما</span>
           </p>
@@ -717,13 +346,13 @@ h1,h2,h3{color:var(--ink)}
 
         <aside class="stmt-side">
           <div class="quote reveal">
-            <p>ما در تمام مراحل پروژه کنار شما هستیم …!</p>
-            <span class="latin">medis design group</span>
+            <p>از اولین اندازه‌گیری تا آخرین پنل.</p>
+            <span class="latin" lang="en">medis design group</span>
           </div>
-          <ul class="disc reveal">
-            <li><span>معماری</span><span class="latin">architecture</span></li>
-            <li><span>آکوستیک</span><span class="latin">acoustic</span></li>
-            <li><span>الکتروآکوستیک</span><span class="latin">electroacoustic</span></li>
+          <ul class="disc reveal" role="list">
+            <li><span>معماری</span><span class="latin" lang="en">architecture</span></li>
+            <li><span>آکوستیک</span><span class="latin" lang="en">acoustic</span></li>
+            <li><span>الکتروآکوستیک</span><span class="latin" lang="en">electroacoustic</span></li>
           </ul>
         </aside>
       </div>
@@ -741,7 +370,7 @@ h1,h2,h3{color:var(--ink)}
           </div>
           <div class="sec-title">
             <p class="eyebrow">
-              <span class="latin">six practices</span>
+              <span class="latin" lang="en">six practices</span>
               <span class="rule" aria-hidden="true"></span>
               <span class="fa">خدمات</span>
             </p>
@@ -752,65 +381,132 @@ h1,h2,h3{color:var(--ink)}
       </div>
 
       <div class="svc-grid">
-        <article class="card reveal">
-          <span class="card-n">۰۱</span>
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 20V7l8-4 8 4v13"/><path d="M9 20v-5a3 3 0 0 1 6 0v5"/>
-          </svg>
-          <h3>طراحی آکوستیک معماری</h3>
-          <p>طراحی و آنالیز آکوستیکی انواع فضاهای معماری؛ ساختمان‌های فرهنگی، اداری، مسکونی، هتل، مسجد، بیمارستان و …</p>
-        </article>
+        <a class="card reveal" href="service-architecture.html">
+          <div class="card-img">
+            <picture>
+              <source type="image/webp" srcset="assets/img/svc-1-480.webp 480w, assets/img/svc-1-960.webp 960w" sizes="(max-width: 700px) 92vw, (max-width: 1180px) 46vw, 410px">
+              <img src="assets/img/svc-1-480.jpg" width="480" height="270" loading="lazy" decoding="async" alt="فضای داخلی با پوشش‌های آکوستیک روی دیوار">
+            </picture>
+          </div>
+          <div class="card-body">
+            <span class="card-top">
+              <span class="card-n">۰۱</span>
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 20V7l8-4 8 4v13"/><path d="M9 20v-5a3 3 0 0 1 6 0v5"/>
+              </svg>
+            </span>
+            <h3>طراحی آکوستیک معماری</h3>
+            <p>طراحی و آنالیز آکوستیکی انواع فضاهای معماری؛ ساختمان‌های فرهنگی، اداری، مسکونی، هتل، مسجد، بیمارستان و …</p>
+          </div>
+        </a>
 
-        <article class="card reveal" style="--d:.06s">
-          <span class="card-n">۰۲</span>
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 8h16"/><path d="M4 16h16"/><path d="M4 12c4 0 4-2.6 8-2.6s4 2.6 8 2.6"/>
-          </svg>
-          <h3>اجرای آکوستیک معماری</h3>
-          <p>اجرای پوشش‌های دکوراتیو آکوستیک سقف، کف و دیوار؛ کاهش انتقال صدا و مدت زمان ماندگاری صدا.</p>
-        </article>
+        <a class="card reveal" href="service-execution.html" style="--d:.06s">
+          <div class="card-img">
+            <picture>
+              <source type="image/webp" srcset="assets/img/svc-2-480.webp 480w, assets/img/svc-2-960.webp 960w" sizes="(max-width: 700px) 92vw, (max-width: 1180px) 46vw, 410px">
+              <img src="assets/img/svc-2-480.jpg" width="480" height="270" loading="lazy" decoding="async" alt="اجرای پوشش آکوستیک روی دیوار و سقف">
+            </picture>
+          </div>
+          <div class="card-body">
+            <span class="card-top">
+              <span class="card-n">۰۲</span>
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 8h16"/><path d="M4 16h16"/><path d="M4 12c4 0 4-2.6 8-2.6s4 2.6 8 2.6"/>
+              </svg>
+            </span>
+            <h3>اجرای آکوستیک معماری</h3>
+            <p>اجرای پوشش‌های دکوراتیو آکوستیک سقف، کف و دیوار؛ کاهش انتقال صدا و مدت زمان ماندگاری صدا.</p>
+          </div>
+        </a>
 
-        <article class="card reveal" style="--d:.12s">
-          <span class="card-n">۰۳</span>
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 20V9l6 3.5V9l6 3.5V6h6v14z"/><path d="M7 20v-3h2v3"/>
-          </svg>
-          <h3>طراحی آکوستیک صنعتی</h3>
-          <p>طراحی، آنالیز و اجرای آکوستیک محیط‌های صنعتی؛ کارخانه‌ها و کارگاه‌های تولیدی، برای کاهش صداهای زیان‌آور.</p>
-        </article>
+        <a class="card reveal" href="service-industrial.html" style="--d:.12s">
+          <div class="card-img">
+            <picture>
+              <source type="image/webp" srcset="assets/img/svc-3-480.webp 480w, assets/img/svc-3-960.webp 960w" sizes="(max-width: 700px) 92vw, (max-width: 1180px) 46vw, 410px">
+              <img src="assets/img/svc-3-480.jpg" width="480" height="270" loading="lazy" decoding="async" alt="سالن صنعتی با سازه‌های فلزی و تیرهای سقف">
+            </picture>
+          </div>
+          <div class="card-body">
+            <span class="card-top">
+              <span class="card-n">۰۳</span>
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 20V9l6 3.5V9l6 3.5V6h6v14z"/><path d="M7 20v-3h2v3"/>
+              </svg>
+            </span>
+            <h3>طراحی آکوستیک صنعتی</h3>
+            <p>طراحی، آنالیز و اجرای آکوستیک محیط‌های صنعتی؛ کارخانه‌ها و کارگاه‌های تولیدی، برای کاهش صداهای زیان‌آور.</p>
+          </div>
+        </a>
 
-        <article class="card reveal">
-          <span class="card-n">۰۴</span>
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 7h18v8H3z"/><path d="M4 18c5 2 11 2 16 0"/>
-          </svg>
-          <h3>سینما و سالن‌های همایش</h3>
-          <p>طراحی و اجرای تخصصی سالن‌های سینما، همایش، تئاتر، کنفرانس، سالن‌های چندمنظوره و فضاهای فرهنگی.</p>
-        </article>
+        <a class="card reveal" href="service-halls.html" style="--d:.06s">
+          <div class="card-img">
+            <picture>
+              <source type="image/webp" srcset="assets/img/svc-4-480.webp 480w, assets/img/svc-4-960.webp 960w" sizes="(max-width: 700px) 92vw, (max-width: 1180px) 46vw, 410px">
+              <img src="assets/img/svc-4-480.jpg" width="480" height="270" loading="lazy" decoding="async" alt="سالن کنسرت با پوشش چوبی و نورپردازی گرم">
+            </picture>
+          </div>
+          <div class="card-body">
+            <span class="card-top">
+              <span class="card-n">۰۴</span>
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 7h18v8H3z"/><path d="M4 18c5 2 11 2 16 0"/>
+              </svg>
+            </span>
+            <h3>سینما و سالن‌های همایش</h3>
+            <p>طراحی و اجرای تخصصی سالن‌های سینما، همایش، تئاتر، کنفرانس، سالن‌های چندمنظوره و فضاهای فرهنگی.</p>
+          </div>
+        </a>
 
-        <article class="card reveal" style="--d:.06s">
-          <span class="card-n">۰۵</span>
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 14.5v-5h4L13 6v12l-5-3.5H4z"/><path d="M16.5 9.4a3.6 3.6 0 0 1 0 5.2"/>
-          </svg>
-          <h3>طراحی و اجرای الکتروآکوستیک</h3>
-          <p>طراحی و اجرای سیستم‌های صوتی سالن‌های همایش، سینما، جلسات، رستوران، هتل و سیستم‌های خانگی.</p>
-        </article>
+        <a class="card reveal" href="service-electroacoustic.html" style="--d:.12s">
+          <div class="card-img">
+            <picture>
+              <source type="image/webp" srcset="assets/img/svc-5-480.webp 480w, assets/img/svc-5-960.webp 960w" sizes="(max-width: 700px) 92vw, (max-width: 1180px) 46vw, 410px">
+              <img src="assets/img/svc-5-480.jpg" width="480" height="270" loading="lazy" decoding="async" alt="میز کنترل صوتی و تجهیزات الکتروآکوستیک">
+            </picture>
+          </div>
+          <div class="card-body">
+            <span class="card-top">
+              <span class="card-n">۰۵</span>
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 14.5v-5h4L13 6v12l-5-3.5H4z"/><path d="M16.5 9.4a3.6 3.6 0 0 1 0 5.2"/>
+              </svg>
+            </span>
+            <h3>طراحی و اجرای الکتروآکوستیک</h3>
+            <p>طراحی و اجرای سیستم‌های صوتی سالن‌های همایش، سینما، جلسات، رستوران، هتل و سیستم‌های خونگی.</p>
+          </div>
+        </a>
 
-        <article class="card reveal" style="--d:.12s">
-          <span class="card-n">۰۶</span>
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 20h18"/><path d="M4 20V11M8 20V6M12 20v-6M16 20V8M20 20v-4"/>
-          </svg>
-          <h3>محصولات آکوستیک ـ دکوراتیو</h3>
-          <p>طراحی و ساخت جاذب‌ها، پخش‌کننده‌ها، رفلکتورها، بیس‌ترپ‌ها و پوشش‌های دکوراتیو آکوستیکی دیوار.</p>
-        </article>
+        <a class="card reveal" href="products.html" style="--d:.18s">
+          <div class="card-img">
+            <picture>
+              <source type="image/webp" srcset="assets/img/svc-6-480.webp 480w, assets/img/svc-6-960.webp 960w" sizes="(max-width: 700px) 92vw, (max-width: 1180px) 46vw, 410px">
+              <img src="assets/img/svc-6-480.jpg" width="480" height="270" loading="lazy" decoding="async" alt="پوشش آکوستیک چوبی روی دیوار سالن">
+            </picture>
+          </div>
+          <div class="card-body">
+            <span class="card-top">
+              <span class="card-n">۰۶</span>
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 20h18"/><path d="M4 20V11M8 20V6M12 20v-6M16 20V8M20 20v-4"/>
+              </svg>
+            </span>
+            <h3>محصولات آکوستیک ـ دکوراتیو</h3>
+            <p>طراحی و ساخت جاذب‌ها، پخش‌کننده‌ها، رفلکتورها، بیس‌ترپ‌ها و پوشش‌های دکوراتیو آکوستیکی دیوار.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="sec-more">
+        <a class="link" href="services.html">
+          همهٔ خدمات
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H4"/><path d="M8 4 4 8l4 4"/></svg>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ================= 03 · PROJECTS ================= -->
-  <section class="sec" id="projects" aria-labelledby="projects-h">
+  <!-- ================= 03 · PROCESS ================= -->
+  <section class="sec" id="process" aria-labelledby="process-h">
     <div class="wrap">
       <div class="sec-bar">
         <div class="sec-head reveal">
@@ -820,101 +516,182 @@ h1,h2,h3{color:var(--ink)}
           </div>
           <div class="sec-title">
             <p class="eyebrow">
-              <span class="latin">selected works</span>
+              <span class="latin" lang="en">method</span>
+              <span class="rule" aria-hidden="true"></span>
+              <span class="fa">فرآیند</span>
+            </p>
+            <h2 id="process-h">از تحلیل تا اجرا</h2>
+          </div>
+        </div>
+        <p class="sec-note reveal">سه گام، یک پیوستار؛ هیچ بخشی از پروژه به پروژهٔ بعدی سپرده نمی‌شود.</p>
+      </div>
+
+      <div class="proc-in">
+        <div class="proc-copy">
+          <p class="lead reveal">کار از اندازه‌گیری آغاز می‌شود، نه از ایده. هندسهٔ فضا، رفتار صدا و پوشش نهایی، در یک زبان مشترک تصمیم می‌گیرند.</p>
+
+          <ol class="proc-steps reveal" role="list">
+            <li class="proc-step">
+              <b>۰۱</b>
+              <div>
+                <h3>تحلیل و آنالیز</h3>
+                <p>اندازه‌گیری رفتار صدا در فضا و مدل‌سازی هندسه، پیش از آنکه طراحی آغاز شود.</p>
+              </div>
+            </li>
+            <li class="proc-step">
+              <b>۰۲</b>
+              <div>
+                <h3>طراحی</h3>
+                <p>طراحی معماری، آکوستیک و الکتروآکوستیک به‌صورت یکپارچه؛ از مقطع و چیدمان تا جزئیات اجرا.</p>
+              </div>
+            </li>
+            <li class="proc-step">
+              <b>۰۳</b>
+              <div>
+                <h3>اجرا و نظارت</h3>
+                <p>اجرای پوشش‌ها و سیستم‌ها، تحویل پروژه و مشاوره و نظارت در طول اجرا.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="proc-plates">
+          <figure class="plate-sheet reveal">
+            <span class="sheet-img">
+              <picture>
+                <source type="image/webp" srcset="assets/img/plate-model-320.webp 320w, assets/img/plate-model-640.webp 640w" sizes="(max-width: 900px) 42vw, 300px">
+                <img src="assets/img/plate-model-640.jpg" width="640" height="480" loading="lazy" decoding="async" alt="مدل سه‌بعدی حجمی از یک فضای مذهبی با شبکهٔ آکوستیک">
+              </picture>
+            </span>
+            <figcaption>
+              <span class="latin" lang="en">acoustic model</span>
+              <span class="fa">مدل سه‌بعدی حجم</span>
+            </figcaption>
+          </figure>
+
+          <figure class="plate-sheet reveal">
+            <span class="sheet-img">
+              <picture>
+                <source type="image/webp" srcset="assets/img/plate-section-480.webp 480w, assets/img/plate-section-960.webp 960w" sizes="(max-width: 900px) 42vw, 300px">
+                <img src="assets/img/plate-section-960.jpg" width="960" height="600" loading="lazy" decoding="async" alt="مقطع خطی سالن همایش با شیب سقف و سکوها">
+              </picture>
+            </span>
+            <figcaption>
+              <span class="latin" lang="en">section</span>
+              <span class="fa">مقطع سالن</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 04 · PROJECTS ================= -->
+  <section class="sec sky" id="projects" aria-labelledby="projects-h">
+    <div class="wrap">
+      <div class="sec-bar">
+        <div class="sec-head reveal">
+          <div class="mark" aria-hidden="true">
+            <svg class="rings" viewBox="-500 -500 1000 1000"><use href="#contour" x="-500" y="-500" width="1000" height="1000"/></svg>
+            <b>۰۴</b>
+          </div>
+          <div class="sec-title">
+            <p class="eyebrow">
+              <span class="latin" lang="en">selected works</span>
               <span class="rule" aria-hidden="true"></span>
               <span class="fa">پروژه‌ها</span>
             </p>
             <h2 id="projects-h">پروژه‌های ما</h2>
           </div>
         </div>
-        <p class="sec-note reveal">هشت پروژه از میان کارهای اجراشده؛ سالن اجتماعات، سینما، مسجد و ساختمان اداری.</p>
       </div>
 
       <div class="plates">
-        <figure class="plate reveal">
-          <a class="ph" href="#projects" aria-label="سالن بنیاد علوی">
-            <img src="assets/img/project-07.jpg" width="1710" height="960" loading="lazy" decoding="async" alt="سالن بنیاد علوی، سالن اجتماعات با صندلی‌های سبز">
+        <figure class="plate half reveal">
+          <a class="ph" href="project-alavi.html">
+            <picture><source type="image/webp" srcset="assets/img/project-07-400.webp 400w, assets/img/project-07-800.webp 800w" sizes="(max-width: 700px) 92vw, (max-width: 1180px) 62vw, 640px"><img src="assets/img/project-07.jpg" width="1710" height="960" loading="lazy" decoding="async" alt="سالن بنیاد علوی، سالن اجتماعات با صندلی‌های سبز"></picture>
           </a>
           <figcaption>
-            <div class="cap-top"><span class="pnum">۰۱</span><span class="ptype">سالن اجتماعات</span></div>
             <h3>سالن بنیاد علوی</h3>
           </figcaption>
         </figure>
 
-        <figure class="plate reveal" style="--d:.05s">
-          <a class="ph" href="#projects" aria-label="سالن همایش شهرک صنعتی بهارستان">
-            <img src="assets/img/project-01.jpg" width="1710" height="954" loading="lazy" decoding="async" alt="سالن همایش شهرک صنعتی بهارستان">
+        <figure class="plate half reveal" style="--d:.05s">
+          <a class="ph" href="projects.html">
+            <picture><source type="image/webp" srcset="assets/img/project-01-400.webp 400w, assets/img/project-01-800.webp 800w" sizes="(max-width: 700px) 46vw, (max-width: 1180px) 30vw, 300px"><img src="assets/img/project-01.jpg" width="1710" height="954" loading="lazy" decoding="async" alt="سالن همایش شهرک صنعتی بهارستان"></picture>
           </a>
           <figcaption>
-            <div class="cap-top"><span class="pnum">۰۲</span><span class="ptype">سالن همایش</span></div>
             <h3>سالن همایش شهرک صنعتی بهارستان</h3>
           </figcaption>
         </figure>
 
-        <figure class="plate reveal" style="--d:.1s">
-          <a class="ph" href="#projects" aria-label="سالن هتل آراز">
-            <img src="assets/img/project-04.jpg" width="1710" height="942" loading="lazy" decoding="async" alt="سالن هتل آراز، سالن همایش هتل">
+        <figure class="plate third reveal" style="--d:.1s">
+          <a class="ph" href="projects.html">
+            <picture><source type="image/webp" srcset="assets/img/project-04-400.webp 400w, assets/img/project-04-800.webp 800w" sizes="(max-width: 700px) 46vw, (max-width: 1180px) 30vw, 300px"><img src="assets/img/project-04.jpg" width="1710" height="942" loading="lazy" decoding="async" alt="سالن هتل آراز، سالن همایش هتل"></picture>
           </a>
           <figcaption>
-            <div class="cap-top"><span class="pnum">۰۳</span><span class="ptype">سالن همایش هتل</span></div>
             <h3>سالن هتل آراز</h3>
           </figcaption>
         </figure>
 
-        <figure class="plate reveal" style="--d:.15s">
-          <a class="ph" href="#projects" aria-label="سالن سینمای داتین">
-            <img src="assets/img/project-05.jpg" width="1710" height="960" loading="lazy" decoding="async" alt="سالن سینمای داتین">
+        <figure class="plate third reveal" style="--d:.15s">
+          <a class="ph" href="project-datin-cinema.html">
+            <picture><source type="image/webp" srcset="assets/img/project-05-400.webp 400w, assets/img/project-05-800.webp 800w" sizes="(max-width: 700px) 46vw, (max-width: 1180px) 30vw, 300px"><img src="assets/img/project-05.jpg" width="1710" height="960" loading="lazy" decoding="async" alt="سالن سینمای داتین"></picture>
           </a>
           <figcaption>
-            <div class="cap-top"><span class="pnum">۰۴</span><span class="ptype">سالن سینما</span></div>
             <h3>سالن سینمای داتین</h3>
           </figcaption>
         </figure>
 
-        <figure class="plate reveal">
-          <a class="ph" href="#projects" aria-label="سالن کنفرانس داتین">
-            <img src="assets/img/project-08.jpg" width="1710" height="954" loading="lazy" decoding="async" alt="سالن کنفرانس داتین">
+        <figure class="plate third reveal" style="--d:.05s">
+          <a class="ph" href="projects.html">
+            <picture><source type="image/webp" srcset="assets/img/project-08-400.webp 400w, assets/img/project-08-800.webp 800w" sizes="(max-width: 700px) 46vw, (max-width: 1180px) 30vw, 300px"><img src="assets/img/project-08.jpg" width="1710" height="954" loading="lazy" decoding="async" alt="سالن کنفرانس داتین"></picture>
           </a>
           <figcaption>
-            <div class="cap-top"><span class="pnum">۰۵</span><span class="ptype">سالن کنفرانس</span></div>
             <h3>سالن کنفرانس داتین</h3>
           </figcaption>
         </figure>
 
-        <figure class="plate reveal" style="--d:.05s">
-          <a class="ph" href="#projects" aria-label="مسجد امام حسن مجتبی">
-            <img src="assets/img/project-02.jpg" width="1710" height="960" loading="lazy" decoding="async" alt="مسجد امام حسن مجتبی، فضای مذهبی">
+        <figure class="plate third reveal" style="--d:.1s">
+          <a class="ph" href="projects.html">
+            <picture><source type="image/webp" srcset="assets/img/project-02-400.webp 400w, assets/img/project-02-800.webp 800w" sizes="(max-width: 700px) 46vw, (max-width: 1180px) 30vw, 300px"><img src="assets/img/project-02.jpg" width="1710" height="960" loading="lazy" decoding="async" alt="مسجد امام حسن مجتبی، فضای مذهبی"></picture>
           </a>
           <figcaption>
-            <div class="cap-top"><span class="pnum">۰۶</span><span class="ptype">فضای مذهبی</span></div>
             <h3>مسجد امام حسن مجتبی</h3>
           </figcaption>
         </figure>
 
-        <figure class="plate reveal" style="--d:.1s">
-          <a class="ph" href="#projects" aria-label="ساختمان مرکزی بیمه دی">
-            <img src="assets/img/project-03.jpg" width="1710" height="954" loading="lazy" decoding="async" alt="ساختمان مرکزی بیمه دی، ساختمان اداری">
+        <figure class="plate third reveal" style="--d:.15s">
+          <a class="ph" href="project-dey.html">
+            <picture><source type="image/webp" srcset="assets/img/project-03-400.webp 400w, assets/img/project-03-800.webp 800w" sizes="(max-width: 700px) 46vw, (max-width: 1180px) 30vw, 300px"><img src="assets/img/project-03.jpg" width="1710" height="954" loading="lazy" decoding="async" alt="ساختمان مرکزی بیمه دی، ساختمان اداری"></picture>
           </a>
           <figcaption>
-            <div class="cap-top"><span class="pnum">۰۷</span><span class="ptype">ساختمان اداری</span></div>
             <h3>ساختمان مرکزی بیمه دی</h3>
           </figcaption>
         </figure>
 
-        <figure class="plate reveal" style="--d:.15s">
-          <a class="ph" href="#projects" aria-label="سالن کنفرانس کیمیا فام">
-            <img src="assets/img/project-06.jpg" width="1710" height="954" loading="lazy" decoding="async" alt="سالن کنفرانس کیمیا فام">
+        <figure class="plate third reveal" style="--d:.2s">
+          <a class="ph" href="projects.html">
+            <picture><source type="image/webp" srcset="assets/img/project-06-400.webp 400w, assets/img/project-06-800.webp 800w" sizes="(max-width: 700px) 46vw, (max-width: 1180px) 30vw, 300px"><img src="assets/img/project-06.jpg" width="1710" height="954" loading="lazy" decoding="async" alt="سالن کنفرانس کیمیا فام"></picture>
           </a>
           <figcaption>
-            <div class="cap-top"><span class="pnum">۰۸</span><span class="ptype">سالن کنفرانس</span></div>
             <h3>سالن کنفرانس کیمیا فام</h3>
           </figcaption>
         </figure>
+
+        <div class="plate-cta reveal" style="--d:.05s">
+          <b>همهٔ پروژه‌ها</b>
+          <p>۴۲ پروژه تکمیل شده؛ سالن، سینما، مسجد، ساختمان اداری و فضای فرهنگی.</p>
+          <a class="link" href="projects.html">
+            مشاهدهٔ آرشیو
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H4"/><path d="M8 4 4 8l4 4"/></svg>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= 04 · STATS ================= -->
+  <!-- ================= 05 · STATS ================= -->
   <section class="band" aria-labelledby="band-h">
     <div class="field band-field" data-drift="0.03" data-turn="0.004" aria-hidden="true">
       <svg viewBox="-500 -500 1000 1000"><use href="#contour" x="-500" y="-500" width="1000" height="1000"/></svg>
@@ -923,15 +700,15 @@ h1,h2,h3{color:var(--ink)}
       <div class="sec-head reveal">
         <div class="mark" aria-hidden="true">
           <svg class="rings" viewBox="-500 -500 1000 1000"><use href="#contour" x="-500" y="-500" width="1000" height="1000"/></svg>
-          <b>۰۴</b>
+          <b>۰۵</b>
         </div>
         <div class="sec-title">
           <p class="eyebrow">
-            <span class="latin">in numbers</span>
+            <span class="latin" lang="en">in numbers</span>
             <span class="rule" aria-hidden="true"></span>
             <span class="fa">ارقام</span>
           </p>
-          <h2 id="band-h">تجربه و تخصص مهم است:<br>دو دهه تمایز</h2>
+          <h2 id="band-h">تجربه و تخصص مهم است</h2>
         </div>
       </div>
 
@@ -944,18 +721,18 @@ h1,h2,h3{color:var(--ink)}
     </div>
   </section>
 
-  <!-- ================= 05 · PRODUCTS ================= -->
-  <section class="sec sky" id="products" aria-labelledby="products-h">
+  <!-- ================= 06 · PRODUCTS ================= -->
+  <section class="sec" id="products" aria-labelledby="products-h">
     <div class="wrap">
       <div class="sec-bar">
         <div class="sec-head reveal">
           <div class="mark" aria-hidden="true">
             <svg class="rings" viewBox="-500 -500 1000 1000"><use href="#contour" x="-500" y="-500" width="1000" height="1000"/></svg>
-            <b>۰۵</b>
+            <b>۰۶</b>
           </div>
           <div class="sec-title">
             <p class="eyebrow">
-              <span class="latin">materials</span>
+              <span class="latin" lang="en">materials</span>
               <span class="rule" aria-hidden="true"></span>
               <span class="fa">محصولات</span>
             </p>
@@ -967,8 +744,8 @@ h1,h2,h3{color:var(--ink)}
 
       <div class="prod-grid">
         <div class="chips">
-          <article class="chip reveal">
-            <img src="assets/img/panel-1.jpg" width="182" height="103" loading="lazy" decoding="async" alt="رندر پنل جاذب صدا">
+          <a class="chip reveal" href="products.html">
+            <picture><source type="image/webp" srcset="assets/img/panel-1.webp"><img src="assets/img/panel-1.jpg" width="182" height="103" loading="lazy" decoding="async" alt="رندر پنل جاذب صدا"></picture>
             <div>
               <h3>جاذب‌های صدا</h3>
               <p>کنترل بازگشت صدا و زمان ماندگاری</p>
@@ -976,10 +753,10 @@ h1,h2,h3{color:var(--ink)}
             <span class="go" aria-hidden="true">
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H4"/><path d="M8 4 4 8l4 4"/></svg>
             </span>
-          </article>
+          </a>
 
-          <article class="chip reveal" style="--d:.05s">
-            <img src="assets/img/panel-2.jpg" width="165" height="99" loading="lazy" decoding="async" alt="رندر پنل دیفیوزر">
+          <a class="chip reveal" href="products.html" style="--d:.05s">
+            <picture><source type="image/webp" srcset="assets/img/panel-2.webp"><img src="assets/img/panel-2.jpg" width="165" height="99" loading="lazy" decoding="async" alt="رندر پنل دیفیوزر"></picture>
             <div>
               <h3>دیفیوزرها</h3>
               <p>پخش یکنواخت انرژی صوتی در فضا</p>
@@ -987,10 +764,10 @@ h1,h2,h3{color:var(--ink)}
             <span class="go" aria-hidden="true">
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H4"/><path d="M8 4 4 8l4 4"/></svg>
             </span>
-          </article>
+          </a>
 
-          <article class="chip reveal" style="--d:.1s">
-            <img src="assets/img/panel-3.jpg" width="165" height="99" loading="lazy" decoding="async" alt="رندر پنل بیس‌ترپ">
+          <a class="chip reveal" href="products.html" style="--d:.1s">
+            <picture><source type="image/webp" srcset="assets/img/panel-3.webp"><img src="assets/img/panel-3.jpg" width="165" height="99" loading="lazy" decoding="async" alt="رندر پنل بیس‌ترپ"></picture>
             <div>
               <h3>بیس‌ترپ</h3>
               <p>کنترل فرکانس‌های پایین در گوشه‌ها</p>
@@ -998,10 +775,10 @@ h1,h2,h3{color:var(--ink)}
             <span class="go" aria-hidden="true">
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H4"/><path d="M8 4 4 8l4 4"/></svg>
             </span>
-          </article>
+          </a>
 
-          <article class="chip reveal" style="--d:.15s">
-            <img src="assets/img/panel-4.jpg" width="165" height="99" loading="lazy" decoding="async" alt="رندر پنل پوشش دکوراتیو آکوستیک">
+          <a class="chip reveal" href="products.html" style="--d:.15s">
+            <picture><source type="image/webp" srcset="assets/img/panel-4.webp"><img src="assets/img/panel-4.jpg" width="165" height="99" loading="lazy" decoding="async" alt="رندر پنل پوشش دکوراتیو آکوستیک"></picture>
             <div>
               <h3>پوشش‌های دکوراتیو</h3>
               <p>سقف، کف و دیوار با نمای آکوستیک</p>
@@ -1009,11 +786,11 @@ h1,h2,h3{color:var(--ink)}
             <span class="go" aria-hidden="true">
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H4"/><path d="M8 4 4 8l4 4"/></svg>
             </span>
-          </article>
+          </a>
 
           <div class="cat" id="catalog">
-            <span class="latin">catalogues</span>
-            <a class="link" href="#contact">
+            <span class="latin" lang="en">catalogues</span>
+            <a class="link" href="catalog.html">
               درخواست کاتالوگ محصولات
               <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H4"/><path d="M8 4 4 8l4 4"/></svg>
             </a>
@@ -1023,11 +800,16 @@ h1,h2,h3{color:var(--ink)}
         <div class="material reveal">
           <figure>
             <div class="frame">
-              <img src="assets/img/service-06.jpg" width="1800" height="972" loading="lazy" decoding="async"
-                   alt="نمونه‌های روکش چوب در رنگ‌های طبیعی، برای پوشش‌های آکوستیک">
+              <picture>
+                <source type="image/webp"
+                        srcset="assets/img/service-06-560.webp 560w, assets/img/service-06-1120.webp 1120w"
+                        sizes="(max-width: 900px) 90vw, (max-width: 1180px) 38vw, 530px">
+                <img src="assets/img/service-06.jpg" width="1800" height="972" loading="lazy" decoding="async"
+                     alt="نمونه‌های روکش چوب در رنگ‌های طبیعی، برای پوشش‌های آکوستیک">
+              </picture>
             </div>
             <figcaption class="material-cap">
-              <span class="latin">wood veneer samples</span>
+              <span class="latin" lang="en">wood veneer samples</span>
               <span class="fa">نمونه‌های پوشش</span>
             </figcaption>
           </figure>
@@ -1036,41 +818,8 @@ h1,h2,h3{color:var(--ink)}
     </div>
   </section>
 
-  <!-- ================= 06 · PARTNERS ================= -->
-  <section class="sec" aria-labelledby="partners-h">
-    <div class="wrap">
-      <div class="sec-bar">
-        <div class="sec-head reveal">
-          <div class="mark" aria-hidden="true">
-            <svg class="rings" viewBox="-500 -500 1000 1000"><use href="#contour" x="-500" y="-500" width="1000" height="1000"/></svg>
-            <b>۰۶</b>
-          </div>
-          <div class="sec-title">
-            <p class="eyebrow">
-              <span class="latin">with us</span>
-              <span class="rule" aria-hidden="true"></span>
-              <span class="fa">همراهان</span>
-            </p>
-            <h2 id="partners-h">همراهان همیشگی ما</h2>
-          </div>
-        </div>
-      </div>
-
-      <ul class="logos reveal">
-        <li><a href="#" aria-label="بیمه دی"><img src="assets/brand/partners/0000001111.png" width="300" height="300" loading="lazy" decoding="async" alt="بیمه دی"></a></li>
-        <li><a href="#" aria-label="همیاری"><img src="assets/brand/partners/00000022222.png" width="300" height="300" loading="lazy" decoding="async" alt="همیاری"></a></li>
-        <li><a href="#" aria-label="داتین"><img src="assets/brand/partners/000003333.png" width="300" height="300" loading="lazy" decoding="async" alt="داتین"></a></li>
-        <li><a href="#" aria-label="بانک پارسیان"><img src="assets/brand/partners/00221321321.png" width="300" height="300" loading="lazy" decoding="async" alt="بانک پارسیان"></a></li>
-        <li><a href="#" aria-label="قوه قضائیه"><img src="assets/brand/partners/20651651.png" width="300" height="300" loading="lazy" decoding="async" alt="قوه قضائیه"></a></li>
-        <li><a href="#" aria-label="مؤسسه خیریه کهریزک"><img src="assets/brand/partners/6120320635151.png" width="300" height="300" loading="lazy" decoding="async" alt="مؤسسه خیریه کهریزک"></a></li>
-        <li><a href="#" aria-label="سازمان بهزیستی"><img src="assets/brand/partners/0315165165151.png" width="300" height="300" loading="lazy" decoding="async" alt="سازمان بهزیستی"></a></li>
-        <li><a href="#" aria-label="مرکز مدیریت حوزه‌های علمیه"><img src="assets/brand/partners/251561651651.png" width="300" height="300" loading="lazy" decoding="async" alt="مرکز مدیریت حوزه‌های علمیه"></a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ================= 07 · MAGAZINE ================= -->
-  <section class="sec alt" id="magazine" aria-labelledby="magazine-h">
+  <!-- ================= 07 · PARTNERS ================= -->
+  <section class="sec alt" aria-labelledby="partners-h">
     <div class="wrap">
       <div class="sec-bar">
         <div class="sec-head reveal">
@@ -1080,7 +829,42 @@ h1,h2,h3{color:var(--ink)}
           </div>
           <div class="sec-title">
             <p class="eyebrow">
-              <span class="latin">journal</span>
+              <span class="latin" lang="en">with us</span>
+              <span class="rule" aria-hidden="true"></span>
+              <span class="fa">همراهان</span>
+            </p>
+            <h2 id="partners-h">همراهان همیشگی ما</h2>
+          </div>
+        </div>
+      </div>
+
+      <ul class="logos reveal" role="list">
+        <li><picture><source type="image/webp" srcset="assets/brand/partners/0000001111-160.webp"><img src="assets/brand/partners/0000001111.png" width="768" height="768" loading="lazy" decoding="async" alt="بیمه دی"></picture></li>
+        <li><picture><source type="image/webp" srcset="assets/brand/partners/00000022222-160.webp"><img src="assets/brand/partners/00000022222.png" width="768" height="768" loading="lazy" decoding="async" alt="همیاری"></picture></li>
+        <li><picture><source type="image/webp" srcset="assets/brand/partners/000003333-160.webp"><img src="assets/brand/partners/000003333.png" width="768" height="768" loading="lazy" decoding="async" alt="داتین"></picture></li>
+        <li><picture><source type="image/webp" srcset="assets/brand/partners/00221321321-160.webp"><img src="assets/brand/partners/00221321321.png" width="768" height="768" loading="lazy" decoding="async" alt="بانک پارسیان"></picture></li>
+        <li><picture><source type="image/webp" srcset="assets/brand/partners/20651651-160.webp"><img src="assets/brand/partners/20651651.png" width="768" height="768" loading="lazy" decoding="async" alt="قوه قضائیه"></picture></li>
+        <li><picture><source type="image/webp" srcset="assets/brand/partners/6120320635151-160.webp"><img src="assets/brand/partners/6120320635151.png" width="768" height="768" loading="lazy" decoding="async" alt="مؤسسه خیریه کهریزک"></picture></li>
+        <li><picture><source type="image/webp" srcset="assets/brand/partners/0315165165151-160.webp"><img src="assets/brand/partners/0315165165151.png" width="768" height="768" loading="lazy" decoding="async" alt="سازمان بهزیستی"></picture></li>
+        <li><picture><source type="image/webp" srcset="assets/brand/partners/251561651651-160.webp"><img src="assets/brand/partners/251561651651.png" width="768" height="768" loading="lazy" decoding="async" alt="مرکز مدیریت حوزه‌های علمیه"></picture></li>
+      </ul>
+
+      <p class="partner-note reveal">همراهانی که در سال‌های گذشته با آن‌ها کار کرده‌ایم.</p>
+    </div>
+  </section>
+
+  <!-- ================= 08 · MAGAZINE ================= -->
+  <section class="sec sky" id="magazine" aria-labelledby="magazine-h">
+    <div class="wrap">
+      <div class="sec-bar">
+        <div class="sec-head reveal">
+          <div class="mark" aria-hidden="true">
+            <svg class="rings" viewBox="-500 -500 1000 1000"><use href="#contour" x="-500" y="-500" width="1000" height="1000"/></svg>
+            <b>۰۸</b>
+          </div>
+          <div class="sec-title">
+            <p class="eyebrow">
+              <span class="latin" lang="en">journal</span>
               <span class="rule" aria-hidden="true"></span>
               <span class="fa">مجله</span>
             </p>
@@ -1091,27 +875,57 @@ h1,h2,h3{color:var(--ink)}
       </div>
 
       <div class="mag-grid">
-        <a class="mag-item reveal" href="#magazine">
-          <span class="mtext"><span class="idx">۰۱</span><h3>عایق صوتی و نقش آن در صنعت ساختمان</h3></span>
-          <time datetime="2024-10-28">۲۸ مهر ۱۴۰۳</time>
+        <a class="mag-item reveal" href="article-sound-insulation.html">
+          <div class="mag-thumb">
+            <picture><source type="image/webp" srcset="assets/img/mag/mag-1-160.webp 160w, assets/img/mag/mag-1-320.webp 320w" sizes="96px"><img src="assets/img/mag/mag-1-320.jpg" width="320" height="320" loading="lazy" decoding="async" alt="سالن صنعتی با سازه‌های فلزی"></picture>
+          </div>
+          <div class="mag-text">
+            <span class="mag-top"><span class="idx">۰۱</span><time datetime="2024-10-28">۷ آبان ۱۴۰۳</time></span>
+            <h3>عایق صوتی و نقش آن در صنعت ساختمان</h3>
+          </div>
         </a>
-        <a class="mag-item reveal" style="--d:.05s" href="#magazine">
-          <span class="mtext"><span class="idx">۰۲</span><h3>آکوستیک چیست؟</h3></span>
-          <time datetime="2024-11-07">۷ آبان ۱۴۰۳</time>
+
+        <a class="mag-item reveal" style="--d:.05s" href="article-acoustics.html">
+          <div class="mag-thumb">
+            <picture><source type="image/webp" srcset="assets/img/mag/mag-2-160.webp 160w, assets/img/mag/mag-2-320.webp 320w" sizes="96px"><img src="assets/img/mag/mag-2-320.jpg" width="320" height="320" loading="lazy" decoding="async" alt="نیروی کار با گوشی حفاظتی در محیط پرصدا"></picture>
+          </div>
+          <div class="mag-text">
+            <span class="mag-top"><span class="idx">۰۲</span><time datetime="2025-04-07">۱۸ فروردین ۱۴۰۴</time></span>
+            <h3>آکوستیک</h3>
+          </div>
         </a>
-        <a class="mag-item reveal" style="--d:.1s" href="#magazine">
-          <span class="mtext"><span class="idx">۰۳</span><h3>پنل‌های دیفیوزر</h3></span>
-          <time datetime="2024-09-29">۸ مهر ۱۴۰۳</time>
+
+        <a class="mag-item reveal" style="--d:.1s" href="magazine.html">
+          <div class="mag-thumb">
+            <picture><source type="image/webp" srcset="assets/img/mag/mag-3-160.webp 160w, assets/img/mag/mag-3-320.webp 320w" sizes="96px"><img src="assets/img/mag/mag-3-320.jpg" width="320" height="320" loading="lazy" decoding="async" alt="رندر پنل دیفیوزر"></picture>
+          </div>
+          <div class="mag-text">
+            <span class="mag-top"><span class="idx">۰۳</span><time datetime="2024-09-29">۸ مهر ۱۴۰۳</time></span>
+            <h3>پنل‌های دیفیوزر</h3>
+          </div>
         </a>
-        <a class="mag-item reveal" style="--d:.15s" href="#magazine">
-          <span class="mtext"><span class="idx">۰۴</span><h3>بیس‌ترپ و انواع آن</h3></span>
-          <time datetime="2024-10-26">۵ آبان ۱۴۰۳</time>
+
+        <a class="mag-item reveal" style="--d:.15s" href="magazine.html">
+          <div class="mag-thumb">
+            <picture><source type="image/webp" srcset="assets/img/mag/mag-4-160.webp 160w, assets/img/mag/mag-4-320.webp 320w" sizes="96px"><img src="assets/img/mag/mag-4-320.jpg" width="320" height="320" loading="lazy" decoding="async" alt="سالن همایش با صندلی‌های آبی"></picture>
+          </div>
+          <div class="mag-text">
+            <span class="mag-top"><span class="idx">۰۴</span><time datetime="2024-10-26">۵ آبان ۱۴۰۳</time></span>
+            <h3>بیس‌ترپ و انواع آن</h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="sec-more">
+        <a class="link" href="magazine.html">
+          همهٔ مقالات
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H4"/><path d="M8 4 4 8l4 4"/></svg>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ================= 08 · CONTACT ================= -->
+  <!-- ================= 09 · CONTACT ================= -->
   <section class="sec" id="contact" aria-labelledby="contact-h">
     <div class="wrap">
       <div class="panel reveal">
@@ -1124,11 +938,11 @@ h1,h2,h3{color:var(--ink)}
             <div class="sec-head">
               <div class="mark" aria-hidden="true">
                 <svg class="rings" viewBox="-500 -500 1000 1000"><use href="#contour" x="-500" y="-500" width="1000" height="1000"/></svg>
-                <b>۰۸</b>
+                <b>۰۹</b>
               </div>
               <div class="sec-title">
                 <p class="eyebrow">
-                  <span class="latin">dialogue</span>
+                  <span class="latin" lang="en">dialogue</span>
                   <span class="rule" aria-hidden="true"></span>
                   <span class="fa">تماس</span>
                 </p>
@@ -1142,10 +956,15 @@ h1,h2,h3{color:var(--ink)}
               <span class="lbl">دفتر مرکزی</span>
               <p>تهران، خیابان شریعتی، خیابان ظفر، پلاک ۱۶۸، واحد ۹</p>
             </div>
+
+            <div class="c-address">
+              <span class="lbl">کارخانه</span>
+              <p>شهرک صنعتی صفادشت، بلوار فروردین، پلاک ۳۱۰</p>
+            </div>
           </div>
 
           <div class="c-side">
-            <span class="latin">telephone</span>
+            <span class="latin" lang="en">telephone</span>
             <a class="prow" href="tel:+982126413369">
               <span class="plabel">تلفن</span>
               <span class="pnum">۰۲۱-۲۶۴۱۳۳۶۹</span>
@@ -1159,6 +978,20 @@ h1,h2,h3{color:var(--ink)}
               <span class="pnum">۰۹۳۸۶۰۳۸۰۰۳</span>
             </a>
 
+            <span class="latin" lang="en" style="display:block;margin-top:26px">digital</span>
+            <a class="prow" href="mailto:medisdesign.team@gmail.com">
+              <span class="plabel">ایمیل</span>
+              <span class="pnum contact">medisdesign.team@gmail.com</span>
+            </a>
+            <a class="prow" href="https://instagram.com/medisdesign.team" target="_blank" rel="noopener noreferrer">
+              <span class="plabel">اینستاگرام</span>
+              <span class="pnum contact">@medisdesign.team</span>
+            </a>
+            <a class="prow" href="https://wa.me/989386038003" target="_blank" rel="noopener noreferrer">
+              <span class="plabel">واتساپ</span>
+              <span class="pnum contact">wa.me/989386038003</span>
+            </a>
+
             <a class="c-site" href="https://medisdesign.com">medisdesign.com</a>
           </div>
         </div>
@@ -1168,34 +1001,48 @@ h1,h2,h3{color:var(--ink)}
 
 </main>
 
-<footer class="foot">
+<footer class="foot" data-lazy>
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <img src="assets/brand/medis-mark-cream.png" width="32" height="32" alt="نشان گروه مهندسی مدیس">
+        <img src="assets/brand/medis-mark-cream.png" width="32" height="32" loading="lazy" decoding="async" alt="نشان گروه مهندسی مدیس">
         <div>
           <b>گروه مهندسی مدیس</b>
           <p>طراحی آکوستیک، الکتروآکوستیک و معماری سالن‌های همایش، سینما و فضاهای فرهنگی.</p>
+          <p class="foot-addr">کارخانه: شهرک صنعتی صفادشت، بلوار فروردین، پلاک ۳۱۰</p>
         </div>
       </div>
 
       <div>
-        <h4>صفحه‌ها</h4>
-        <ul>
-          <li><a href="#projects">پروژه‌ها</a></li>
-          <li><a href="#products">محصولات</a></li>
-          <li><a href="#services">خدمات ما</a></li>
-          <li><a href="#magazine">مدیس مگ</a></li>
+        <h2 class="foot-h">صفحه‌ها</h2>
+        <ul role="list">
+          <li><a href="projects.html">پروژه‌ها</a></li>
+          <li><a href="products.html">محصولات</a></li>
+          <li><a href="services.html">خدمات ما</a></li>
+          <li><a href="magazine.html">مدیس مگ</a></li>
+          <li><a href="catalog.html">کاتالوگ‌ها</a></li>
         </ul>
       </div>
 
       <div>
-        <h4>تماس</h4>
-        <ul>
+        <h2 class="foot-h">دسترسی</h2>
+        <ul role="list">
+          <li><a href="about.html">درباره ما</a></li>
+          <li><a href="contact.html">تماس با ما</a></li>
+          <li><a href="strategy.html">سند راهبردی</a></li>
+          <li><a href="policy.html">خط مشی</a></li>
+          <li><a href="privacy.html">حریم خصوصی</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="foot-h">تماس</h2>
+        <ul role="list">
           <li><a href="tel:+982126413369">۰۲۱-۲۶۴۱۳۳۶۹</a></li>
           <li><a href="tel:+982126709572">۰۲۱-۲۶۷۰۹۵۷۲</a></li>
           <li><a href="tel:+989386038003">۰۹۳۸۶۰۳۸۰۰۳</a></li>
-          <li><a href="https://medisdesign.com">medisdesign.com</a></li>
+          <li><a href="mailto:medisdesign.team@gmail.com">medisdesign.team@gmail.com</a></li>
+          <li><a href="https://instagram.com/medisdesign.team" target="_blank" rel="noopener noreferrer">اینستاگرام</a></li>
         </ul>
       </div>
     </div>
@@ -1210,9 +1057,105 @@ h1,h2,h3{color:var(--ink)}
   </div>
 </footer>
 
+<div class="mcta" id="mcta" aria-label="تماس سریع">
+  <a class="btn" href="#contact">شروع گفت‌وگو</a>
+  <a class="mcta-tel" href="tel:+982126413369">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z"/></svg>
+    ۰۲۱-۲۶۴۱۳۳۶۹
+  </a>
+</div>
+
 <script>
 (function () {
+  'use strict';
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root = document.documentElement;
+
+  /* mast elevation + scroll progress */
+  var mast = document.querySelector('.mast');
+  var progress = 0;
+  function onScroll() {
+    var y = window.scrollY || window.pageYOffset || 0;
+    if (mast) mast.classList.toggle('is-scrolled', y > 8);
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    var p = max > 0 ? Math.min(1, y / max) : 0;
+    if (Math.abs(p - progress) > 0.004) {
+      progress = p;
+      if (mast) mast.style.setProperty('--p', p.toFixed(3));
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  onScroll();
+
+  /* mobile navigation — native <dialog>, Escape + focus trap included */
+  var dialog = document.getElementById('mobile-nav');
+  var burger = document.querySelector('.burger');
+  var closeBtn = dialog ? dialog.querySelector('.mnav-close') : null;
+
+  function openNav() {
+    if (!dialog || !burger || dialog.open) return;
+    if (typeof dialog.showModal === 'function') dialog.showModal();
+    else dialog.setAttribute('open', '');
+    root.classList.add('nav-open');
+    burger.setAttribute('aria-expanded', 'true');
+    if (closeBtn) closeBtn.focus();
+  }
+
+  function closeNav() {
+    if (!dialog) return;
+    if (dialog.open && typeof dialog.close === 'function') dialog.close();
+    else dialog.removeAttribute('open');
+    root.classList.remove('nav-open');
+    if (burger) {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.focus();
+    }
+  }
+
+  if (burger) burger.addEventListener('click', openNav);
+  if (closeBtn) closeBtn.addEventListener('click', closeNav);
+  if (dialog) {
+    dialog.addEventListener('close', function () {
+      root.classList.remove('nav-open');
+      if (burger) burger.setAttribute('aria-expanded', 'false');
+    });
+    dialog.addEventListener('cancel', function () {
+      root.classList.remove('nav-open');
+      if (burger) burger.setAttribute('aria-expanded', 'false');
+    });
+    dialog.addEventListener('click', function (event) {
+      if (event.target === dialog) closeNav();
+    });
+    dialog.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', function () { closeNav(); });
+    });
+    if (typeof dialog.showModal !== 'function') {
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && dialog.hasAttribute('open')) closeNav();
+      });
+    }
+  }
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 1024 && dialog && dialog.open) closeNav();
+  }, { passive: true });
+
+  /* mobile action bar — hidden once the contact panel is on screen */
+  var bar = document.getElementById('mcta');
+  var contact = document.getElementById('contact');
+  if (bar) {
+    root.classList.add('has-mcta');
+    if (contact && 'IntersectionObserver' in window) {
+      var spy = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          bar.classList.toggle('is-off', entry.isIntersecting);
+          root.classList.toggle('cta-off', entry.isIntersecting);
+        });
+      }, { rootMargin: '-30% 0px 0px 0px', threshold: 0 });
+      spy.observe(contact);
+    }
+  }
+
   if (reduce) return;
 
   /* contour drift — a slow translate plus a fraction of a degree of rotation */

@@ -95,3 +95,14 @@ Captions at 13–14.4 px inherit body weight 300. On low-DPI Windows, thin Persi
 - Desktop: [`full-1440.png`](screenshots/review/full-1440.png) + `slice-0..5.png`, [`hero-1440.png`](screenshots/review/hero-1440.png)
 - Mobile (390-class): [`full-mob.png`](screenshots/review/full-mob.png) + `mob-slice-0..4.png`
 - Tablet (768): [`full-tab.png`](screenshots/review/full-tab.png) + `tab-slice-0..3.png`
+
+---
+
+## Status update (2026-11-16) — this review is historical
+
+The directions it reviews (`index.html` in its «ارگانیک» form, then `dsh/autoclow/oc-redesign.html`)
+have been replaced. `index.html` is now the **spark** page, and the site exists as 29 flat pages in
+this folder (`projects`, 8 project details, `services`, 6 service details, `products`, `catalog`,
+`magazine`, 4 articles, `about`, `contact`, 3 document pages) sharing `assets/css/spark.css`.
+Copy is still only `CONTENT.md` / `data/*.json`; project and service details carry factual meta only.
+Verification for the multi-page build is logged in `../MEMORY.md` («Spark direction + flat multi-page build»).

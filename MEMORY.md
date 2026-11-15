@@ -21,23 +21,40 @@ Static Next.js replica of https://medisdesign.com. See `README.md` for the full 
 - **Only one direction is left: `redesign/index.html`** («ارگانیک», cream/contour). The palette/white-ground variant
   (`index-palette.html`) was built, then deleted by the user on 2026-11-14 — do not resurrect it unless asked.
   Its design decisions survive only in git-less history; the screenshots under `redesign/screenshots/palette-*` are gone too.
+- **`redesign/autoclow-redesign.html` (2026-11-16)** — a parallel implementation of `redesign/REVIEW.md` requested
+  in another session ("create new html name autoclow-redesign and implement changes"); `index.html` untouched.
+  Same P0/P1 fixes as `dsh-redesign.html`, different choices: coral kept for tagline rule + band eyebrow;
+  small accent text uses darker terracotta tokens `--primary-ink` #9C5713 / `--primary-deep` #8F4E0E (AA-passing)
+  instead of the single-orange tradeoff; CSS-overlay nav sheet ≤900px (not `<dialog>`); content pack kept verbatim
+  (four magazine titles, datetimes matched to the visible Jalali labels: 2024-10-19 / 2024-10-28 / 2024-09-29 /
+  2024-10-26); featured banner (سینمای داتین) + 7 plates + «همه پروژه‌ها» closer tile keeps grids full (4×2 desktop,
+  2×4 mobile); PIL WebP `srcset`/`sizes` (first load ~770 KB incl. 150 KB fonts); statement quote = real about-page
+  sentence (CTA line single-use). Verified: 28/28 images load in a real browser, no overflow 1440→390, sheet
+  open/close/focus/scroll-to tested; captures `redesign/screenshots/review/v2-*`. Both v2 files now coexist —
+  the user should pick one before production (dsh: 208 KB first load, real routes, single orange; autoclow:
+  AA-passing accent text, CONTENT.md-verbatim copy).
+  Pane gotcha: the embedded browser pane freezes CSS transition clocks — computed opacity reads 0 mid-animation;
+  verify transitions headless or via `getAnimations()`.
 - Accent change (2026-11-14, on request): **terracotta `#CC7529` is `index.html`'s chromatic accent**. The old roles
   collapsed into one token — `--gold` (links/buttons/numbers/rules/contours), `--moss` (eyebrows + service icons),
   `--clay` (active-nav underline, marks, dots, chip arrows) all became `var(--primary)`; `--gold-hover` was unused and
-  is gone; `--coral #F77656` stays for the tagline rule and (in the mockup) the focus ring. Brass is one edit away:
+  is gone; `--coral #F77656` is used in the mockup for the tagline rule and focus ring (the production
+  build replaced it with the single orange on 2026-11-16). Brass is one edit away:
   `--primary:#A18E37` turns every role gold together (the per-role split is no longer possible without re-splitting).
   Both CTAs (header "تماس با ما", hero "شروع گفت‌وگو") are light labels on terracotta — user asked for light text, so the
-  earlier ink label was reverted to `#fff`. In the mockup that is 3.4:1 (AA only at large sizes); the production build
-  uses `--primary-cta:#B05A12` (4.86:1) for filled controls and keeps `#CC7529` for rules/figures.
+  earlier ink label was reverted to `#fff`. That is 3.4:1 (AA only at large sizes). The production build now
+  uses the exact design orange `#CC7529` (sampled #CC762A from the 2026-11-16 request screenshot) for every
+  accent — the temporary `#B05A12` button and `#8A4610` small-label variants were removed on request.
   There are no other filled buttons — "دیدن پروژه‌ها", "درخواست کاتالوگ محصولات" and "بازگشت به بالا" are underlined text links.
-  Known weak spot in the mockup: small accent labels on the sand grounds (`#E7DCCB`) sit at ~2.5:1; the production
-  build adds `--accent-text:#8A4610` (5.23:1 on sand) for small accent type.
+  Known weak spot (accepted design tradeoff): small accent labels on chalk/sand sit at 3.16:1 / 2.52:1 because the
+  production build uses the same `#CC7529` for them; `#8A4610` (5.23:1 sand) is the documented AA alternative.
 - Secondary colour (2026-11-14, on request): **`#002736` deep petrol** carries the dark structural grounds — the stats
   `.band` and `.foot` (both were cream/sand before), plus `.sec.sky` now a whisper tint
   `color-mix(in srgb, var(--secondary) 5%, var(--chalk))` instead of the old `#E8EEF6` blue. On petrol: cream
   `--on-secondary:#F8F6F0` for headings/brand, `rgba(248,246,240,.72/.66/.56)` for copy and meta,
   `rgba(248,246,240,.16–.22)` rules, terracotta `--primary` for the stat numerals (4.6:1) and footer link hover,
-  coral for the band eyebrow. Contour fields inside petrol grounds flip to cream at .10–.18.
+  coral for the band eyebrow (the production build uses the single orange instead). Contour fields inside petrol
+  grounds flip to cream at .10–.18.
 - Logo colour follows the grounds: the mark is line art on transparency, so two recoloured copies were generated from
   `assets/brand/medis-mark.png` (alpha kept, RGB replaced) — `medis-mark-secondary.png` (#002736) in the **header**,
   `medis-mark-cream.png` (#F8F6F0) in the **footer**. Regenerate with the same recipe if the palette changes again;
@@ -87,9 +104,12 @@ candidate built from it (85 KB, self-contained, relative `assets/`). Changes:
 - **P0 fixed:** native `<dialog>` mobile nav ≤1024 px (burger, focus trap, Escape, scroll lock,
   two-column on ≥700); scroll-cue dot now travels right→left (`-46px`); product chips and all six
   service cards are real links; the retired gold literal became `color-mix(--primary)`.
-- **Tokens:** `--muted:#55607A` (4.64:1 sand), `--accent-text:#8A4610` (small accent type,
-  5.23:1 sand), `--primary-cta:#B05A12` (filled buttons, white label 4.86:1); focus ring is ink,
-  footer labels .55 cream. Coral stays decorative only.
+- **Accent:** one token, `--primary:#CC7529`, for every button, label, number and rule. The darker
+  `--accent-text:#8A4610` and `--primary-cta:#B05A12` variants were removed on request 2026-11-16, as was
+  `--coral` (tagline rule and band eyebrow are now orange). White button label 3.42:1; small labels 3.16:1
+  on chalk / 2.52:1 on sand — accepted design tradeoff, with `#B05A12`/`#8A4610` documented as AA
+  alternatives but no longer in the file. Focus ring is ink, footer labels .55 cream. No coral or
+  second orange remains in the production file.
 - **Type:** h1 line-height 1.16, `text-wrap:balance` on h1/h2, weight 400 for all ≤15 px text,
   Georgia-first serif stack, Latin labels carry `lang="en"`.
 - **Content:** «ارگانیک» → «طراحی آکوستیک»; the duplicated CTA quote became «از اولین اندازه‌گیری
@@ -109,6 +129,41 @@ candidate built from it (85 KB, self-contained, relative `assets/`). Changes:
   Captures: `redesign/screenshots/production/`.
 - **Still open:** H1 is the poetic line (keywords live in title/description — decide before launch);
   port into Next with shared chrome first; subset WOFF2 fonts; 1200×630 OG image; analytics/host.
+
+## Spark direction + flat multi-page build (2026-11-16)
+
+- **`redesign/index.html` is now the spark page** (cream ground, contour field, orange `--primary`,
+  self-hosted Yekan/Sans), promoted from `spark-redesign.html` on request. `spark-redesign.html`,
+  `autoclow-redesign.html`, `dsh-redesign.html` and `oc-redesign.html` were deleted; the notes for
+  them above are history only.
+- `index.html` is a thin document again: chrome + sections + JS, with the whole `<style>` block moved
+  verbatim to `assets/css/spark.css` (~46 KB) plus a new **section 22 — interior pages**
+  (`.page-hero`, `.crumbs`, `.prose`, `.art-in`, `.rows`, `.kv`, `.cards-4`, `.tile`, `.pager`,
+  `.split`, `.doc-panel`, `.plate-cta`).
+- **Relative `url()` in that file resolves from `assets/css/`**, so the four `@font-face` sources must
+  be `../fonts/oc/…`. With `assets/fonts/…` they 404'd and every page silently fell back to Tahoma —
+  the only real bug the extraction introduced. Everything else about the split is byte-identical.
+- 28 sibling pages live **flat** in `redesign/` (no directories, so it still previews from a plain
+  file server): `projects.html` + 8 `project-*.html`, `services.html` + 6 `service-*.html`,
+  `products.html`, `catalog.html`, `magazine.html` + 4 `article-*.html`, `about.html`, `contact.html`,
+  `privacy.html`, `policy.html`, `strategy.html`. Site routes in `index.html` were rewritten to those
+  filenames (`/projects/` → `projects.html`, `/عایق-صوتی/` → `article-sound-insulation.html`,
+  `/diffuser-panels/` and `/bass-trap-and-its-types/` → `magazine.html`, …).
+- The pages are generated, not hand-written: `gen-spark.mjs` (kept in the session temp dir, not in the
+  repo) slices the mast/dialog/footer/mcta/JS chrome out of `index.html` and emits per-page `<head>`,
+  JSON-LD (Organization graph minus the home `WebPage` node + per-page WebPage + BreadcrumbList) and
+  `aria-current="page"` on the matching desktop **and** mobile nav link. Re-run it after structural
+  edits; edits to `index.html` itself stay manual.
+- Copy stays real: only `CONTENT.md` and `data/*.json`. Four posts have real bodies (`آکوستیک`,
+  `عایق صوتی و نقش آن در صنعت ساختمان`, `پوشش های ضد حریق`, `طراحی آکوستیک معماری`) → four article
+  pages; every other journal title is a non-link row in the `magazine.html` archive. Project and
+  service detail pages are image-led with factual meta only (name, type, links) — no invented year,
+  area or capacity.
+- **Verified:** 29 pages; every local `href`/`src`/`srcset` resolves (96 image URLs, all HTTP 200); no
+  dead `#anchor`; one `h1` per page; one current item per nav; `scrollWidth == clientWidth` at
+  390 / 768 / 1000 px; no console errors once the font paths were fixed. Lazy images that show as
+  "pending" in headless captures are a background-tab artifact of the capture, not a page defect
+  (`curl` + real-browser `naturalWidth` confirm they load).
 
 ## Pipeline
 
