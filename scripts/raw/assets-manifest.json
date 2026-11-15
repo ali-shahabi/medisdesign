@@ -1,0 +1,44 @@
+{
+  "total": 366,
+  "ok": 357,
+  "skip": 0,
+  "fail": 9,
+  "failures": [
+    {
+      "u": "/wp-content/uploads/2024/01/Acoustic-absorbers-and-their-types03.jpg",
+      "r": "fail:HTTP 404"
+    },
+    {
+      "u": "/wp-content/uploads/2024/01/Acoustic-absorbers-and-their-types02.jpg",
+      "r": "fail:HTTP 404"
+    },
+    {
+      "u": "/wp-content/uploads/2024/01/what-is-sound-and-sound-insulation01.jpg",
+      "r": "fail:HTTP 404"
+    },
+    {
+      "u": "/wp-content/uploads/2024/01/what-is-sound-and-sound-insulation02.jpg",
+      "r": "fail:HTTP 404"
+    },
+    {
+      "u": "/wp-content/uploads/2024/01/Acoustic-absorbers-and-their-types04.jpg",
+      "r": "fail:HTTP 404"
+    },
+    {
+      "u": "/wp-content/uploads/2024/02/Diffuser-panels02.jpg",
+      "r": "fail:HTTP 404"
+    },
+    {
+      "u": "/wp-content/uploads/2024/02/Diffuser-panels01.jpg",
+      "r": "fail:HTTP 404"
+    },
+    {
+      "u": "/wp-content/uploads/2024/02/Diffuser-panels03.jpg",
+      "r": "fail:HTTP 404"
+    },
+    {
+      "u": "/wp-content/uploads/2024/02/Diffuser-panels04.jpg",
+      "r": "fail:HTTP 404"
+    }
+  ]
+}

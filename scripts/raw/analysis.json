@@ -1,0 +1,2967 @@
+{
+  "rowsByPage": [
+    {
+      "kind": "page",
+      "url": "/%d8%b3%db%8c%d8%a7%d8%b3%d8%aa-%d8%ad%d9%81%d8%b8-%d8%ad%d8%b1%db%8c%d9%85-%d8%ae%d8%b5%d9%88%d8%b5%db%8c/",
+      "title": "سیاست حفظ حریم خصوصی",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/%d8%b7%d8%b1%d8%a7%d8%ad%db%8c-%d8%a2%da%a9%d9%88%d8%b3%d8%aa%db%8c%da%a9-%d9%85%d8%b9%d9%85%d8%a7%d8%b1%db%8c/",
+      "title": "طراحی آکوستیک معماری​",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/%d8%b7%d8%b1%d8%a7%d8%ad%db%8c-%d8%a2%da%a9%d9%88%d8%b3%d8%aa%db%8c%da%a9-%d8%b5%d9%86%d8%b9%d8%aa%db%8c/",
+      "title": "طراحی آکوستیک صنعتی",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/%d8%b7%d8%b1%d8%a7%d8%ad%db%8c-%d9%88-%d8%a7%d8%ac%d8%b1%d8%a7%db%8c-%d8%a7%d9%84%da%a9%d8%aa%d8%b1%d9%88%d8%a2%da%a9%d9%88%d8%b3%d8%aa%db%8c%da%a9/",
+      "title": "طراحی و اجرای الکتروآکوستیک",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa-%d8%a7%da%a9%d9%88%d8%b3%d8%aa%db%8c%da%a9%db%8c-%da%86%d9%88%d8%a8/",
+      "title": "اجرای آکوستیک معماری",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/%d8%a7%d9%86%d8%aa%d9%82%d8%a7%d9%84-%d8%b5%d8%af%d8%a7%db%8c-%d8%af%db%8c%d9%88%d8%a7%d8%b1%d9%87-%d9%87%d8%a7/",
+      "title": "انتقال صدای دیواره ها",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/%d8%a7%d9%86%d8%aa%d9%82%d8%a7%d9%84-%d8%b5%d8%af%d8%a7%db%8c-%d8%b7%d8%a8%d9%82%d8%a7%d8%aa/",
+      "title": "انتقال صدای طبقات",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/%d8%a7%d9%86%d8%aa%d9%82%d8%a7%d9%84-%d8%b5%d8%af%d8%a7%db%8c-%d8%aa%d8%a7%d8%b3%db%8c%d8%b3%d8%a7%d8%aa%db%8c/",
+      "title": "انتقال صدای تاسیساتی",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/%d8%a7%d9%86%d8%aa%d9%82%d8%a7%d9%84-%d8%b5%d8%af%d8%a7%db%8c-%d8%a2%d8%b3%d8%a7%d9%86%d8%b3%d9%88%d8%b1%d9%87%d8%a7/",
+      "title": "انتقال صدای آسانسورها",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/%d8%b3%db%8c%d9%86%d9%85%d8%a7-%d9%88-%d8%b3%d8%a7%d9%84%d9%86-%d9%87%d8%a7%db%8c-%d9%87%d9%85%d8%a7%db%8c%d8%b4/",
+      "title": "سینما و سالن های همایش",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 2,
+          "kinds": "image+text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa-%d8%a2%da%a9%d9%88%d8%b3%d8%aa%db%8c%da%a9-%d8%af%da%a9%d9%88%d8%b1%d8%a7%d8%aa%db%8c%d9%88/",
+      "title": "محصولات آکوستیک-دکوراتیو",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/catalog/",
+      "title": "کاتالوگ",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 4,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 3,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 3,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 3,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/contact-us-medis-design/",
+      "title": "تماس با ما",
+      "sections": []
+    },
+    {
+      "kind": "page",
+      "url": "/articles/",
+      "title": "مقالات",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/projects/",
+      "title": "پروژه ها",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 4,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 3,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 2,
+          "kinds": "image+text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "text",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/products/",
+      "title": "محصولات",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/madis-design-about-us/",
+      "title": "درباره ما",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 2,
+          "kinds": "image+text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/%d8%b5%d9%81%d8%ad%d9%87-%d8%a7%d8%b5%d9%84%db%8c/",
+      "title": "صفحه اصلی",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 3,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 3,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 2,
+          "kinds": "image+text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 5,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 4,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 2,
+          "kinds": "text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 2,
+          "kinds": "image+text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/%d9%85%d8%ac%d9%84%d9%87-%d8%aa%d8%ae%d8%b5%d8%b5%db%8c-%d8%b3%d8%a7%d9%84%d9%86-%d9%87%d8%a7%db%8c-%d9%87%d9%85%d8%a7%db%8c%d8%b4/",
+      "title": "مدیس مگ",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 3,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d8%b3%d8%a7%d9%84%d9%86-%d9%87%d9%85%d8%a7%db%8c%d8%b4/",
+      "title": "خدمات سالن همایش",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 3,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 3,
+          "kinds": "button+image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/%d8%b3%d9%86%d8%af-%d8%b1%d8%a7%d9%87%d8%a8%d8%b1%d8%af%db%8c-%d9%85%db%8c%d8%af%d8%a7%d8%b3/",
+      "title": "سند راهبردی میداس",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 3,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/%d8%ae%d8%b7-%d9%85%d8%b4%db%8c-%d9%85%d8%af%db%8c%d8%b3/",
+      "title": "خط مشی مدیس",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 3,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "url": "/",
+      "title": "صفحه اصلی 2",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 3,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 3,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 3,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 2,
+          "kinds": "image+text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 4,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "image",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 4,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/what-is-sound-and-sound-insulation/",
+      "title": "صدا و عایق صدا چیست؟",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/acoustic-absorbers-and-its-types/",
+      "title": "جاذب های صوتی و انواع آن",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/diffuser-panels/",
+      "title": " پنل های دیفیوزر",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/amphitheater/",
+      "title": "سالن های آمفی تئاتر",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d8%b7%d8%b1%d8%a7%d8%ad%db%8c-%d8%a2%da%a9%d9%88%d8%b3%d8%aa%db%8c%da%a9-%d9%85%d8%b9%d9%85%d8%a7%d8%b1%db%8c/",
+      "title": "طراحی آکوستیک معماری",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/sydney-opera-house/",
+      "title": "اپرای سیدنی",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/principles-of-acoustic-design/",
+      "title": "اصول طراحی آکوستیکی",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/principles-of-office-design/",
+      "title": "اصول طراحی اماکن اداری",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d8%b7%d8%b1%d8%a7%d8%ad%db%8c-%d9%81%d8%b6%d8%a7%d8%b3%d8%a7%d8%b2%db%8c-%d8%a7%d8%af%d8%a7%d8%b1%db%8c-2/",
+      "title": "طراحی فضاسازی اداری",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/acoustic-wall-panels/",
+      "title": "پانل‌های دیواری آکوستیکی",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d8%a7%d8%b5%d9%88%d9%84-%d8%b7%d8%b1%d8%a7%d8%ad%db%8c-%d8%a7%d9%85%d8%a7%da%a9%d9%86-%d8%a7%d8%af%d8%a7%d8%b1%db%8c/",
+      "title": "اصول طراحی اماکن اداری",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d8%a2%db%8c%da%a9%d9%86-%d8%a8%d8%a7%d9%86%da%a9-%d9%be%d8%a7%d8%b3%d8%a7%d8%b1%da%af%d8%a7%d8%af/",
+      "title": "آیکن بانک پاسارگاد",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d8%a2%db%8c%da%a9%d9%86-%d8%b4%d8%b1%da%a9%d8%aa-%d9%87%d9%85%d9%be%d8%a7%db%8c%d9%87/",
+      "title": "آیکن شرکت همپایه",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d8%a2%db%8c%da%a9%d9%86-%d9%86%db%8c%d8%b1%d9%88%db%8c-%d8%a7%d9%86%d8%aa%d8%b8%d8%a7%d9%85%db%8c-%d8%ac%d9%85%d9%87%d9%88%d8%b1%db%8c-%d8%a7%d8%b3%d9%84%d8%a7%d9%85%db%8c-%d8%a7%db%8c%d8%b1%d8%a7/",
+      "title": "آیکن نیروی انتظامی جمهوری اسلامی ایران",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d8%a2%db%8c%da%a9%d9%86-%d8%a8%db%8c%d9%85%d9%87-%d8%af%db%8c/",
+      "title": "آیکن بیمه دی",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d9%85%d9%88%d8%b3%d8%b3%d9%87-%d8%ae%db%8c%d8%b1%db%8c%d9%87-%da%a9%d9%87%d8%b1%db%8c%d8%b2%da%a9/",
+      "title": "موسسه خیریه کهریزک",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d8%a2%db%8c%da%a9%d9%86-%d8%a8%d9%86%db%8c%d8%a7%d8%af-%d9%85%d8%b3%d8%aa%d8%b6%d8%b9%d9%81%d8%a7%d9%86-%d8%a7%d9%86%d9%82%d9%84%d8%a7%d8%a8-%d8%a7%d8%b3%d9%84%d8%a7%d9%85%db%8c/",
+      "title": "آیکن بنیاد مستضعفان انقلاب اسلامی",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d8%a2%db%8c%da%a9%d9%86-%d9%85%d8%b1%da%a9%d8%b2-%d9%85%d8%af%db%8c%d8%b1%db%8c%d8%aa-%d8%ad%d9%88%d8%b2%d9%87-%d9%87%d8%a7%db%8c-%d8%b9%d9%84%d9%85%db%8c%d9%87/",
+      "title": "آیکن مرکز مدیریت حوزه های علمیه",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/bass-trap-and-its-types/",
+      "title": "بیس ترپ و انواع آن",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d9%be%d9%88%d8%b4%d8%b4-%d9%87%d8%a7%db%8c-%d8%b6%d8%af-%d8%ad%d8%b1%db%8c%d9%82/",
+      "title": "پوشش های ضد حریق",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 4,
+          "kinds": "button",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 2,
+          "kinds": "image+text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "text",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d8%b9%d8%a7%db%8c%d9%82-%d8%b5%d9%88%d8%aa%db%8c/",
+      "title": "عایق صوتی و نقش آن در صنعت ساختمان",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 4,
+          "kinds": "button",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 2,
+          "kinds": "image+text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d8%a8%d9%86%db%8c%d8%a7%d8%af-%d8%b9%d9%84%d9%88%db%8c/",
+      "title": "بنیاد علوی​",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d8%b3%d8%a7%d8%ae%d8%aa%d9%85%d8%a7%d9%86-%d9%85%d8%b1%da%a9%d8%b2%db%8c-%d8%a8%db%8c%d9%85%d9%87-%d8%af%db%8c/",
+      "title": "ساختمان مرکزی بیمه دی",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d8%b3%db%8c%d9%86%d9%85%d8%a7%db%8c-%d8%af%d8%a7%d8%aa%db%8c%d9%86/",
+      "title": "سینمای داتین​",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "post",
+      "url": "/%d8%a2%da%a9%d9%88%d8%b3%d8%aa%db%8c%da%a9/",
+      "title": "آکوستیک",
+      "sections": [
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 4,
+          "kinds": "button",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 2,
+          "kinds": "image+text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 1,
+          "kinds": "text",
+          "height": "height_auto",
+          "bg": ""
+        },
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "category",
+      "url": "/category/logo%d9%85%d8%b4%d8%aa%d8%b1%db%8c%d8%a7%d9%86/",
+      "title": "Logoمشتریان",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "category",
+      "url": "/category/medismag/",
+      "title": "medismag",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "category",
+      "url": "/category/services/",
+      "title": "services",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "category",
+      "url": "/category/%d9%85%d8%b9%d9%85%d8%a7%d8%b1%db%8c/",
+      "title": "اجرای آکوستیک معماری",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "category",
+      "url": "/category/%d9%be%d8%b1%d9%88%da%98%d9%87-%d9%87%d8%a7/",
+      "title": "پروژه ها",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "category",
+      "url": "/category/%d8%af%d8%b3%d8%aa%d9%87%d8%a8%d9%86%d8%af%db%8c-%d9%86%d8%b4%d8%af%d9%87/",
+      "title": "دسته‌بندی نشده",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "category",
+      "url": "/category/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+      "title": "مقالات",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "tag",
+      "url": "/tag/services/",
+      "title": "Services",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "tag",
+      "url": "/tag/%d8%a2%da%a9%d9%88%d8%b3%d8%aa%db%8c%da%a9/",
+      "title": "آکوستیک",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "tag",
+      "url": "/tag/%d8%b9%d8%a7%db%8c%d9%82-%d8%b5%d9%88%d8%aa%db%8c/",
+      "title": "عایق صوتی",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "author",
+      "url": "/author/mahdi-moradlu/",
+      "title": "mahdi-moradlu",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    },
+    {
+      "kind": "author",
+      "url": "/author/postman/",
+      "title": "postman",
+      "sections": [
+        {
+          "cols": 0,
+          "kinds": "",
+          "height": "height_auto",
+          "bg": ""
+        }
+      ]
+    }
+  ],
+  "tags": [
+    [
+      "section",
+      178
+    ],
+    [
+      "div",
+      2119
+    ],
+    [
+      "p",
+      566
+    ],
+    [
+      "h2",
+      84
+    ],
+    [
+      "strong",
+      196
+    ],
+    [
+      "br",
+      84
+    ],
+    [
+      "ul",
+      87
+    ],
+    [
+      "li",
+      248
+    ],
+    [
+      "h3",
+      93
+    ],
+    [
+      "img",
+      163
+    ],
+    [
+      "small",
+      25
+    ],
+    [
+      "a",
+      181
+    ],
+    [
+      "form",
+      25
+    ],
+    [
+      "span",
+      394
+    ],
+    [
+      "textarea",
+      25
+    ],
+    [
+      "input",
+      125
+    ],
+    [
+      "label",
+      25
+    ],
+    [
+      "button",
+      52
+    ],
+    [
+      "h4",
+      148
+    ],
+    [
+      "h1",
+      35
+    ],
+    [
+      "h6",
+      14
+    ],
+    [
+      "svg",
+      1
+    ],
+    [
+      "path",
+      1
+    ],
+    [
+      "script",
+      3
+    ],
+    [
+      "i",
+      15
+    ],
+    [
+      "ol",
+      10
+    ],
+    [
+      "figure",
+      1
+    ],
+    [
+      "blockquote",
+      1
+    ],
+    [
+      "time",
+      3
+    ],
+    [
+      "style",
+      12
+    ],
+    [
+      "article",
+      44
+    ],
+    [
+      "nav",
+      2
+    ]
+  ],
+  "classes": [
+    [
+      "l-section",
+      178
+    ],
+    [
+      "height_auto",
+      178
+    ],
+    [
+      "l-section-h",
+      178
+    ],
+    [
+      "i-cf",
+      178
+    ],
+    [
+      "wp-block-paragraph",
+      37
+    ],
+    [
+      "wp-block-heading",
+      22
+    ],
+    [
+      "privacy-policy-tutorial",
+      8
+    ],
+    [
+      "wpb_row",
+      117
+    ],
+    [
+      "g-cols",
+      117
+    ],
+    [
+      "vc_row",
+      114
+    ],
+    [
+      "via_grid",
+      117
+    ],
+    [
+      "cols_1",
+      82
+    ],
+    [
+      "laptops-cols_inherit",
+      117
+    ],
+    [
+      "tablets-cols_inherit",
+      117
+    ],
+    [
+      "mobiles-cols_1",
+      117
+    ],
+    [
+      "valign_top",
+      116
+    ],
+    [
+      "type_default",
+      117
+    ],
+    [
+      "stacking_default",
+      117
+    ],
+    [
+      "wpb_column",
+      185
+    ],
+    [
+      "vc_column_container",
+      185
+    ],
+    [
+      "vc_column-inner",
+      185
+    ],
+    [
+      "w-separator",
+      339
+    ],
+    [
+      "size_medium",
+      53
+    ],
+    [
+      "wpb_text_column",
+      20
+    ],
+    [
+      "wpb_wrapper",
+      20
+    ],
+    [
+      "for_comments",
+      25
+    ],
+    [
+      "w-comments",
+      25
+    ],
+    [
+      "comment-respond",
+      25
+    ],
+    [
+      "comment-reply-title",
+      25
+    ],
+    [
+      "comment-form",
+      25
+    ],
+    [
+      "comment-notes",
+      25
+    ],
+    [
+      "required-field-message",
+      25
+    ],
+    [
+      "required",
+      125
+    ],
+    [
+      "w-form-row",
+      100
+    ],
+    [
+      "for_textarea",
+      25
+    ],
+    [
+      "w-form-row-field",
+      100
+    ],
+    [
+      "w-form-row-state",
+      100
+    ],
+    [
+      "for_text",
+      25
+    ],
+    [
+      "for_email",
+      25
+    ],
+    [
+      "for_agreement",
+      25
+    ],
+    [
+      "form-submit",
+      25
+    ],
+    [
+      "w-btn",
+      34
+    ],
+    [
+      "us-btn-style_1",
+      25
+    ],
+    [
+      "w-btn-label",
+      34
+    ],
+    [
+      "us-comments-json",
+      25
+    ],
+    [
+      "hidden",
+      39
+    ],
+    [
+      "cols_2-1",
+      7
+    ],
+    [
+      "w-image",
+      72
+    ],
+    [
+      "align_center",
+      103
+    ],
+    [
+      "w-image-h",
+      72
+    ],
+    [
+      "attachment-us_400_400",
+      2
+    ],
+    [
+      "size-us_400_400",
+      2
+    ],
+    [
+      "aligncenter",
+      10
+    ],
+    [
+      "size_small",
+      260
+    ],
+    [
+      "cols_4",
+      8
+    ],
+    [
+      "us_custom_9457764c",
+      1
+    ],
+    [
+      "us_animate_this",
+      8
+    ],
+    [
+      "attachment-medium",
+      4
+    ],
+    [
+      "size-medium",
+      4
+    ],
+    [
+      "w-text",
+      92
+    ],
+    [
+      "us_custom_41dc56da",
+      2
+    ],
+    [
+      "has_text_color",
+      94
+    ],
+    [
+      "w-text-h",
+      92
+    ],
+    [
+      "w-text-value",
+      92
+    ],
+    [
+      "us_custom_90a2a671",
+      1
+    ],
+    [
+      "us_custom_8e6b96c2",
+      1
+    ],
+    [
+      "us_custom_16657092",
+      6
+    ],
+    [
+      "us_custom_ea2204c6",
+      1
+    ],
+    [
+      "us_custom_311930e1",
+      1
+    ],
+    [
+      "cols_3",
+      12
+    ],
+    [
+      "valign_middle",
+      1
+    ],
+    [
+      "with_line",
+      14
+    ],
+    [
+      "width_default",
+      14
+    ],
+    [
+      "thick_1",
+      10
+    ],
+    [
+      "style_solid",
+      14
+    ],
+    [
+      "color_secondary",
+      10
+    ],
+    [
+      "w-separator-h",
+      14
+    ],
+    [
+      "us_custom_eb849559",
+      8
+    ],
+    [
+      "ult-banner-block",
+      6
+    ],
+    [
+      "ult-adjust-bottom-margin",
+      6
+    ],
+    [
+      "ult-bb-none",
+      6
+    ],
+    [
+      "banner-style11",
+      4
+    ],
+    [
+      "title-left",
+      6
+    ],
+    [
+      "bb-top-title",
+      6
+    ],
+    [
+      "ult-responsive",
+      12
+    ],
+    [
+      "mask",
+      6
+    ],
+    [
+      "opaque-background",
+      6
+    ],
+    [
+      "bb-description",
+      6
+    ],
+    [
+      "banner-style01",
+      2
+    ],
+    [
+      "width_full",
+      12
+    ],
+    [
+      "has_scroll_effects",
+      6
+    ],
+    [
+      "stretched",
+      35
+    ],
+    [
+      "us_custom_fca8cc99",
+      3
+    ],
+    [
+      "attachment-full",
+      57
+    ],
+    [
+      "size-full",
+      66
+    ],
+    [
+      "w-counter",
+      12
+    ],
+    [
+      "us_custom_124eca1f",
+      12
+    ],
+    [
+      "color_custom",
+      12
+    ],
+    [
+      "has_font_size",
+      12
+    ],
+    [
+      "w-counter-value",
+      12
+    ],
+    [
+      "w-counter-value-part",
+      36
+    ],
+    [
+      "type_text",
+      24
+    ],
+    [
+      "type_number",
+      12
+    ],
+    [
+      "w-counter-title",
+      12
+    ],
+    [
+      "w-ibanner",
+      27
+    ],
+    [
+      "us_custom_0114ac2b",
+      9
+    ],
+    [
+      "animation_phorcys",
+      8
+    ],
+    [
+      "ratio_2x1",
+      9
+    ],
+    [
+      "easing_ease",
+      27
+    ],
+    [
+      "w-ibanner-h",
+      27
+    ],
+    [
+      "w-ibanner-image",
+      27
+    ],
+    [
+      "w-ibanner-content",
+      27
+    ],
+    [
+      "w-ibanner-content-h",
+      27
+    ],
+    [
+      "w-ibanner-title",
+      27
+    ],
+    [
+      "w-ibanner-desc",
+      27
+    ],
+    [
+      "us_custom_d74c829e",
+      8
+    ],
+    [
+      "l-section-overlay",
+      5
+    ],
+    [
+      "cols_2",
+      17
+    ],
+    [
+      "size_huge",
+      22
+    ],
+    [
+      "us_custom_432d3f53",
+      2
+    ],
+    [
+      "us_custom_81dbcac1",
+      1
+    ],
+    [
+      "align_none",
+      1
+    ],
+    [
+      "attachment-large",
+      41
+    ],
+    [
+      "size-large",
+      41
+    ],
+    [
+      "us_custom_73c9dc32",
+      4
+    ],
+    [
+      "attachment-us_600_400",
+      1
+    ],
+    [
+      "size-us_600_400",
+      1
+    ],
+    [
+      "with_shape",
+      1
+    ],
+    [
+      "l-section-shape",
+      1
+    ],
+    [
+      "type_zigzag",
+      1
+    ],
+    [
+      "pos_bottom",
+      1
+    ],
+    [
+      "with_slider",
+      2
+    ],
+    [
+      "l-section-slider",
+      2
+    ],
+    [
+      "w-slider",
+      2
+    ],
+    [
+      "style_none",
+      2
+    ],
+    [
+      "fit_cover",
+      2
+    ],
+    [
+      "nav_none",
+      2
+    ],
+    [
+      "count_2",
+      1
+    ],
+    [
+      "w-slider-h",
+      2
+    ],
+    [
+      "royalSlider",
+      2
+    ],
+    [
+      "rsContent",
+      7
+    ],
+    [
+      "rsImg",
+      7
+    ],
+    [
+      "w-slider-json",
+      2
+    ],
+    [
+      "us_custom_bcea55a7",
+      6
+    ],
+    [
+      "us_custom_1bd968f0",
+      24
+    ],
+    [
+      "us_custom_04570ec2",
+      1
+    ],
+    [
+      "us_custom_525088b1",
+      1
+    ],
+    [
+      "full_height",
+      2
+    ],
+    [
+      "valign_center",
+      2
+    ],
+    [
+      "cols_5",
+      1
+    ],
+    [
+      "us_custom_b915761e",
+      2
+    ],
+    [
+      "animation_aidos",
+      6
+    ],
+    [
+      "ratio_3x4",
+      15
+    ],
+    [
+      "us_custom_85a01785",
+      8
+    ],
+    [
+      "animation_aphelia",
+      4
+    ],
+    [
+      "us_custom_0a51ba87",
+      1
+    ],
+    [
+      "us_custom_705072c5",
+      1
+    ],
+    [
+      "animation_melete",
+      9
+    ],
+    [
+      "us_custom_67df1f44",
+      4
+    ],
+    [
+      "thick_2",
+      4
+    ],
+    [
+      "color_border",
+      4
+    ],
+    [
+      "us_custom_b4310ed6",
+      3
+    ],
+    [
+      "ult-carousel-wrapper",
+      3
+    ],
+    [
+      "ult_horizontal",
+      3
+    ],
+    [
+      "ult-carousel-32817545356af441b4003ea",
+      1
+    ],
+    [
+      "ult-item-wrap",
+      21
+    ],
+    [
+      "has_scale",
+      2
+    ],
+    [
+      "us_custom_65c8bef6",
+      1
+    ],
+    [
+      "ratio_3x2",
+      3
+    ],
+    [
+      "us_custom_14d6b9a1",
+      3
+    ],
+    [
+      "icon_atleft",
+      12
+    ],
+    [
+      "fas",
+      9
+    ],
+    [
+      "fa-hand-pointer",
+      9
+    ],
+    [
+      "us_custom_6c231e8c",
+      1
+    ],
+    [
+      "us_custom_9d284501",
+      1
+    ],
+    [
+      "count_5",
+      1
+    ],
+    [
+      "ult-carousel-1648449606af441b7c60f3",
+      1
+    ],
+    [
+      "us_custom_87ef8311",
+      5
+    ],
+    [
+      "size_large",
+      4
+    ],
+    [
+      "us_custom_d1043832",
+      24
+    ],
+    [
+      "w-btn-wrapper",
+      9
+    ],
+    [
+      "us-btn-style_2",
+      6
+    ],
+    [
+      "us_custom_03893d90",
+      1
+    ],
+    [
+      "cols_1-4-1",
+      2
+    ],
+    [
+      "us_custom_2b626058",
+      1
+    ],
+    [
+      "us_custom_8bf0c232",
+      1
+    ],
+    [
+      "us_custom_213e151c",
+      11
+    ],
+    [
+      "ult-carousel-41527261036af441bdc28e1",
+      1
+    ],
+    [
+      "wp-image-1262",
+      1
+    ],
+    [
+      "wp-image-1263",
+      1
+    ],
+    [
+      "wpulike",
+      24
+    ],
+    [
+      "wpulike-default",
+      24
+    ],
+    [
+      "wp_ulike_general_class",
+      24
+    ],
+    [
+      "wp_ulike_is_not_liked",
+      24
+    ],
+    [
+      "wp_ulike_btn",
+      24
+    ],
+    [
+      "wp_ulike_put_image",
+      24
+    ],
+    [
+      "wp_post_btn_103",
+      1
+    ],
+    [
+      "count-box",
+      24
+    ],
+    [
+      "wp_ulike_counter_up",
+      24
+    ],
+    [
+      "wp-image-1288",
+      1
+    ],
+    [
+      "wp-image-1286",
+      1
+    ],
+    [
+      "wp-image-1287",
+      1
+    ],
+    [
+      "wp_post_btn_104",
+      1
+    ],
+    [
+      "wp-image-1324",
+      1
+    ],
+    [
+      "wp-image-1326",
+      1
+    ],
+    [
+      "wp-image-1327",
+      1
+    ],
+    [
+      "wp-image-1325",
+      1
+    ],
+    [
+      "wp_post_btn_107",
+      1
+    ],
+    [
+      "wp_post_btn_108",
+      1
+    ],
+    [
+      "wp_post_btn_1573",
+      1
+    ],
+    [
+      "wp_post_btn_1578",
+      1
+    ],
+    [
+      "wp_post_btn_1581",
+      1
+    ],
+    [
+      "wp_post_btn_2921",
+      1
+    ],
+    [
+      "wp_post_btn_2997",
+      1
+    ],
+    [
+      "has-text-align-center",
+      1
+    ],
+    [
+      "wp-block-post-title",
+      1
+    ],
+    [
+      "has-large-font-size",
+      1
+    ],
+    [
+      "wp-block-post-featured-image",
+      1
+    ],
+    [
+      "attachment-post-thumbnail",
+      1
+    ],
+    [
+      "size-post-thumbnail",
+      1
+    ],
+    [
+      "wp-post-image",
+      34
+    ],
+    [
+      "is-layout-flow",
+      2
+    ],
+    [
+      "wp-block-quote-is-layout-flow",
+      1
+    ],
+    [
+      "wp-block-list",
+      2
+    ],
+    [
+      "is-layout-constrained",
+      2
+    ],
+    [
+      "wp-block-group-is-layout-constrained",
+      2
+    ],
+    [
+      "is-layout-flex",
+      1
+    ],
+    [
+      "wp-container-core-columns-is-layout-8f761849",
+      1
+    ],
+    [
+      "wp-block-columns-is-layout-flex",
+      1
+    ],
+    [
+      "wp-block-column-is-layout-flow",
+      1
+    ],
+    [
+      "wp_post_btn_3104",
+      1
+    ],
+    [
+      "wp_post_btn_3221",
+      1
+    ],
+    [
+      "wp_post_btn_3231",
+      1
+    ],
+    [
+      "wp_post_btn_3237",
+      1
+    ],
+    [
+      "wp_post_btn_3239",
+      1
+    ],
+    [
+      "wp_post_btn_3242",
+      1
+    ],
+    [
+      "wp_post_btn_3245",
+      1
+    ],
+    [
+      "wp_post_btn_3248",
+      1
+    ],
+    [
+      "wp_post_btn_3591",
+      1
+    ],
+    [
+      "w-post-elm",
+      86
+    ],
+    [
+      "post_navigation",
+      3
+    ],
+    [
+      "us_custom_a574d586",
+      3
+    ],
+    [
+      "layout_simple",
+      3
+    ],
+    [
+      "inv_true",
+      3
+    ],
+    [
+      "post_navigation-item",
+      6
+    ],
+    [
+      "order_first",
+      3
+    ],
+    [
+      "to_next",
+      3
+    ],
+    [
+      "post_navigation-item-arrow",
+      5
+    ],
+    [
+      "post_navigation-item-meta",
+      5
+    ],
+    [
+      "post_navigation-item-title",
+      5
+    ],
+    [
+      "order_second",
+      3
+    ],
+    [
+      "to_prev",
+      3
+    ],
+    [
+      "post_date",
+      3
+    ],
+    [
+      "entry-date",
+      3
+    ],
+    [
+      "published",
+      3
+    ],
+    [
+      "fab",
+      3
+    ],
+    [
+      "fa-linux",
+      3
+    ],
+    [
+      "us_custom_b297f009",
+      3
+    ],
+    [
+      "for_add_to_favs",
+      3
+    ],
+    [
+      "us_add_to_favs",
+      3
+    ],
+    [
+      "default",
+      3
+    ],
+    [
+      "far",
+      3
+    ],
+    [
+      "fa-heart",
+      3
+    ],
+    [
+      "us-add-to-favs-tooltip",
+      3
+    ],
+    [
+      "not-logged-in",
+      3
+    ],
+    [
+      "post_title",
+      47
+    ],
+    [
+      "align_right",
+      3
+    ],
+    [
+      "entry-title",
+      47
+    ],
+    [
+      "color_link_inherit",
+      47
+    ],
+    [
+      "wp_post_btn_3740",
+      1
+    ],
+    [
+      "wp_post_btn_4137",
+      1
+    ],
+    [
+      "wp_post_btn_4351",
+      1
+    ],
+    [
+      "wp_post_btn_4353",
+      1
+    ],
+    [
+      "wp_post_btn_4355",
+      1
+    ],
+    [
+      "wp_post_btn_6390",
+      1
+    ],
+    [
+      "w-grid",
+      12
+    ],
+    [
+      "type_grid",
+      12
+    ],
+    [
+      "layout_blog_1",
+      12
+    ],
+    [
+      "pagination_regular",
+      12
+    ],
+    [
+      "w-grid-list",
+      12
+    ],
+    [
+      "w-grid-item",
+      44
+    ],
+    [
+      "size_1x1",
+      44
+    ],
+    [
+      "post-3248",
+      2
+    ],
+    [
+      "post",
+      44
+    ],
+    [
+      "type-post",
+      44
+    ],
+    [
+      "status-publish",
+      44
+    ],
+    [
+      "format-standard",
+      44
+    ],
+    [
+      "has-post-thumbnail",
+      33
+    ],
+    [
+      "hentry",
+      44
+    ],
+    [
+      "category-logo",
+      11
+    ],
+    [
+      "w-grid-item-h",
+      44
+    ],
+    [
+      "post_image",
+      33
+    ],
+    [
+      "usg_post_image_1",
+      33
+    ],
+    [
+      "usg_post_title_1",
+      44
+    ],
+    [
+      "post-3245",
+      2
+    ],
+    [
+      "post-3242",
+      2
+    ],
+    [
+      "post-3239",
+      2
+    ],
+    [
+      "post-3237",
+      1
+    ],
+    [
+      "post-3231",
+      1
+    ],
+    [
+      "post-3221",
+      1
+    ],
+    [
+      "w-grid-preloader",
+      12
+    ],
+    [
+      "g-preloader",
+      12
+    ],
+    [
+      "type_1",
+      12
+    ],
+    [
+      "w-grid-json",
+      12
+    ],
+    [
+      "post-104",
+      1
+    ],
+    [
+      "category-medismag",
+      1
+    ],
+    [
+      "w-grid-none",
+      2
+    ],
+    [
+      "type_message",
+      2
+    ],
+    [
+      "post-4355",
+      2
+    ],
+    [
+      "category-28",
+      6
+    ],
+    [
+      "post-4353",
+      2
+    ],
+    [
+      "post-4351",
+      2
+    ],
+    [
+      "post-3104",
+      1
+    ],
+    [
+      "category-1",
+      4
+    ],
+    [
+      "post-2921",
+      1
+    ],
+    [
+      "post-252",
+      2
+    ],
+    [
+      "tag-services",
+      2
+    ],
+    [
+      "post-6390",
+      4
+    ],
+    [
+      "category-19",
+      22
+    ],
+    [
+      "tag-27",
+      17
+    ],
+    [
+      "tag-26",
+      12
+    ],
+    [
+      "post-4137",
+      4
+    ],
+    [
+      "post-3740",
+      3
+    ],
+    [
+      "post-3591",
+      4
+    ],
+    [
+      "post-2997",
+      2
+    ],
+    [
+      "post-1581",
+      1
+    ],
+    [
+      "post-1578",
+      1
+    ],
+    [
+      "post-1573",
+      1
+    ],
+    [
+      "post-107",
+      1
+    ],
+    [
+      "post-108",
+      1
+    ],
+    [
+      "pagination",
+      2
+    ],
+    [
+      "navigation",
+      2
+    ],
+    [
+      "nav-links",
+      2
+    ],
+    [
+      "page-numbers",
+      7
+    ],
+    [
+      "current",
+      2
+    ],
+    [
+      "next",
+      2
+    ]
+  ]
+}

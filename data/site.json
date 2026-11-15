@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "menus": [
+      {
+        "id": "ush_menu_1",
+        "items": [
+          {
+            "title": "صفحه اصلی",
+            "href": "/",
+            "isCurrent": true
+          },
+          {
+            "title": "پروژه ها",
+            "href": "/projects/",
+            "isCurrent": false
+          },
+          {
+            "title": "محصولات",
+            "href": "/products/",
+            "isCurrent": false
+          },
+          {
+            "title": "خدمات ما",
+            "href": "/%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d8%b3%d8%a7%d9%84%d9%86-%d9%87%d9%85%d8%a7%db%8c%d8%b4/",
+            "isCurrent": false
+          }
+        ]
+      },
+      {
+        "id": "ush_menu_2",
+        "items": [
+          {
+            "title": "مدیس مگ",
+            "href": "/%d9%85%d8%ac%d9%84%d9%87-%d8%aa%d8%ae%d8%b5%d8%b5%db%8c-%d8%b3%d8%a7%d9%84%d9%86-%d9%87%d8%a7%db%8c-%d9%87%d9%85%d8%a7%db%8c%d8%b4/",
+            "isCurrent": false
+          },
+          {
+            "title": "کاتالوگ ها",
+            "href": "/catalog/",
+            "isCurrent": false
+          },
+          {
+            "title": "درباره ما",
+            "href": "/madis-design-about-us/",
+            "isCurrent": false
+          },
+          {
+            "title": "تماس با ما",
+            "href": "/contact-us-medis-design/",
+            "isCurrent": false
+          }
+        ]
+      }
+    ],
+    "logo": {
+      "src": "/wp-content/uploads/2025/05/00695959.png",
+      "width": 500,
+      "height": 500,
+      "href": "/"
+    }
+  }
+}

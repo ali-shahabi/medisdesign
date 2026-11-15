@@ -1,0 +1,28 @@
+{
+  "name": "medisdesign",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && node scripts/postbuild.mjs",
+    "start": "next start",
+    "lint": "next lint",
+    "scrape": "node scripts/scrape.mjs",
+    "assets": "node scripts/download-assets.mjs",
+    "export": "next build",
+    "data": "node scripts/build-data.mjs && node scripts/scrape-extras.mjs && node scripts/build-data.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/vazirmatn": "^5.3.0",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "cheerio": "^1.0.0",
+    "typescript": "^5"
+  }
+}
