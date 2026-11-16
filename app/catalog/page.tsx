@@ -76,10 +76,10 @@ export default function CatalogPage() {
             <div className="svc-grid">
               {catalogScope.map((group, i) => (
                 <article key={group.title} className="tile reveal" style={{ '--d': `${(i % 3) * 0.05}s` } as CSSProperties}>
-                  <span className="tile-top">
-                    <span className="n">{fa(i + 1)}</span>
-                  </span>
-                  <h3>{group.title}</h3>
+                  <h3 className="mt-0">
+                    <span className="n me-3">{fa(i + 1)}</span>
+                    {group.title}
+                  </h3>
                   <ul role="list">
                     {group.items.map((item) => (
                       <li key={item}>{item}</li>
