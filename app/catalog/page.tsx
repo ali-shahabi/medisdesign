@@ -71,7 +71,6 @@ export default function CatalogPage() {
               fa="محدوده"
               id="scope-h"
               title="محدودهٔ خدمات"
-              note="همان فهرستی که در صفحهٔ کاتالوگ سایت آمده است."
             />
 
             <div className="svc-grid">
