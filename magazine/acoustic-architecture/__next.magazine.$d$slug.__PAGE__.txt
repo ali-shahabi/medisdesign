@@ -1,0 +1,119 @@
+2:"$Sreact.fragment"
+3:"/medisdesign/_next/static/chunks/0xtcja3cs2uwl.js"
+4:I[46912,["$3"],"default"]
+5:I[1384,["$3"],"default"]
+11:"ViewportBoundary"
+12:I[96559,["$3"],"$11"]
+13:"MetadataBoundary"
+14:I[96559,["$3"],"$13"]
+15:"$Sreact.suspense"
+16:I[78936,["$3"],"IconMark"]
+7:X
+7:C
+8:X
+c:T3648,<h2>طراحی آکوستیک معماری</h2>
+<p>صدایی که ناخواسته باشد، نوفه یا سر و صدا نامیده می شود. خواسته و یا ناخواسته بودن صدا نسبی است مانند صدای ساز زدن کسی که برای او خواسته و برای دیگران ناخواسته است. از نظر علمی سر و صدا مخلوطی است از صوتهای مختلف با طول موج ها و شدت های متفاوت که ترکیب مشخص و معینی نداشته و برای گوش ناخوشایند می باشد. در دنیای صنعت و فناوری امروز می بایست از به وجود آمدن و انتقال صداهای ناخواسته که برای انسان عوارض روانی و فیزیولوژیک ناخوشایندی را به همراه دارند جلوگیری کرد.</p><p>
+اگرچه انسان به سر و صدا عادت کرده و با محیط پر سر و صدا تطابق پیدا کرده است، ولی در حقیقت سر و صدا یک عامل خستگی بوده و ظرفیت کار انسان را چه در مشاغل فکری و محتاج به دقت بیشتر و چه در شغل های بدنی و ساده کاهش می دهد. به علاوه روی وضع روانی و روحیه شخصی اثر کرده باعث اشکال در تطابق یافتن انسان ها با محیط کار و حتی با محیط خانواده و اجتماع نیز می گردد که نتیجه آن باز کاهش بازده کار می باشد. هرچه صدا زیرتر باشد، زیان آن از صدای بم با همان شدت بیشتر است.</p><p>
+همچنین نوفه ها یا صداهای مزاحم از نظر محیط انتشار به دو گروه عمده نوفه هوابرد و نوفه پیکره ای تقسیم می گردند. امواج صوتی هوابرد امواجی هستند که محیط انتشار آنان هوا است اما اگر امواج صوتی حاصل از یک جسم مرتعش علاوه بر هوای محیط، اجسام سخت و جداره های ساختمانی را نیز به نوسان درآورد، امواج صوتی پیکره ای نامیده می شود. راه های جلوگیری از نوفه های هوابرد و پیکره ای متفاوت است، از این رو شناختن و تفکیک سرچشمه های صوتی و بلندی صداها به منظور کاهش صداهای آزار دهنده ضروری است.</p>
+<ul>
+<li>با استفاده از نرم افزار Odeon</li>
+</ul>
+<p>امروزه نرم افزارهای کامپیوتری در زمینه های مختلف علمی و هنری کمک زیادی به مهندسان، هنرمندان، دانشمندان و سایر افراد کرده است. شاید بتوان گفت که فیزیک یکی از علومی است که در این حوزه از لحاظ تعداد، کمترین نرم افزارها را به خود اختصاص داده است، دلیل آن را می توان این گونه بیان کرد که، برخلاف سایر رشته ها، فیزیک به چگونگی پیش آمدهای علمی توجه می کند و در واقع به دنبال یافتن دلایل و چرایی هر پدیده یا اتفاق می باشد.</p><p>
+آکوستیک که یکی از شاخه های علم فیزیک می باشد، تعداد کمی نرم افزارهای مربوطه را که به طراحان و تحلیل گران آکوستیک کمک کند دارد. در تمامی کشورها فقط چهار شرکت وجود دارد که خدمات نرم افزار آکوستیکی به مشتریان خود ارائه می کند.</p><p>
+به جرات می توان گفت که یکی از قدرتمندترین نرم افزارهای حوزه آکوستیک نرم افزار می باشد. این نرم افزار محصول شرکت از کشور دانمارک می باشد. بزرگترین دانشمندان حوزه آکوستیک در سراسر دنیا به عنوان مشاور در طراحی این نرم افزار نقش داشته اند.</p>
+<ul>
+<li>زمان واکنش (Reverberation Time)</li>
+</ul>
+<p>یکی از مهمترین و موثرترین پارامترهای آکوستیکی زمان واخنش یا مدت زمان زمان ماندگاری صدا میباشد. به طور خلاصه مدت زمانی که پس از قطع منبع صدا تراز فشار صدا به مقدار 60 دسیبل افت کند. زمان واخنش به حجم، متریال، هندسه، منبع صدا بستگی دارد و یکی از پارامترهای تعیین کننده در شرایط آکوستیکی می باشد. نرم افزار این قابلیت را دارد که به طور دقیق زمان واخنش فضای طراحی شده را قبل از اجرا محاسبه کند.</p>
+<h2>ویژگی های نرم افزار</h2>
+<ul>
+<li>
+<h3>ورودی و خروجی نرم افزار</h3>
+</li>
+</ul>
+<p>برای تمامی نرم افزارهای صوتی وارد کردن هندسه مکان و فضا از اهمت زیادی برخوردار است. در این نرم افزار امکان وارد کردن هندسه از نرم افزارهایی مانند وجود دارد. این قابلیت در فرمت های مختلف فعال است. همچنین در این نرم افزار کاربر این امکان را دارد که بعد از اعمال تغییراتی چون وارد کردن بلندگو، تعیین متریال و … خروجی سه بعدی برای نرم افزارهای مرتبط را بگیرد.</p>
+<ul>
+<li>
+<h3>بیش از یک میلیون متریال</h3>
+</li>
+</ul>
+<p>وجود بیش از یک میلیون متریال در این نرم افزار یکی از علل قدرتمند بودن این نرم افزار میباشد. در هر متریال تمام مشخصات آکوستیکی متریال مانند ضریب جذب، ضریب پراکندگی، ضریب اسکدر و … وجود داشته و با اعمال کردن متریال بر هر سطح مورد نظر، کاربر امکان مشاهده تاثیر متریال بر آکوستیک فضا را خواهد داشت. یکی دیگر از ویژگی های این نرم افزار امکان اضافه کردن متریال جدید با مشخصات آکوستیکی مورد نظر کاربرد می باشد.</p>
+<ul>
+<li>
+<h3>نمایش توزیع صدا</h3>
+</li>
+</ul>
+<p>با استفاده از این نرم افزار می توان میزان پراکندگی پارامترهای مختلف صدا را در قسمت های مختلف یک فضا به دست آورد تا به توزیع متوازن صدا برسیم.</p>
+<ul>
+<li>
+<h3>سایر محاسبات آکوستیکی</h3>
+</li>
+</ul>
+<p>پارامترهای آکوستیکی که توسط نرم افزار Odeon قابل محاسبه می باشد شامل:</p>
+<ul>
+<li>Reverberation Time (RT)</li>
+<li>Speech Transmision Index (STI)</li>
+<li>Articulation Loss Of Consonants (Alcons)</li>
+<li>Sound Pressure Width(ASW)</li>
+<li>Transmission Mixed Width Room Acoustic</li>
+<li>Perceived Reverberance</li>
+<li>Listeners Envelopement</li>
+<li>Listen To Auralization</li>
+<li>Reflector Coverage</li>
+<li>Frequency Response</li>
+</ul>
+
+<p>طراحی آکوستیک مسجد امام حسن مجتبی (ع)</p>
+
+<p>مسجد امام حسن محتبی (ع)</p>
+<p>یکی از بزرگترین چالش های نرم افزارهای آکوستیکی حساس بودن نرم افزار به جزئیات معماری می باشد. به همین دلیل طراحی دقیق از فضای مورد نظر یکی از مهمترین مراحل در طراحی آکوستیکی هر فضایی محسوب می شود. هندسه سازه در تمامی پارامترهای آکوستیکی نقش مهمی را ایفا می کند، از این رو کوچکترین تغییراتی در ترسیم هندسه در تعیین پارامترهای آکوستیکی تاثیرگذار خواهد بود. برای مثال اگر یک برجستگی کوچک در سقف وجود داشته باشد و در زمان طراحی به دلیل پیچیدگی از آن صرف نظر شود، می تواند باعث خروجی نادرست برنامه در هنگام محاسبات فیزیکی باشد.</p><p>
+ّ</p><p>
+تمامی دیوارها، سقف و قسمت های مختلف یک فضا اگر با شیب و یا با زاویه اجرا شده باشد و یا سازه های گنبدی شکل باید به صورت دقیق در هنگام ترسیم اجرا شود تا در هنگام گرفتن خروجی اطلاعات، نرم افزار به درستی محاسبات را انجام بدهد. حجم کلی فضا نیز دلیل دیگر می باشد. تعدادی از پارامترهای آکوستیکی مانند زمان واخنش یا مدت زمان ماندگاری صدا در یک فضا رابطه مستقیم با حجم کلی دارد، به طور مثال رفتار آکوستیکی یک سالن با حجم 5000 متر مکعب با سالنی با حجم 6000 متر مکعب با همان هندسه و متریال متفاوت است. به همین امر باید از درستی ترسیم فضا با ابعاد دقیق اطمینان حاصل کرد.</p>
+<p>گروه مدیس با داشتن متخصصین در زمینه نقشه کشی، معماری و آکوستیک توانایی طراحی و تحلیل انواع فضاهای معماری با سبک های مختلف و در حجم های مختلف را داشته و این اطمینان را به مشتریان خود میدهد که تمامی تحلیل های آکوستیکی این شرکت مورد تایید شرکت های بزرگ معماری آکوستیک معتبر در کشورهای پیشرفته می باشد. پروژه های انجام شده از سوی گروه مدیس و رضایت کارفرمایان بخش دولتی و خصوصی نیز توانایی های این شرکت را اثبات کرده است.</p>
+<p><strong>طراحی آکوستیک </strong></p><p>
+<strong>با استفاده از نرم افزار</strong></p><p>
+<strong>CATT-Acoustic</strong></p>
+<p>معرفی نرم افزار</p>
+<p>یکی دیگر از نرم افزارهای پرکاربرد و محبوب در زمینه آکوستیک که طراحان و کارشناسان آکوستیک از آن استفاده می کنند نرم افزار (CATT-Acoustic) ساخته شرکت (CATT) می باشد. این نرم افزار که ساخته یک شرکت سوئدی می باشد در میان تمامی نرم افزارهای این حوزه قدیمی تر بوده و جزء اولین نرم افزارهایی بوده که به کمک متخصصین آکوستیک آمده است. در چندین سال گذشته به روز رسانی های فوق العاده ای را نیز انجام داده است که از سایر رقبای خود در این حوزه عقب نماند.</p><p>
+این نرم افزار نیز مانند سایر رقبای خود در ترسیم هندسه آکوستیکی بسیار حساس و دقیق بوده و کوچکترین مشکلی در ترسیم به خطا در محاسبات فیزیکی و آکوستیکی خواهد رسید. این نکته نیز قابل ذکر است که این نرم افزار نیز جزء نرم افزارهای بسیار پرهزینه محسوب شده و خرید لایسنس آن قیمت بسیار بالایی دارد.</p>
+
+<p>الگوریتم محاسباتی</p>
+<p>این نرم افزار در محاسبات خود از سیستم(Universal Cone Tracer) استفاده می کند. این اکوگرام و الگوریتم توانایی محاسبه مستقیم پاراماتر (Impulse Response) که برای واکنش به تک فراکنس استفاده می شود را دارد. به همین دلیل یکی از بهترین الگوریتم ها برای محاسبه اصوات در فضای باز به شمار می رود (مانند جشنواره های موسیقی در فضای باز)، این الگوریتم برای محاسبه (Flutter Echoes) که در سخنرانی یکی از پارامترهای مهم می باشد عملکرد بسیار بالایی دارد.</p><p>
+در این نرم افزار به دلیل استفاده از سیستم (Geometrical Acoustic(GA)) که از تقسیم هر پرتو و فرکانس به هر صفحه استفاده می شود باعث افزایش سرعت کامپیوتر در محاسبات خواهد شد.</p><p>
+این سیستم نیز یکی از قدرتمندترین الگوریتم ها برای محاسبات اصوات با فرکانس بسیار پایین می باشد.</p>
+
+<p>سایر ویژگی های نرم افزار</p>
+<p>توانایی ورود بلندگو، میکروفون و هدفون های استاندارد شرکت های معتبر با فرمت های مختلف به صورت سه بعدی با مشخصات فنی صوتی. ت</p>
+<p>محاسبه فایل های (SD2Files) برای سیستم های (Array).</p>
+<p>محاسبه پارامترهای آکوستیکی شامل:</p>
+<ul>
+<li>Perceived Clarity Of Sound</li>
+<li>Perceived Reverberance</li>
+<li>Listeners Envelopement</li>
+<li>Listen To Auralization</li>
+<li>Reflector Coverage</li>
+<li>Frequency Response</li>
+<li>Reverberation Time (RT)</li>
+<li>speech Transmision Index (STI)</li>
+<li>Articulation Loss Of Consonants (ALcons)</li>
+<li>Sound Pressure Level (SPL)</li>
+<li>Apparent Source Width (ASW)</li>
+<li>Transmission Mixed With Room Acoustic</li>
+</ul>b:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://medisdesign.com/magazine/acoustic-architecture/#webpage\",\"url\":\"https://medisdesign.com/magazine/acoustic-architecture/\",\"name\":\"طراحی آکوستیک معماری | مدیس مگ\",\"description\":\"صدایی که ناخواسته باشد، نوفه یا سر و صدا نامیده می‌شود؛ طراحی آکوستیک، پاسخ به همان نوفه است.\",\"inLanguage\":\"fa-IR\",\"isPartOf\":{\"@id\":\"https://medisdesign.com/#website\"},\"about\":{\"@id\":\"https://medisdesign.com/#organization\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"صفحه اصلی\",\"item\":\"https://medisdesign.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"مدیس مگ\",\"item\":\"https://medisdesign.com/magazine/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"طراحی آکوستیک معماری\"}]}]}"}}],["$","main",null,{"id":"main","children":[["$","section",null,{"className":"page-hero","id":"top","aria-labelledby":"page-h","children":[["$","div",null,{"className":"field page-field","data-drift":"0.04","data-turn":"0.004","aria-hidden":"true","children":["$","svg",null,{"viewBox":"-500 -500 1000 1000","children":["$","use",null,{"href":"#contour","x":"-500","y":"-500","width":"1000","height":"1000"}]}]}],["$","div",null,{"className":"wrap page-hero-in","children":[["$","div",null,{"className":"ph-copy full col-span-12","children":[["$","p",null,{"className":"eyebrow mt-[22px]","children":[["$","span",null,{"className":"latin","lang":"en","children":"journal"}],["$","span",null,{"className":"rule","aria-hidden":"true"}],["$","span",null,{"className":"fa","children":"مقاله"}]]}],["$","h1",null,{"id":"page-h","children":"طراحی آکوستیک معماری"}],["$","p",null,{"className":"lede","children":"صدایی که ناخواسته باشد، نوفه یا سر و صدا نامیده می‌شود؛ طراحی آکوستیک، پاسخ به همان نوفه است."}],"$undefined",null]}],null]}]]}],["$","section",null,{"className":"sec tight","id":"article","aria-labelledby":"article-h","children":["$","div",null,{"className":"wrap","children":["$","div",null,{"className":"art-in","children":[["$","div",null,{"className":"art-body","children":[["$","figure",null,{"className":"art-hero mt-0","children":["$","img",null,{"src":"/medisdesign/assets/img/service-01.jpg","width":1800,"height":1100,"loading":"lazy","decoding":"async","alt":"فضای داخلی با پوشش‌های آکوستیک روی دیوار"}]}],["$","div",null,{"className":"prose mt-[40px]","dangerouslySetInnerHTML":{"__html":"$c"}}],"$Ld"]}],"$Le"]}]}]}]]}]],null,"$Lf"]}],"p":"$@10","v":null,"s":"$8"}}]]
+9:[["children",{"s":{"n":"slug","t":"d","k":"acoustic-architecture","s":[]},"h":96,"d":{"r":["$","$2","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}],"p":"$@a","v":"$7","s":"$8"},"c":"$Qb"}]]
+1:[["children",{"s":"magazine","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}],"p":"$@6","v":"$7","s":"$8"},"c":"$Q9"}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L12",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#F8F6F0"}],["$","meta","3",{"name":"color-scheme","content":"light"}]]}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$15",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"طراحی آکوستیک معماری | مدیس مگ"}],["$","meta","1",{"name":"description","content":"صدایی که ناخواسته باشد، نوفه یا سر و صدا نامیده می‌شود؛ طراحی آکوستیک، پاسخ به همان نوفه است."}],["$","meta","2",{"name":"application-name","content":"گروه مهندسی مدیس"}],["$","meta","3",{"name":"author","content":"گروه مهندسی مدیس"}],["$","link","4",{"rel":"manifest","href":"/medisdesign/manifest.webmanifest"}],["$","meta","5",{"name":"keywords","content":"آکوستیک,طراحی آکوستیک,الکتروآکوستیک,سالن همایش,سینما,مدیس"}],["$","meta","6",{"name":"robots","content":"index, follow"}],["$","link","7",{"rel":"canonical","href":"https://medisdesign.com/magazine/acoustic-architecture/"}],["$","meta","8",{"name":"format-detection","content":"telephone=no"}],["$","meta","9",{"property":"og:title","content":"طراحی آکوستیک معماری | مدیس مگ"}],["$","meta","10",{"property":"og:description","content":"صدایی که ناخواسته باشد، نوفه یا سر و صدا نامیده می‌شود؛ طراحی آکوستیک، پاسخ به همان نوفه است."}],["$","meta","11",{"property":"og:url","content":"https://medisdesign.com/magazine/acoustic-architecture/"}],["$","meta","12",{"property":"og:site_name","content":"گروه مهندسی مدیس"}],["$","meta","13",{"property":"og:locale","content":"fa_IR"}],["$","meta","14",{"property":"og:image","content":"https://medisdesign.com/assets/img/service-01.jpg"}],["$","meta","15",{"property":"og:image:width","content":"1800"}],["$","meta","16",{"property":"og:image:height","content":"1100"}],["$","meta","17",{"property":"og:image:alt","content":"فضای داخلی با پوشش‌های آکوستیک روی دیوار"}],["$","meta","18",{"property":"og:type","content":"website"}],["$","meta","19",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","20",{"name":"twitter:title","content":"طراحی آکوستیک معماری | مدیس مگ"}],["$","meta","21",{"name":"twitter:description","content":"صدایی که ناخواسته باشد، نوفه یا سر و صدا نامیده می‌شود؛ طراحی آکوستیک، پاسخ به همان نوفه است."}],["$","meta","22",{"name":"twitter:image","content":"https://medisdesign.com/assets/img/service-01.jpg"}],["$","link","23",{"rel":"shortcut icon","href":"/medisdesign/assets/brand/favicon-32.png"}],["$","link","24",{"rel":"icon","href":"/medisdesign/assets/brand/favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","25",{"rel":"apple-touch-icon","href":"/medisdesign/assets/brand/favicon-180.png","sizes":"180x180"}],["$","$L16","26",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@17","v":null,"s":"$8"}},"a":"$@18","u":"$@19","b":"MnQlYoVsKMj5UK3hOweIN"}
+1a:I[49848,["$3"],""]
+1b:I[96559,["$3"],"OutletBoundary"]
+d:["$","div",null,{"className":"ph-actions mt-[44px]","children":[["$","$L1a",null,{"className":"btn","href":"/contact/","children":"مشاورهٔ تخصصی"}],["$","$L1a",null,{"className":"link","href":"/magazine/","children":["بازگشت به مدیس مگ",["$","svg",null,{"viewBox":"0 0 16 16","aria-hidden":"true","focusable":"false","fill":"none","stroke":"currentColor","strokeWidth":1.3,"strokeLinecap":"round","strokeLinejoin":"round","children":[["$","path",null,{"d":"M13 8H4"}],["$","path",null,{"d":"M8 4 4 8l4 4"}]]}]]}]]}]
+e:["$","aside",null,{"className":"art-side","children":[["$","dl",null,{"className":"art-meta","children":[["$","div",null,{"children":[["$","dt",null,{"children":"تاریخ"}],["$","dd",null,{"children":["$","time",null,{"dateTime":"2024-10-07","children":"۱۶ مهر ۱۴۰۳"}]}]]}],["$","div",null,{"children":[["$","dt",null,{"children":"دسته"}],["$","dd",null,{"children":"آکوستیک"}]]}],["$","div",null,{"children":[["$","dt",null,{"children":"منبع"}],["$","dd",null,{"children":"مدیس مگ"}]]}]]}],["$","div",null,{"className":"quote","children":[["$","p",null,{"children":"از اولین اندازه‌گیری تا آخرین پنل."}],["$","span",null,{"className":"latin","lang":"en","children":"medis design group"}]]}],["$","$L1a",null,{"className":"link mt-[24px]","href":"/magazine/acoustics/","children":[["مقالهٔ بعدی: ","آکوستیک"],["$","svg",null,{"viewBox":"0 0 16 16","aria-hidden":"true","focusable":"false","fill":"none","stroke":"currentColor","strokeWidth":1.3,"strokeLinecap":"round","strokeLinejoin":"round","children":[["$","path",null,{"d":"M13 8H4"}],["$","path",null,{"d":"M8 4 4 8l4 4"}]]}]]}]]}]
+f:["$","$L1b",null,{"children":["$","$15",null,{"name":"Next.MetadataOutlet","children":"$@1c"}]}]
+19:true
+8:300
+1c:null
+8:C
+18:0
+a:"$undefined"
+6:"$undefined"
+17:"$undefined"
+10:"$undefined"
