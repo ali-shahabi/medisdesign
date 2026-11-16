@@ -6,7 +6,6 @@ export default function NotFound() {
   return (
     <main id="main">
       <PageHero
-        crumb={[['صفحه اصلی', '/'], ['صفحه پیدا نشد']]}
         en="lost"
         fa="خطا"
         h1="این صفحه اینجا نیست"

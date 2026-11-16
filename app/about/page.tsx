@@ -31,7 +31,6 @@ export default function AboutPage() {
 
       <main id="main">
         <PageHero
-          crumb={[['صفحه اصلی', '/'], ['درباره ما']]}
           en="about"
           fa="درباره ما"
           h1="دو دهه تمایز"

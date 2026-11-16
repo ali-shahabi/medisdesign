@@ -54,7 +54,6 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
       <main id="main">
         <PageHero
-          crumb={[['صفحه اصلی', '/'], ['مدیس مگ', '/magazine/'], [article.title]]}
           en="journal"
           fa="مقاله"
           h1={article.title}

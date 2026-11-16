@@ -27,7 +27,6 @@ export default function ContactPage() {
 
       <main id="main">
         <PageHero
-          crumb={[['صفحه اصلی', '/'], ['تماس با ما']]}
           en="dialogue"
           fa="تماس"
           h1="تماس با ما"

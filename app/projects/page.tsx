@@ -29,7 +29,6 @@ export default function ProjectsPage() {
 
       <main id="main">
         <PageHero
-          crumb={[['صفحه اصلی', '/'], ['پروژه‌ها']]}
           en="selected works"
           fa="پروژه‌ها"
           h1="پروژه‌های ما"

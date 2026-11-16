@@ -31,7 +31,6 @@ export default function ServicesPage() {
 
       <main id="main">
         <PageHero
-          crumb={[['صفحه اصلی', '/'], ['خدمات ما']]}
           en="six practices"
           fa="خدمات"
           h1="خدمات ما"

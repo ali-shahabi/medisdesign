@@ -32,7 +32,6 @@ export default function ProductsPage() {
 
       <main id="main">
         <PageHero
-          crumb={[['صفحه اصلی', '/'], ['محصولات']]}
           en="materials"
           fa="محصولات"
           h1="محصولات آکوستیک ـ دکوراتیو"

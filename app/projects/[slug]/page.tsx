@@ -49,11 +49,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
       <main id="main">
         <PageHero
-          crumb={[
-            ['صفحه اصلی', '/'],
-            ['پروژه‌ها', '/projects/'],
-            [project.name],
-          ]}
           en="project"
           fa="پروژه"
           h1={project.name}

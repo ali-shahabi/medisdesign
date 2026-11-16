@@ -45,11 +45,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
       <main id="main">
         <PageHero
-          crumb={[
-            ['صفحه اصلی', '/'],
-            ['خدمات ما', '/services/'],
-            [service.title],
-          ]}
           en="practice"
           fa="خدمت"
           h1={service.title}

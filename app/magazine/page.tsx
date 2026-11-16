@@ -41,7 +41,6 @@ export default function MagazinePage() {
 
       <main id="main">
         <PageHero
-          crumb={[['صفحه اصلی', '/'], ['مدیس مگ']]}
           en="journal"
           fa="مجله"
           h1="مدیس مگ"

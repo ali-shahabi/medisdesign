@@ -28,7 +28,6 @@ export default function CatalogPage() {
 
       <main id="main">
         <PageHero
-          crumb={[['صفحه اصلی', '/'], ['کاتالوگ‌ها']]}
           en="catalogues"
           fa="کاتالوگ"
           h1="کاتالوگ‌ها"

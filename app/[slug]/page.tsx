@@ -38,7 +38,6 @@ export default async function DocumentPage({ params }: { params: Promise<{ slug:
 
       <main id="main">
         <PageHero
-          crumb={[['صفحه اصلی', '/'], [doc.title]]}
           en={doc.en}
           fa="سند"
           h1={doc.title}
