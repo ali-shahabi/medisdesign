@@ -1102,7 +1102,6 @@
     isolation: isolate;
     overflow: hidden;
     background: var(--color-chalk);
-    border-bottom: 1px solid var(--line);
   }
   .page-field {
     width: 1500px;
