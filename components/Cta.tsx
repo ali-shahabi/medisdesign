@@ -72,10 +72,8 @@ export function Cta({
             <div className="c-side col-start-9 col-span-4">
               {side ?? (
                 <>
-                  <span className="latin" lang="en">
-                    central office
-                  </span>
                   <div className="c-address mt-0 border-t-0 pt-0">
+                    <span className="lbl">دفتر مرکزی</span>
                     <p>{contact.office}</p>
                   </div>
                   <div className="c-address">
