@@ -95,25 +95,18 @@ export default function MagazinePage() {
             />
 
             <div className="rows">
-              {journal.map((row, i) => {
-                const slug = byTitle.get(row.title);
-                const inner = (
-                  <>
-                    <span className="idx">{fa(i + 1)}</span>
-                    <h3>{row.title}</h3>
-                    <time dateTime={row.date}>{faDate(row.date)}</time>
-                  </>
-                );
-                return slug ? (
-                  <Link key={row.title} className="row" href={`/magazine/${slug}/`}>
-                    {inner}
-                  </Link>
-                ) : (
-                  <div key={row.title} className="row">
-                    {inner}
-                  </div>
-                );
-              })}
+              {journal
+                .filter((row) => byTitle.has(row.title))
+                .map((row, i) => {
+                  const slug = byTitle.get(row.title)!;
+                  return (
+                    <Link key={row.title} className="row" href={`/magazine/${slug}/`}>
+                      <span className="idx">{fa(i + 1)}</span>
+                      <h3>{row.title}</h3>
+                      <time dateTime={row.date}>{faDate(row.date)}</time>
+                    </Link>
+                  );
+                })}
             </div>
           </div>
         </section>
