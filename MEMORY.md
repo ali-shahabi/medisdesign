@@ -94,7 +94,8 @@ Full report: `docs/seo-status/report.md` (+ `live.md`, `clone.md`, `performance.
   12 archives lose their canonical (`app/[...slug]/page.tsx:47-50`), 36/66 pages have no description,
   sitemap includes the noindex page + 2 legacy `/medismag/` duplicates + stubs + pagination, canonical
   origin hardcoded in 3 files, and `images.unoptimized: true` makes images 1.59× heavier than live's srcset.
-  Not deployed (no commits/remotes/host config).
+  (Deploy status changed later — see «GitHub Pages deploy» below: the repo now has a remote and a live
+  gh-pages branch.)
 
 ## Production build (2026-11-15) — `redesign/dsh-redesign.html`
 
@@ -271,4 +272,22 @@ The theme uses 1380 / 1024 / 600 for CSS and 900 for the nav collapse:
   so the hue step is only visible where a page h1 meets a section h2 — near-identical at #002736 vs #0f131f.
   Project-page `.plate-cap` captions outside the hero deliberately stay ink (out of scope); swap them by
   dropping the `.hero-plate` prefix if the whole caption family should follow.
+
+## GitHub Pages deploy (verified 2026-11-18)
+
+- **Live:** https://ali-shahabi.github.io/medisdesign/ — project pages under the `/medisdesign` base path;
+  source on `main`, built site on `gh-pages` (orphan branch, one commit per deploy, no Actions workflow).
+- Recipe: `NEXT_PUBLIC_BASE_PATH=/medisdesign pnpm build` → **`touch out/.nojekyll`** → publish `out/` to
+  `gh-pages`. The `.nojekyll` step is mandatory and easy to lose: `next build` wipes `out/`, and without the
+  marker Jekyll drops every `_next/` asset (site renders unstyled). `out/` is gitignored, so the export only
+  ever exists on `gh-pages`.
+- Publishing that worked: `git worktree add --detach /tmp/… origin/gh-pages` → `rsync -a --delete --exclude
+  .git out/ /tmp/…/` → commit → `git push origin HEAD:gh-pages` → `git worktree remove --force`. Verified
+  commit/file parity first (737 files = 737 tracked, `index.html` byte-identical).
+- GitHub Pages picked the commit up in well under a minute (first poll already served the new HTML).
+  Post-deploy checks that pass on the live URL: `/about/`, `/services/`, `/services/industrial/`,
+  `/projects/datin-cinema/`, `/magazine/` all 200; `/not-a-page/` 404; CSS/font chunks 200 under
+  `/medisdesign/_next/…`.
+- Building while `next dev` (:3000) runs is safe here — the dev server still answered 200 after the
+  production build (`next dev` keeps its caches in `.next/dev`).
 
