@@ -7,7 +7,7 @@ import { Cta } from '@/components/Cta';
 import { PageLd } from '@/components/PageLd';
 import { Picture } from '@/components/Picture';
 import { Partners, Process, StatsBand } from '@/components/Sections';
-import { Eyebrow, Field, Mark, SecHead } from '@/components/Section';
+import { Eyebrow, Field, SecHead } from '@/components/Section';
 import { TextLink } from '@/components/TextLink';
 import { fa, faDate, projectImage, serviceImage, isoDay } from '@/lib/site';
 import { pageMeta } from '@/lib/seo';
@@ -65,12 +65,6 @@ export default function HomePage() {
                   <i aria-hidden="true">·</i>
                   <span>الکتروآکوستیک</span>
                 </p>
-                <div className="hero-actions flex items-center gap-[18px] flex-wrap">
-                  <a className="btn small" href="#contact">
-                    شروع گفت‌وگو
-                  </a>
-                  <TextLink href="#projects">دیدن پروژه‌ها</TextLink>
-                </div>
               </div>
             </div>
 
@@ -102,7 +96,7 @@ export default function HomePage() {
 
           <div className="wrap hero-foot">
             <p>دو دهه تمایز</p>
-            <a className="scroll-cue" href="#about">
+            <a className="scroll-cue" href="#services">
               <span className="latin" lang="en">
                 scroll
               </span>
@@ -113,64 +107,8 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ================= 01 · STATEMENT ================= */}
-        <section className="sec petrol" id="about" aria-labelledby="about-h">
-          <div className="wrap">
-            <div className="sec-head reveal">
-              <Mark n="۰۱" />
-              <div className="sec-title">
-                <Eyebrow en="field note" fa="درباره ما" />
-                <h2 id="about-h">دو دهه تمایز</h2>
-              </div>
-            </div>
-
-            <div className="stmt-in grid grid-cols-12 gap-6 max-[900px]:block">
-              <div className="stmt-main col-span-7 max-[1180px]:col-span-8">
-                <p className="lead reveal">
-                  گروه مهندسی مدیس در سه میدان کار می‌کند: معماری، آکوستیک و الکتروآکوستیک. کار از تحلیل رفتار صدا در فضا
-                  آغاز می‌شود و با طراحی، اجرا و تحویل، به فضایی می‌رسد که می‌توان در آن شنید.
-                </p>
-                <p className="body reveal">
-                  طراحی آکوستیک، الکتروآکوستیک و معماری سالن‌های همایش، سینما و فضاهای فرهنگی؛ همراه با ساخت محصولات
-                  آکوستیک ـ دکوراتیو برای سقف، کف و دیوار. تحلیل، طراحی و اجرا در یک پیوستار، از اولین اندازه‌گیری تا
-                  آخرین پنل.
-                </p>
-              </div>
-
-              <aside className="stmt-side col-start-9 col-span-4 max-[1180px]:col-span-4 max-[1180px]:pt-10">
-                <div className="quote reveal">
-                  <p>از اولین اندازه‌گیری تا آخرین پنل.</p>
-                  <span className="latin" lang="en">
-                    medis design group
-                  </span>
-                </div>
-                <ul className="disc reveal" role="list">
-                  <li>
-                    <span>معماری</span>
-                    <span className="latin" lang="en">
-                      architecture
-                    </span>
-                  </li>
-                  <li>
-                    <span>آکوستیک</span>
-                    <span className="latin" lang="en">
-                      acoustic
-                    </span>
-                  </li>
-                  <li>
-                    <span>الکتروآکوستیک</span>
-                    <span className="latin" lang="en">
-                      electroacoustic
-                    </span>
-                  </li>
-                </ul>
-              </aside>
-            </div>
-          </div>
-        </section>
-
         {/* ================= 02 · SERVICES ================= */}
-        <section className="sec alt" id="services" aria-labelledby="services-h">
+        <section className="sec petrol" id="services" aria-labelledby="services-h">
           <div className="wrap">
             <SecHead
               n="۰۲"

@@ -233,3 +233,42 @@ The theme uses 1380 / 1024 / 600 for CSS and 900 for the nav collapse:
   inside a 390px viewport, which is what makes its height match.
 - Do NOT append CSS after the `@media (max-width: 900px)` block and then replace from that
   marker — it silently deletes every rule that follows.
+
+## Next.js (Spark) home page — statement section removed (2026-11-18)
+
+- Home section order is now: hero → **services** → process → projects → stats band → products → partners →
+  magazine → contact. The «۰۱ · STATEMENT» / «دو دهه تمایز» block was deleted on request; that copy still exists on
+  `/about/` (its h1 is «دو دهه تمایز», plus a .quote), so nothing was lost.
+- The section after it carries the **secondary** ground on request: services is `className="sec petrol"`
+  (was `sec alt`), so the cream hero still drops into a dark band. The hero scroll cue now points at
+  `#services`; the `#about` anchor is gone (no other file linked it).
+- Dark-ground rules for it live in globals.css §17: `.sec.petrol` h2 / .latin / .mark b / .sec-note / .link;
+  the service cards keep their chalk surface, so nothing had to be inverted. Verified at 1440 and 390 px.
+- Deleted as dead along with the section: the `.disc` list rules (+ their .sec.petrol variant), the
+  `.sec.petrol .stmt-main` lines, and the now-unused `Mark` import. Marks still read ۰۲, ۰۲, ۰۳, ۰۴,
+  ۰۵, ۰۶, ۰۸, ۰۹ (pre-existing, non-sequential) — numbering left untouched.
+- Verify a visual change like this headless: `agent-browser` (headless by default; `--headed` shows it),
+  `set viewport W H` → `open` → force `.reveal` (`classList.add('in')`) before the screenshot, or the
+  capture comes out blank. This project’s dev server is usually already up on :3000.
+
+- **Card copy was capped at 38ch** (.card p, globals.css), which left a wide empty gutter inside every
+  service/product card; on request it is now max-width: none, so the paragraph fills .card-body
+  (423px body → 375px text at 1440, 3-up). The base p{max-width:62ch} would still cut the 2-up
+  /products/.card cards, so the rule has to say none, not just a larger ch value.
+- **The home hero has no CTA row any more** (2026-11-18): the «شروع گفت‌وگو» button and the «دیدن پروژه‌ها»
+  text link were removed on request, leaving only the eyebrow, h1, tagline, lede and the
+  «معماری · آکوستیک · الکتروآکوستیک» line inside .hero-meta. The header keeps its «تماس با ما» button, so
+  #contact is still reachable from every page; the .btn/.link classes are untouched and still used
+  by the section-more links.
+- **Hero copy rides the secondary ink** (2026-11-18, on request): `.hero-copy h1`, `.hero-tagline` →
+  `var(--color-secondary)` #002736; `.h1-kicker`, `.hero-lede`, `.disc-line` → the new `--sec-64` /
+  `--sec-58` tokens (same stepped fallbacks as `--cream-*`, mixed from the secondary hue), so the
+  hierarchy is unchanged and only the hue moves. The eyebrow keeps its orange `.fa`; the plate caption
+  (hall study / سالن، نمای داخلی) was left on ink because the crop did not include it.
+- **Secondary ink also covers the hero chrome** (follow-up): `.hero-plate .plate-cap` (.fa → `--sec-64`,
+  .latin → `--sec-58`) and the interior heroes (`.page-hero h1` → secondary, `.page-hero .lede` →
+  `--sec-64`, `.ph-copy .latin` → `--sec-58`). Section headings (h2) and body prose are still `--color-ink`,
+  so the hue step is only visible where a page h1 meets a section h2 — near-identical at #002736 vs #0f131f.
+  Project-page `.plate-cap` captions outside the hero deliberately stay ink (out of scope); swap them by
+  dropping the `.hero-plate` prefix if the whole caption family should follow.
+

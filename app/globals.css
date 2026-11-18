@@ -44,6 +44,9 @@
     --cream-16: color-mix(in srgb, var(--on-secondary) 16%, transparent);
     --cream-22: color-mix(in srgb, var(--on-secondary) 22%, transparent);
     --cream-28: color-mix(in srgb, var(--on-secondary) 28%, transparent);
+    /* the same stepped fallbacks, but in the secondary hue (hero copy on the cream ground) */
+    --sec-64: color-mix(in srgb, var(--color-secondary) 64%, transparent);
+    --sec-58: color-mix(in srgb, var(--color-secondary) 58%, transparent);
     --max: 1320px;
   }
 
@@ -541,6 +544,14 @@
   }
   .disc-line i { font-style: normal; color: var(--color-primary); opacity: 0.8; }
 
+  /* the hero copy rides the secondary ink, so the cream ground hands off to the petrol sections */
+  .hero-copy h1 { color: var(--color-secondary); }
+  .hero-copy h1 .h1-kicker { color: var(--sec-64); }
+  .hero-tagline { color: var(--color-secondary); }
+  .hero-lede { color: var(--sec-64); }
+  .hero-copy .latin { color: var(--sec-58); }
+  .hero-copy .disc-line { color: var(--sec-64); }
+
   .hero-proof {
     margin-top: 30px;
     padding-top: 22px;
@@ -572,6 +583,7 @@
 
   .plate-cap { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-top: 13px; }
   .plate-cap .fa { font-size: 11.5px; font-weight: 400; color: var(--ink-64); }
+  .hero-plate .plate-cap .fa { color: var(--sec-64); }
 
   .hero-foot {
     position: relative;
@@ -653,19 +665,6 @@
   .quote p { font-family: var(--font-display); font-weight: 500; font-size: 17.5px; line-height: 1.85; color: var(--color-ink); }
   .quote .latin { display: block; margin-top: 14px; }
 
-  .disc { margin-top: 26px; border-top: 1px solid var(--line); }
-  .disc li {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 16px;
-    padding-block: 13px;
-    border-bottom: 1px solid var(--line);
-    font-size: 13.5px;
-    font-weight: 400;
-  }
-  .disc li .latin { font-size: 11px; }
-
   /* ------------------------------------------------------------- 6 · services */
   .svc-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 44px; }
   .card {
@@ -691,7 +690,7 @@
   .card-n { font-family: var(--font-display); font-weight: 700; font-size: 11px; color: var(--color-primary); letter-spacing: 0; }
   .card .ico { width: 24px; height: 24px; color: var(--color-primary); flex: none; }
   .card h3 { margin-top: 14px; font-size: 17px; line-height: 1.6; }
-  .card p { margin-top: 8px; font-size: 14px; font-weight: 400; line-height: 1.9; color: var(--ink-64); max-width: 38ch; }
+  .card p { margin-top: 8px; font-size: 14px; font-weight: 400; line-height: 1.9; color: var(--ink-64); max-width: none; }
   .sec-more { display: flex; justify-content: flex-end; margin-top: 30px; }
 
   /* -------------------------------------------------------------- 7 · process */
@@ -1081,16 +1080,15 @@
   .band :focus-visible { outline-color: var(--on-secondary); }
 
   .sec.petrol h2 { color: var(--on-secondary); }
-  .sec.petrol .stmt-main .lead { color: var(--on-secondary); }
-  .sec.petrol .stmt-main .body { color: var(--cream-74); }
   .sec.petrol .latin { color: var(--cream-58); }
   .sec.petrol .eyebrow .rule { background: var(--cream-28); }
   .sec.petrol .quote { background: var(--cream-16); border: 1px solid var(--cream-22); }
   .sec.petrol .quote p { color: var(--on-secondary); }
   .sec.petrol .mark b { color: var(--on-secondary); }
   .sec.petrol .mark .rings { opacity: 0.32; }
-  .sec.petrol .disc { border-top-color: var(--cream-16); }
-  .sec.petrol .disc li { border-bottom-color: var(--cream-16); color: var(--cream-74); }
+  .sec.petrol .sec-note { color: var(--cream-74); }
+  .sec.petrol .link { color: var(--on-secondary); }
+  .sec.petrol .link:hover { color: var(--color-primary); }
   .sec.petrol :focus-visible { outline-color: var(--on-secondary); }
 
   .foot-brand b { color: var(--on-secondary); }
@@ -1138,8 +1136,23 @@
   .crumbs i { font-style: normal; opacity: 0.55; }
   .crumbs [aria-current] { color: var(--color-ink); }
 
-  .page-hero h1 { margin-top: 16px; font-size: clamp(2.05rem, 4.3vw, 3.5rem); line-height: 1.2; max-width: 26ch; }
-  .page-hero .lede { margin-top: 16px; max-width: 56ch; font-size: clamp(15px, 1.2vw, 17px); line-height: 2; color: var(--ink-72); }
+  .page-hero h1 {
+    margin-top: 16px;
+    font-size: clamp(2.05rem, 4.3vw, 3.5rem);
+    line-height: 1.2;
+    max-width: 26ch;
+    color: var(--color-secondary);
+  }
+  .page-hero .lede {
+    margin-top: 16px;
+    max-width: 56ch;
+    font-size: clamp(15px, 1.2vw, 17px);
+    line-height: 2;
+    color: var(--sec-64);
+  }
+  /* interior heroes share the home hero's secondary ink */
+  .ph-copy .latin { color: var(--sec-58); }
+  .hero-plate .plate-cap .latin { color: var(--sec-58); }
   .ph-actions { margin-top: 26px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
   .ph-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 22px; }
   .tag {
