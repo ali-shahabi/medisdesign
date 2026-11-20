@@ -377,6 +377,12 @@ The theme uses 1380 / 1024 / 600 for CSS and 900 for the nav collapse:
   `/products/colours/`, `/products/chairs/`, `/catalog/`, `/projects/baharestan/` → 200;
   the PDF is 2 523 866 B; the canvas draws and the chips point at `/medisdesign/products/#<family>`.
 
+- **Stats band has no rules (2026-11-20, on request).** `.stats` lost its `border-top`, the
+  `cream-16` dividers between `.stat`s (desktop, 2-col and 1-col breakpoints) and the 26 px
+  `padding-inline-start` that used to separate them; spacing is a plain `gap: 26px` now, so the
+  numbers align to their column starts. Re-adding a divider means putting back both the border
+  and the padding, or the first column looks wider than the rest.
+
 ### Header lockup (2026-11-20, on request “make the logo bigger”)
 
 - Mark 34 → **46 px**, brand name 14.5 → **17 px**, latin line 9.5 → **11 px**, gap 12 → 14 px,
