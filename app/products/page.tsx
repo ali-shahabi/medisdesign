@@ -1,24 +1,22 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import type { CSSProperties } from 'react';
-import { products } from '@/content/site';
+import { catalogue, colourFile, families, familyModels, models, woodColours } from '@/content/products';
+import { Asset } from '@/components/Asset';
 import { Cta } from '@/components/Cta';
-import { PageLd } from '@/components/PageLd';
+import { Arrow } from '@/components/Icons';
 import { PageHero } from '@/components/PageHero';
-import { Picture } from '@/components/Picture';
-import { SecHead } from '@/components/Section';
+import { PageLd } from '@/components/PageLd';
+import { Eyebrow, SecHead } from '@/components/Section';
 import { TextLink } from '@/components/TextLink';
 import { fa } from '@/lib/site';
 import { pageMeta } from '@/lib/seo';
 
 export const metadata: Metadata = pageMeta({
   title: 'محصولات آکوستیک ـ دکوراتیو | گروه مهندسی مدیس',
-  description: 'جاذب‌های صدا، دیفیوزرها، بیس‌ترپ و پوشش‌های دکوراتیو آکوستیک برای سقف، کف و دیوار.',
+  description:
+    'سیزده مدل جاذب صدا، بیس‌ترپ، پنل سالن، تایل چوبی و صندلی؛ با ابعاد، وزن، کاربرد و منحنی ضریب جذب از کاتالوگ مدیس.',
   path: '/products/',
 });
-
-const widths = [182, 165, 165, 165];
-const heights = [103, 99, 99, 99];
 
 export default function ProductsPage() {
   return (
@@ -26,17 +24,24 @@ export default function ProductsPage() {
       <PageLd
         path="/products/"
         name="محصولات آکوستیک ـ دکوراتیو | گروه مهندسی مدیس"
-        description="جاذب‌های صدا، دیفیوزرها، بیس‌ترپ و پوشش‌های دکوراتیو آکوستیک برای سقف، کف و دیوار."
+        description="سیزده مدل جاذب صدا، بیس‌ترپ، پنل سالن، تایل چوبی و صندلی، با مشخصات فنی کامل."
         crumbs={[{ name: 'صفحه اصلی', path: '/' }, { name: 'محصولات' }]}
       />
 
       <main id="main">
         <PageHero
-          en="materials"
+          en="products"
           fa="محصولات"
           h1="محصولات آکوستیک ـ دکوراتیو"
-          lede="پوشش‌ها، جاذب‌ها و دیفیوزرها؛ همان موادی که فضا را نرم می‌کنند. چهار خانوادهٔ محصول، یک زبان طراحی."
-          actions={<TextLink href="/catalog/">درخواست کاتالوگ محصولات</TextLink>}
+          lede={`${fa(models.length)} مدل در پنج خانواده؛ با ابعاد، وزن، کاربرد و منحنی ضریب جذب — همان‌طور که در کاتالوگ چاپی آمده است.`}
+          actions={
+            <>
+              <Link className="btn" href="/contact/">
+                درخواست نمونه
+              </Link>
+              <TextLink href="/catalog/">کاتالوگ محصولات</TextLink>
+            </>
+          }
         />
 
         <section className="sec tight" id="families" aria-labelledby="families-h">
@@ -44,80 +49,127 @@ export default function ProductsPage() {
             <SecHead
               n="۰۱"
               en="families"
-              fa="چهار خانواده"
+              fa="خانواده‌ها"
               id="families-h"
-              title="چهار خانوادهٔ محصول"
-              note="توضیح‌ها همان یک‌خطی‌های واقعی سایت است؛ بدون ضخامت، درجهٔ حریق یا ضریب جذب."
+              title="پنج خانوادهٔ محصول"
+              note="هر ردیف، یک مدل با کد مشخص است؛ روی مدل بزنید تا شناسنامهٔ فنی و منحنی جذب را ببینید."
             />
 
-            <div className="cards-2">
-              {products.map((product, i) => (
-                <article
-                  key={product.id}
-                  className="card reveal"
-                  id={product.id}
-                  style={{ '--d': `${(i % 2) * 0.05}s` } as CSSProperties}
-                >
-                  <div className="card-img">
-                    <Picture
-                      webp={[{ src: `/assets/img/panel-${product.img}.webp` }]}
-                      jpg={`/assets/img/panel-${product.img}.jpg`}
-                      width={widths[i]}
-                      height={heights[i]}
-                      alt={product.alt}
-                      sizes="(max-width: 900px) 92vw, 560px"
-                    />
-                  </div>
-                  <div className="card-body">
-                    <span className="card-top">
-                      <span className="card-n">{fa(i + 1)}</span>
-                      <span className="latin" lang="en">
-                        acoustic product
-                      </span>
-                    </span>
-                    <h3>{product.title}</h3>
-                    <p>{product.line}</p>
-                  </div>
-                </article>
-              ))}
+            <div className="fam-list">
+              {families.map((family) => {
+                const rows = familyModels(family.id);
+                return (
+                  <section className="fam" id={family.id} key={family.id} aria-labelledby={`fam-${family.id}`}>
+                    <div className="fam-head">
+                      <span className="fam-n">{family.n}</span>
+                      <div>
+                        <Eyebrow en={family.en} fa={family.title} />
+                        <h3 id={`fam-${family.id}`}>{family.title}</h3>
+                        <p>{family.intro}</p>
+                      </div>
+                    </div>
+
+                    {rows.length ? (
+                      <ul className="fam-models">
+                        {rows.map((m) => (
+                          <li key={m.slug}>
+                            <Link className="model-row" href={`/products/${m.slug}/`}>
+                              <span className="mr-img">
+                                <Asset src={m.photo} width={m.photoW} height={m.photoH} alt={m.alt} />
+                              </span>
+                              <span className="mr-txt">
+                                <span className="latin" lang="en">
+                                  {m.code}
+                                </span>
+                                <b>{m.title}</b>
+                                <span className="mr-meta">
+                                  {m.dims.length ? m.dims[0] : m.weight ? `وزن ${m.weight}` : m.use[0]}
+                                </span>
+                              </span>
+                              <span className="go" aria-hidden="true">
+                                <Arrow />
+                              </span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <ul className="fam-models">
+                        <li>
+                          <Link className="model-row" href="/products/chairs/">
+                            <span className="mr-img">
+                              <Asset
+                                src="/assets/img/spec/chair-3.webp"
+                                width={273}
+                                height={354}
+                                alt="صندلی همایشی با دستهٔ تحریر"
+                              />
+                            </span>
+                            <span className="mr-txt">
+                              <span className="latin" lang="en">
+                                chairs
+                              </span>
+                              <b>صندلی همایشی و سینما</b>
+                              <span className="mr-meta">متریال، مکانیزم و ساخت سفارشی</span>
+                            </span>
+                            <span className="go" aria-hidden="true">
+                              <Arrow />
+                            </span>
+                          </Link>
+                        </li>
+                      </ul>
+                    )}
+                  </section>
+                );
+              })}
             </div>
           </div>
         </section>
 
-        <section className="sec alt tight" id="material" aria-labelledby="material-h">
+        <section className="sec alt tight" id="colours" aria-labelledby="colours-h">
           <div className="wrap">
             <div className="split">
               <div className="split-txt">
-                <SecHead n="۰۲" en="material" fa="متریال" id="material-h" title="روکش، رنگ، بافت" />
-                <p className="lead mt-[22px]">
-                  سطح محصول، بخشی از طراحی است: روکش چوب، رنگ و بافت، همان‌قدر که جذب و پخش صدا مهم است، در دیده‌شدن
-                  فضا اثر می‌گذارد.
-                </p>
+                <SecHead
+                  n="۰۲"
+                  en="finishes"
+                  fa="رنگ"
+                  id="colours-h"
+                  title="۱۶ کد رنگ چوب"
+                  note="رنگ نانو، سطح را آب‌گریز می‌کند؛ هر کد روی نمونهٔ چوب اجرا می‌شود."
+                />
+                <ul className="swatch-row mt-[26px]">
+                  {woodColours.map((code) => (
+                    <li key={code}>
+                      <Link href="/products/colours/" className="swatch-mini">
+                        <Asset src={colourFile(code)} width={340} height={272} alt={`نمونهٔ رنگ چوب کد ${code}`} />
+                        <span className="latin" lang="en">
+                          {code}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
                 <div className="ph-actions mt-[26px]">
-                  <TextLink href="/catalog/">کاتالوگ‌ها</TextLink>
+                  <TextLink href="/products/colours/">همهٔ کدهای رنگ</TextLink>
                   <TextLink href="/contact/">درخواست نمونه</TextLink>
                 </div>
               </div>
               <div className="split-fig">
                 <figure>
                   <div className="frame">
-                    <Picture
-                      webp={[
-                        { src: '/assets/img/service-06-560.webp', w: 560 },
-                        { src: '/assets/img/service-06-1120.webp', w: 1120 },
-                      ]}
-                      jpg="/assets/img/service-06.jpg"
-                      width={1800}
-                      height={972}
-                      alt="نمونه‌های روکش چوب در رنگ‌های طبیعی، برای پوشش‌های آکوستیک"
-                      sizes="(max-width: 900px) 90vw, 520px"
+                    <Asset
+                      src="/assets/img/spec/wood-bg.webp"
+                      width={1190}
+                      height={712}
+                      alt="دیوار پوشیده از تایل چوبی سه‌بعدی در یک فضای مسکونی"
                     />
                   </div>
                   <figcaption className="material-cap">
                     <span className="latin" lang="en">
-                      wood veneer samples
+                      wood colours
                     </span>
-                    <span className="fa">نمونه‌های پوشش</span>
+                    <span className="fa">تایل دکوراتیو</span>
                   </figcaption>
                 </figure>
               </div>
@@ -127,13 +179,13 @@ export default function ProductsPage() {
 
         <Cta
           n="۰۳"
-          h2="کاتالوگ را بفرستیم؟"
-          en="catalogues"
+          h2="کاتالوگ محصولات"
+          en="catalogue"
           fa="کاتالوگ"
-          text="چهار کاتالوگ چاپی؛ با یک تماس یا ایمیل ارسال می‌شود."
+          text={`${fa(catalogue.pages)} صفحه، شش فصل؛ همین حالا قابل دانلود است.`}
           more={
             <Link className="c-site" href="/catalog/">
-              catalog
+              catalogue
             </Link>
           }
         />

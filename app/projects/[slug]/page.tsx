@@ -81,6 +81,16 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                     <span className="fa">{project.type}</span>
                   </figcaption>
                 </figure>
+                {project.note ? <p className="art-note">{project.note}</p> : null}
+                {project.scope?.length ? (
+                  <ul className="scope-tags">
+                    {project.scope.map((s) => (
+                      <li key={s} className="tag">
+                        {s}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
               </div>
 
               <aside className="art-side">
@@ -95,6 +105,18 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                       <Link href="/projects/">پروژه‌های مدیس</Link>
                     </dd>
                   </div>
+                  {project.year ? (
+                    <div>
+                      <dt>سال اجرا</dt>
+                      <dd>{project.year}</dd>
+                    </div>
+                  ) : null}
+                  {project.facts?.map((fact) => (
+                    <div key={fact.label}>
+                      <dt>{fact.label}</dt>
+                      <dd>{fact.value}</dd>
+                    </div>
+                  ))}
                   <div>
                     <dt>خدمات</dt>
                     <dd className="plain">

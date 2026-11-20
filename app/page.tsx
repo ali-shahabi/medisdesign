@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { articles, homeArticles, products, projects, services } from '@/content/site';
+import { articles, homeArticles, projects, services } from '@/content/site';
+import { families } from '@/content/products';
 import { articleDates } from '@/content/journal';
+import { Asset } from '@/components/Asset';
 import { Arrow, ServiceIcon } from '@/components/Icons';
 import { Cta } from '@/components/Cta';
 import { PageLd } from '@/components/PageLd';
@@ -211,28 +213,22 @@ export default function HomePage() {
               fa="محصولات"
               id="products-h"
               title="محصولات آکوستیک ـ دکوراتیو"
-              note="پوشش‌ها، جاذب‌ها و دیفیوزرها؛ همان موادی که فضا را نرم می‌کنند."
+              note="پنج خانواده، سیزده مدل؛ از جاذب سقفی تا تایل چوبی و صندلی."
             />
 
             <div className="prod-grid grid grid-cols-12 gap-6 max-[900px]:block">
               <div className="chips col-span-6 max-[1180px]:col-span-7">
-                {products.map((product, i) => (
+                {families.map((family, i) => (
                   <Link
                     className="chip reveal"
-                    href={`/products/#${product.id}`}
-                    key={product.id}
+                    href={`/products/#${family.id}`}
+                    key={family.id}
                     style={{ '--d': `${i * 0.05}s` } as React.CSSProperties}
                   >
-                    <Picture
-                      webp={[{ src: `/assets/img/panel-${product.img}.webp` }]}
-                      jpg={`/assets/img/panel-${product.img}.jpg`}
-                      width={product.img === 1 ? 182 : 165}
-                      height={product.img === 1 ? 103 : 99}
-                      alt={product.alt}
-                    />
+                    <Asset src={family.img} width={family.imgW} height={family.imgH} alt={family.alt} />
                     <div>
-                      <h3>{product.title}</h3>
-                      <p>{product.line}</p>
+                      <h3>{family.title}</h3>
+                      <p>{family.line}</p>
                     </div>
                     <span className="go" aria-hidden="true">
                       <Arrow />

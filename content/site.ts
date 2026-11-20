@@ -135,11 +135,39 @@ export type Project = {
   img: number;
   width: number;
   height: number;
+  /* only the projects the printed catalogue documents carry facts */
+  year?: string;
+  facts?: { label: string; value: string }[];
+  scope?: string[];
+  note?: string;
 };
 
 export const projects: Project[] = [
   { slug: 'alavi', name: 'سالن بنیاد علوی', type: 'سالن اجتماعات', en: 'hall', img: 7, width: 1710, height: 960 },
-  { slug: 'baharestan', name: 'سالن همایش شهرک صنعتی بهارستان', type: 'سالن همایش', en: 'hall', img: 1, width: 1710, height: 954 },
+  {
+    slug: 'baharestan',
+    name: 'سالن همایش شهرک صنعتی بهارستان',
+    type: 'سالن همایش',
+    en: 'hall',
+    img: 1,
+    width: 1710,
+    height: 954,
+    year: '۱۴۰۲',
+    facts: [
+      { label: 'مساحت', value: '۲۵۰ متر مربع' },
+      { label: 'ظرفیت', value: '۲۰۰ صندلی' },
+      { label: 'نوفهٔ سالن', value: 'از ۸۷ به ۴۸ دسیبل' },
+    ],
+    scope: [
+      'معماری',
+      'آکوستیک',
+      'دکوراتیو',
+      'سیستم صوت',
+      'ضبط و پخش تصویر',
+      'برق عمومی و تخصصی سالن',
+    ],
+    note: 'سالن در شهرک صنعتی کرج قرار دارد؛ سقف ساندویچ‌پنل در بارندگی صدایی معادل ۸۷ دسیبل ایجاد می‌کرد. پس از اجرا، نوفهٔ سالن به ۴۸ دسیبل رسید.',
+  },
   { slug: 'araz', name: 'سالن هتل آراز', type: 'سالن همایش هتل', en: 'hall', img: 4, width: 1710, height: 942 },
   { slug: 'datin-cinema', name: 'سالن سینمای داتین', type: 'سالن سینما', en: 'cinema', img: 5, width: 1710, height: 960 },
   { slug: 'datin-conference', name: 'سالن کنفرانس داتین', type: 'سالن کنفرانس', en: 'hall', img: 8, width: 1710, height: 954 },
@@ -148,14 +176,8 @@ export const projects: Project[] = [
   { slug: 'kimiafam', name: 'سالن کنفرانس کیمیا فام', type: 'سالن کنفرانس', en: 'hall', img: 6, width: 1710, height: 954 },
 ];
 
-export type Product = { id: string; title: string; line: string; img: number; alt: string };
-
-export const products: Product[] = [
-  { id: 'absorbers', title: 'جاذب‌های صدا', line: 'کنترل بازگشت صدا و زمان ماندگاری', img: 1, alt: 'رندر پنل جاذب صدا' },
-  { id: 'diffusers', title: 'دیفیوزرها', line: 'پخش یکنواخت انرژی صوتی در فضا', img: 2, alt: 'رندر پنل دیفیوزر' },
-  { id: 'bass-traps', title: 'بیس‌ترپ', line: 'کنترل فرکانس‌های پایین در گوشه‌ها', img: 3, alt: 'رندر پنل بیس‌ترپ' },
-  { id: 'decorative', title: 'پوشش‌های دکوراتیو', line: 'سقف، کف و دیوار با نمای آکوستیک', img: 4, alt: 'رندر پنل پوشش دکوراتیو آکوستیک' },
-];
+/* the product families now live in content/products.ts, transcribed from the
+   printed catalogue; site.ts keeps only the editorial pages. */
 
 export const catalogues = [
   'کاتالوگ معرفی مدیس دیزاین',

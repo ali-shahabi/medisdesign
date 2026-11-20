@@ -291,3 +291,57 @@ The theme uses 1380 / 1024 / 600 for CSS and 900 for the nav collapse:
 - Building while `next dev` (:3000) runs is safe here — the dev server still answered 200 after the
   production build (`next dev` keeps its caches in `.next/dev`).
 
+## Product catalogue from the printed book (2026-11-20, branch `feat/catalogue-products`)
+
+- **The printed catalogue is the source the site never had.** «Medis Catalogue.pdf» (52 pp.,
+  6 chapters) documents **13 model codes in 5 families**; `content/products.ts` holds every
+  value and invents nothing — the book carries no prices, no fire rating and no *numeric*
+  NRC (the values live only in the printed curves), so the site never states a number.
+- Families → models: `industrial` (Ce-102, Ce-103), `interior` (Fa-105, Fa-106, FD-102),
+  `halls` (GM-109, DM-102), `wood` (DA-103…DA-108), `chairs` (no code). Routes:
+  `/products/` (index, five anchored sections), `/products/[model]/` (`generateStaticParams`
+  over the 13 slugs, `dynamicParams = false`), `/products/colours/`, `/products/chairs/`.
+  The old four-card `products` array in `content/site.ts` is gone; the home chips now map
+  `families` and link to `/products/#<family-id>`.
+- **Assets are crops of the PDF**, not new renders: `public/assets/img/spec/<slug>.webp`
+  (product photos), `<slug>-chart.webp` (absorption curves), `chairs-*.webp`,
+  `catalogue-cover.webp`; `public/assets/img/wood/<code>.webp` (the 16 swatches, cropped
+  above the printed code so the code can be HTML); `public/assets/catalog/medis-catalogue-fa.pdf`
+  — 31.6 MB → 2.5 MB via `doc.rewrite_images(dpi_threshold=200, dpi_target=150, quality=70)`
+  plus `subset_fonts()`; text stays selectable, photos soften. (`dpi_target` must be smaller
+  than `dpi_threshold` or PyMuPDF raises.)
+- **Chart pipeline** (PyMuPDF + Pillow, ad-hoc scripts, not in the repo): the curves are
+  vector — `page.get_drawings()` with fill colours #37A0D8 / #2F2F87 / #0FA34A; the grey
+  dotted gridlines give the value scale, the band labels (125…5000) the x scale. A full
+  numeric extraction was prototyped but **not shipped**: the printed page has no tabulated
+  values and a wrong point is worse than a picture, so the page shows the published chart
+  as an image plus a caption. Do not invent NRC numbers.
+- Two page grounds had to be removed from every crop: the chart's grey #E7E6E9 plot
+  background and the DA pages' beige block. Rule used: any pixel with `min(r,g,b) > 221`
+  and saturation < 16, or within 14 of the beige #CCC1B0, becomes `--color-chalk`; then
+  trim to the content bbox plus a 12 px margin. Re-run that if charts are ever re-cropped.
+- The DA charts keep the book's own axis title `SPECIMEN ABSORPTION (M2/OBJECT)` — it is
+  the catalogue's wording, **not** a second metric; do not «fix» it into alpha without the
+  source data.
+- `/catalog/` now ships the real file: featured download (cover, size, page count) and the
+  six-chapter index with page numbers. The `catalogue` object (file/pages/size/chapters)
+  lives in `content/products.ts`.
+- **Project pages gained optional facts** — `year`, `facts`, `scope`, `note` on `Project`.
+  Only `baharestan` is filled (۱۴۰۲ · ۲۵۰ m² · ۲۰۰ صندلی · ۸۷→۴۸ dB) because the catalogue
+  is the only placement that documents it; the rest stay name+type as before.
+- **New CSS is §20** (`20 · catalogue products`), inserted **before** §19 breakpoints:
+  `.fam*`, `.model-row`, `.spec-*`, `.chart-*`, `.swatch*`, `.chair-*`, `.mat*`, `.dl*`,
+  `.art-note`, `.scope-tags`, with its own 1180/900/600 rules. Gotcha: global `.latin` is
+  `direction: ltr`, so a Latin code stacked in an RTL grid starts at the *left* — that is
+  why `.mr-txt .latin` carries `text-align: right`.
+- **Model pages: no Latin code in the h1.** A code prefixed inside the RTL heading
+  bidi-mangles (Yekan draws the digits Persian-shaped and the run reorders, so «Ce-102»
+  rendered as garbage). The h1 is the Persian title alone; the code stays in the eyebrow
+  (`.latin`, `direction: ltr`), the spec table, and at the END of `<title>`
+  («تایل چوبی دکوراتیو — DA-106») where the LTR run stays isolated. JSON-LD keeps the
+  code first — it is never rendered.
+- **Verified:** `pnpm build` = 47 pages incl. the 13 model routes; Product JSON-LD with
+  `sku` in the export; `scrollWidth === clientWidth` at 390 px on /, /products/, a model,
+  `/products/colours/`, `/products/chairs/`, `/catalog/`, `/projects/baharestan/`; the PDF
+  is in `out/assets/catalog/`. Full-page Chrome captures leave the footer band empty —
+  viewport captures show it correctly, so do not chase that as a bug.

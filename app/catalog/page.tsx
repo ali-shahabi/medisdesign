@@ -1,18 +1,22 @@
 import type { Metadata } from 'next';
 import type { CSSProperties } from 'react';
+import Link from 'next/link';
 import { catalogScope, catalogues } from '@/content/site';
+import { catalogue } from '@/content/products';
+import { Asset } from '@/components/Asset';
 import { Cta } from '@/components/Cta';
 import { Doc } from '@/components/Icons';
 import { PageLd } from '@/components/PageLd';
 import { PageHero } from '@/components/PageHero';
 import { SecHead } from '@/components/Section';
 import { TextLink } from '@/components/TextLink';
-import { fa } from '@/lib/site';
+import { asset, fa } from '@/lib/site';
 import { pageMeta } from '@/lib/seo';
 
 export const metadata: Metadata = pageMeta({
   title: 'کاتالوگ‌ها | گروه مهندسی مدیس',
-  description: 'کاتالوگ‌های مدیس دیزاین: معرفی، آکوستیک معماری، اجرای الکتروآکوستیک و محصولات آکوستیک ـ دکوراتیو.',
+  description:
+    'کاتالوگ مدیس با ۵۲ صفحه و شش فصل، همراه کاتالوگ‌های چاپی آکوستیک معماری، الکتروآکوستیک و محصولات آکوستیک ـ دکوراتیو.',
   path: '/catalog/',
 });
 
@@ -22,7 +26,7 @@ export default function CatalogPage() {
       <PageLd
         path="/catalog/"
         name="کاتالوگ‌ها | گروه مهندسی مدیس"
-        description="کاتالوگ‌های مدیس دیزاین: معرفی، آکوستیک معماری، اجرای الکتروآکوستیک و محصولات آکوستیک ـ دکوراتیو."
+        description="کاتالوگ مدیس با ۵۲ صفحه و شش فصل؛ دانلود فایل و درخواست نسخهٔ چاپی."
         crumbs={[{ name: 'صفحه اصلی', path: '/' }, { name: 'کاتالوگ‌ها' }]}
       />
 
@@ -31,18 +35,76 @@ export default function CatalogPage() {
           en="catalogues"
           fa="کاتالوگ"
           h1="کاتالوگ‌ها"
-          lede="چهار کاتالوگ، به‌همراه فهرست خدماتی که در کاتالوگ معرفی آمده است."
+          lede={`کاتالوگ مدیس در ${fa(catalogue.pages)} صفحه و شش فصل؛ همین حالا دانلود کنید یا نسخهٔ چاپی را بخواهید.`}
+          actions={
+            <>
+              <a className="btn" href={asset(catalogue.file)} download>
+                دانلود کاتالوگ
+              </a>
+              <TextLink href="/contact/">درخواست نسخهٔ چاپی</TextLink>
+            </>
+          }
         />
 
-        <section className="sec tight" id="catalogues" aria-labelledby="catalogues-h">
+        <section className="sec tight" id="download" aria-labelledby="download-h">
           <div className="wrap">
             <SecHead
               n="۰۱"
-              en="four books"
-              fa="کاتالوگ"
+              en="download"
+              fa="فایل"
+              id="download-h"
+              title="کاتالوگ مدیس"
+              note={`PDF، ${fa(catalogue.pages)} صفحه، ${catalogue.sizeMb} مگابایت.`}
+            />
+
+            <div className="dl">
+              <figure className="dl-cover">
+                <Asset
+                  src="/assets/img/spec/catalogue-cover.webp"
+                  width={1310}
+                  height={1853}
+                  alt="جلد کاتالوگ مدیس"
+                  priority
+                />
+              </figure>
+
+              <div className="dl-body">
+                <p className="dl-lead">
+                  کاتالوگ با معرفی گروه آغاز می‌شود و در شش فصل، طراحی آکوستیکی معماری و صنعتی، الکتروآکوستیک، اجرای
+                  آکوستیک، سالن سینما و همایش و در پایان محصولات آکوستیک ـ دکوراتیو را پوشش می‌دهد. شناسنامهٔ فنی هر مدل و
+                  منحنی ضریب جذب آن، همان چیزی است که در صفحهٔ هر محصول در سایت هم آمده است.
+                </p>
+
+                <ol className="dl-chapters">
+                  {catalogue.chapters.map((chapter) => (
+                    <li key={chapter.n}>
+                      <span className="idx">{chapter.n}</span>
+                      <span className="ch-title">{chapter.title}</span>
+                      <span className="ch-page">ص {fa(chapter.page)}</span>
+                    </li>
+                  ))}
+                </ol>
+
+                <div className="ph-actions">
+                  <a className="btn" href={asset(catalogue.file)} download>
+                    دانلود فایل کاتالوگ
+                  </a>
+                  <TextLink href="/products/">محصولات</TextLink>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="sec alt tight" id="catalogues" aria-labelledby="catalogues-h">
+          <div className="wrap">
+            <SecHead
+              n="۰۲"
+              en="printed"
+              fa="چاپی"
               id="catalogues-h"
-              title="چهار کاتالوگ"
-              note="برای دریافت فایل، یک تماس یا ایمیل کافی است."
+              title="کاتالوگ‌های چاپی"
+              note="نسخهٔ چاپی این کاتالوگ‌ها با یک تماس یا ایمیل ارسال می‌شود."
             />
 
             <div className="cards-4">
@@ -62,15 +124,9 @@ export default function CatalogPage() {
           </div>
         </section>
 
-        <section className="sec alt tight" id="scope" aria-labelledby="scope-h">
+        <section className="sec tight" id="scope" aria-labelledby="scope-h">
           <div className="wrap">
-            <SecHead
-              n="۰۲"
-              en="scope of work"
-              fa="محدوده"
-              id="scope-h"
-              title="محدودهٔ خدمات"
-            />
+            <SecHead n="۰۳" en="scope of work" fa="محدوده" id="scope-h" title="محدودهٔ خدمات" />
 
             <div className="svc-grid">
               {catalogScope.map((group, i) => (
@@ -91,7 +147,7 @@ export default function CatalogPage() {
         </section>
 
         <Cta
-          n="۰۳"
+          n="۰۴"
           h2="کاتالوگ را دریافت کنید"
           en="request"
           fa="درخواست"
