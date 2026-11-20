@@ -377,6 +377,13 @@ The theme uses 1380 / 1024 / 600 for CSS and 900 for the nav collapse:
   `/products/colours/`, `/products/chairs/`, `/catalog/`, `/projects/baharestan/` → 200;
   the PDF is 2 523 866 B; the canvas draws and the chips point at `/medisdesign/products/#<family>`.
 
+- **The hall-section plate is vector now (2026-11-20, on request “this picture is cropped”).**
+  `plate-section-{480,960}.{jpg,webp}` were a bad export of the drawing — the ceiling, the
+  rake and the sight lines all ran off the bitmap, so the card showed a fragment. They are
+  deleted; `components/PlateSection.tsx` draws the section (shell, stage, screen, raked
+  seating with seat backs, reflection paths to the ceiling) in a 480×320 viewBox with
+  `currentColor`, styled by `.plate-sheet .plate-art`. Keep the strokes ≥0.7 units — at the
+  300 px card width anything lighter disappears.
 - **Home product chips clear the heading**: `.chips` carries `margin-top: 44px` — the same
   44 px rhythm as `.cards-2`, `.cards-4` and `.fam-list`. `.material` was already 44 px, so the
   two columns now start level instead of the chips butting against the h2.

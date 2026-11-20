@@ -715,6 +715,7 @@
   }
   .plate-sheet .sheet-img { height: 230px; display: grid; place-items: center; }
   .plate-sheet img { width: 100%; height: 100%; object-fit: contain; }
+  .plate-sheet .plate-art { width: 100%; height: 100%; color: var(--color-ink); opacity: 0.92; }
   .plate-sheet figcaption {
     display: flex;
     align-items: baseline;

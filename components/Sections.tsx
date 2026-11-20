@@ -1,5 +1,6 @@
 import { partners, processSteps, stats } from '@/content/site';
 import { Picture } from './Picture';
+import { PlateSection } from './PlateSection';
 import { Eyebrow, Field, Mark, SecHead } from './Section';
 
 export function StatsBand({ n = '۰۲' }: { n?: string }) {
@@ -85,17 +86,7 @@ export function Process() {
 
             <figure className="plate-sheet reveal">
               <span className="sheet-img">
-                <Picture
-                  webp={[
-                    { src: '/assets/img/plate-section-480.webp', w: 480 },
-                    { src: '/assets/img/plate-section-960.webp', w: 960 },
-                  ]}
-                  jpg="/assets/img/plate-section-960.jpg"
-                  width={960}
-                  height={600}
-                  alt="مقطع خطی سالن همایش با شیب سقف و سکوها"
-                  sizes="(max-width: 900px) 42vw, 300px"
-                />
+                <PlateSection />
               </span>
               <figcaption>
                 <span className="latin" lang="en">
