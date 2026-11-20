@@ -9,6 +9,7 @@ import {
   models,
   woodColours,
 } from '@/content/products';
+import { AbsorptionChart } from '@/components/AbsorptionChart';
 import { Asset } from '@/components/Asset';
 import { Cta } from '@/components/Cta';
 import { PageHero } from '@/components/PageHero';
@@ -16,6 +17,7 @@ import { PageLd } from '@/components/PageLd';
 import { ProductLd } from '@/components/ProductLd';
 import { SecHead } from '@/components/Section';
 import { TextLink } from '@/components/TextLink';
+import { fa } from '@/lib/site';
 import { pageMeta } from '@/lib/seo';
 
 export const dynamicParams = false;
@@ -164,16 +166,41 @@ export default async function ProductModelPage({ params }: { params: Promise<{ m
         <section className="sec alt tight" id="curve" aria-labelledby="curve-h">
           <div className="wrap">
             <SecHead n={nCurve} en="absorption" fa="منحنی" id="curve-h" title="ضریب جذب صدا" />
-            {model.charts.map((chart) => (
-              <figure key={chart.src} className="chart-fig reveal">
-                <Asset src={chart.src} width={chart.w} height={chart.h} alt={`منحنی ضریب جذب ${model.code}`} />
-                <figcaption className="chart-cap">{chart.label}</figcaption>
-              </figure>
-            ))}
+            <AbsorptionChart freqs={model.curve.freqs} series={model.curve.series} code={model.code} />
             <p className="chart-note">
-              محور افقی فرکانس (۱۲۵ تا ۵۰۰۰ هرتز) و محور عمودی ضریب جذب است. منحنی‌ها همان‌طور که در کاتالوگ چاپی
-              آمده‌اند بازتولید شده‌اند؛ برای تفسیر پروژه‌ای، تیم آکوستیک مدیس طراحی را بر اساس فضای شما انجام می‌دهد.
+              محور افقی فرکانس (۱۰۰ تا ۵۰۰۰ هرتز) و محور عمودی ضریب جذب است. نشانگر را روی نمودار ببرید تا عدد هر باند
+              را ببینید؛ روی نام هر منحنی بزنید تا خاموش و روشن شود. برای تفسیر پروژه‌ای، تیم آکوستیک مدیس طراحی را بر
+              اساس فضای شما انجام می‌دهد.
             </p>
+
+            <details className="chart-data">
+              <summary>جدول داده‌ها</summary>
+              <div className="chart-scroll">
+                <table className="chart-table">
+                  <caption className="sr-only">ضریب جذب {model.code} بر اساس فرکانس</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">فرکانس (هرتز)</th>
+                      {model.curve.series.map((s) => (
+                        <th key={s.label} scope="col">
+                          {s.label}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {model.curve.freqs.map((f, i) => (
+                      <tr key={f}>
+                        <th scope="row">{fa(f)}</th>
+                        {model.curve.series.map((s) => (
+                          <td key={s.label}>{fa(s.values[i].toFixed(2)).replace('.', '٫')}</td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </details>
           </div>
         </section>
 

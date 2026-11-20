@@ -304,18 +304,31 @@ The theme uses 1380 / 1024 / 600 for CSS and 900 for the nav collapse:
   The old four-card `products` array in `content/site.ts` is gone; the home chips now map
   `families` and link to `/products/#<family-id>`.
 - **Assets are crops of the PDF**, not new renders: `public/assets/img/spec/<slug>.webp`
-  (product photos), `<slug>-chart.webp` (absorption curves), `chairs-*.webp`,
+  (product photos), `chairs-*.webp`,
   `catalogue-cover.webp`; `public/assets/img/wood/<code>.webp` (the 16 swatches, cropped
   above the printed code so the code can be HTML); `public/assets/catalog/medis-catalogue-fa.pdf`
   — 31.6 MB → 2.5 MB via `doc.rewrite_images(dpi_threshold=200, dpi_target=150, quality=70)`
   plus `subset_fonts()`; text stays selectable, photos soften. (`dpi_target` must be smaller
   than `dpi_threshold` or PyMuPDF raises.)
-- **Chart pipeline** (PyMuPDF + Pillow, ad-hoc scripts, not in the repo): the curves are
-  vector — `page.get_drawings()` with fill colours #37A0D8 / #2F2F87 / #0FA34A; the grey
-  dotted gridlines give the value scale, the band labels (125…5000) the x scale. A full
-  numeric extraction was prototyped but **not shipped**: the printed page has no tabulated
-  values and a wrong point is worse than a picture, so the page shows the published chart
-  as an image plus a caption. Do not invent NRC numbers.
+- **The curves are live now (Chart.js), not scans.** `components/AbsorptionChart.tsx`
+  (client, registers only Line+Point+Linear+Category+Tooltip, ~60 KB gz on that route)
+  reads `model.curve = { freqs: 100…5000 (18 bands), series: [{ label, values[] }] }` from
+  `content/products.ts`. Terracotta/petrol/brass per series; HTML legend toggles datasets;
+  a `<details>` data table of the same numbers is server-rendered so the page still carries
+  the data for search and screen readers. Tooltip/labels use Persian digits with «٫».
+- **How those numbers were obtained** (PyMuPDF + Pillow, ad-hoc scripts, not in the repo):
+  the curves are vector — `page.get_drawings()` with fill colours #37A0D8 / #2F2F87 /
+  #0FA34A. The grey dashed gridlines give the y scale (each paired with its printed label
+  via a least-squares fit), and the band labels under the plot (100, 125 … 5000 — **100 Hz
+  is the first band**, easy to drop) give the x scale; each polyline is sampled at the band
+  x positions. Note the legend order is not the colour order: check each page (e.g. FD-102
+  navy = 30 mm, blue = 60 mm).
+- **Source-data caveat worth telling the client:** the book reuses one curve across several
+  models. Extracted arrays for Fa-105 and GM-109 are identical to 2 dp, FD-102 differs only
+  by sampling noise, and DA-103/104 are byte-identical; a pixel diff of the printed crops
+  shows only label/legend differences. Publish these as the book's curves, and replace them
+  the moment real lab data exists — the numbers now live in one file, so it is a data edit,
+  not a code change.
 - Two page grounds had to be removed from every crop: the chart's grey #E7E6E9 plot
   background and the DA pages' beige block. Rule used: any pixel with `min(r,g,b) > 221`
   and saturation < 16, or within 14 of the beige #CCC1B0, becomes `--color-chalk`; then
