@@ -358,3 +358,27 @@ The theme uses 1380 / 1024 / 600 for CSS and 900 for the nav collapse:
   `/products/colours/`, `/products/chairs/`, `/catalog/`, `/projects/baharestan/`; the PDF
   is in `out/assets/catalog/`. Full-page Chrome captures leave the footer band empty —
   viewport captures show it correctly, so do not chase that as a bug.
+
+### Deploy from this network (2026-11-20) — SSH is blocked, use gh over HTTPS
+
+- `git@github.com` (port 22) **times out** here and `ssh-add -l` reports no identities, so
+  the old SSH recipe fails. The `gh` CLI is logged in (keyring) and `gh auth setup-git` installs
+  a credential helper — but the global config also rewrites `https://github.com/` →
+  `https://ghfast.top/https://github.com/`, so a plain HTTPS push asks for a username.
+- Working recipe: disable the global config for the command (drops the rewrite) and re-add
+  only the gh helper:
+  `GIT_CONFIG_GLOBAL=/dev/null GIT_TERMINAL_PROMPT=0 git -c credential.helper='!gh auth git-credential' push https://github.com/ali-shahabi/medisdesign.git HEAD:gh-pages`
+  Commits need identity explicitly when the global config is off (`-c user.name=… -c user.email=…`).
+- Deployed 2026-11-20: gh-pages `acc24da` (319 files) serves the catalogue build —
+  `/products/`, 13 model pages, `/products/colours/`, `/products/chairs/`, `/catalog/` with the
+  2.5 MB PDF, Baharestan facts, Chart.js curves, 86 px header. Branch
+  `feat/catalogue-products` pushed (source), gh-pages carries the build.
+- Live smoke test after deploy: `/`, `/products/`, `/products/ce-102/`, `/products/da-106/`,
+  `/products/colours/`, `/products/chairs/`, `/catalog/`, `/projects/baharestan/` → 200;
+  the PDF is 2 523 866 B; the canvas draws and the chips point at `/medisdesign/products/#<family>`.
+
+### Header lockup (2026-11-20, on request “make the logo bigger”)
+
+- Mark 34 → **46 px**, brand name 14.5 → **17 px**, latin line 9.5 → **11 px**, gap 12 → 14 px,
+  bar 78 → **86 px**; `.hero-in` min-height follows (`100svh - 86px - 58px`) — change both or the
+  home hero overflows the fold by the delta. Mobile (≤900): mark 38, name 15, latin 10, bar 76.
