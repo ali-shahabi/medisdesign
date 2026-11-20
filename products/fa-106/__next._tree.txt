@@ -1,4 +1,4 @@
-:HL["/medisdesign/_next/static/chunks/00y3b2o-on7ra.css","style"]
+:HL["/medisdesign/_next/static/chunks/0bnayg77d405n.css","style"]
 :HL["/medisdesign/_next/static/media/sans_300-s.p.29ni64woz4ht5.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/medisdesign/_next/static/media/sans_400-s.p.3k5lsp2iue9-t.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/medisdesign/_next/static/media/yekan_500-s.p.31diszeh56y-z.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
@@ -7,4 +7,4 @@
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"model","t":"d","k":"fa-106","s":["chairs","colours"]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"products","h":131136,"c":"$Q2"}]]
-0:{"b":"6cue1ZCOdTA-t-FISVhEs","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
+0:{"b":"2_HdLUCUpgNe06sEtCM9t","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}

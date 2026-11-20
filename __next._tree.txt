@@ -1,7 +1,7 @@
-:HL["/medisdesign/_next/static/chunks/00y3b2o-on7ra.css","style"]
+:HL["/medisdesign/_next/static/chunks/0bnayg77d405n.css","style"]
 :HL["/medisdesign/_next/static/media/sans_300-s.p.29ni64woz4ht5.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/medisdesign/_next/static/media/sans_400-s.p.3k5lsp2iue9-t.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/medisdesign/_next/static/media/yekan_500-s.p.31diszeh56y-z.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/medisdesign/_next/static/media/yekan_700-s.p.1bl7fko-so81v.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 1:[["children",{"s":"__PAGE__","h":128}]]
-0:{"b":"6cue1ZCOdTA-t-FISVhEs","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"2_HdLUCUpgNe06sEtCM9t","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
