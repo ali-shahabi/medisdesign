@@ -377,6 +377,9 @@ The theme uses 1380 / 1024 / 600 for CSS and 900 for the nav collapse:
   `/products/colours/`, `/products/chairs/`, `/catalog/`, `/projects/baharestan/` → 200;
   the PDF is 2 523 866 B; the canvas draws and the chips point at `/medisdesign/products/#<family>`.
 
+- **Home product chips clear the heading**: `.chips` carries `margin-top: 44px` — the same
+  44 px rhythm as `.cards-2`, `.cards-4` and `.fam-list`. `.material` was already 44 px, so the
+  two columns now start level instead of the chips butting against the h2.
 - **Stats band has no rules (2026-11-20, on request).** `.stats` lost its `border-top`, the
   `cream-16` dividers between `.stat`s (desktop, 2-col and 1-col breakpoints) and the 26 px
   `padding-inline-start` that used to separate them; spacing is a plain `gap: 26px` now, so the
